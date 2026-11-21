@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 
 import common
 
-MAX_FILES_PER_SITE = 60
+MAX_FILES_PER_SITE = 25
 SKIP = re.compile(r"product|blog|recipe|brand|article|image|video|news|press|career|job|faq|offer|coupon|dish|menu|cuisine", re.I)
 PREFER = re.compile(r"city|cities|local|locality|area|location|near|categor|store|centre|center|restaurant|service", re.I)
 NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
