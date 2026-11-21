@@ -1,16 +1,6 @@
 {
- "collected_at": "2026-11-21T11:39:38Z",
+ "collected_at": "2026-11-21T12:28:46Z",
  "items": [
-  {
-   "provider": "blinkit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
-   "title": "Blinkit launches ambulance service in Bengaluru across four areas, opens second training academy - CNBC TV18",
-   "source": "CNBC TV18",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVjcxME1GMmxQNnAzcXppcWJISld2S2JCczNKWlhHS2Q3QWpVSGVhTWFqSzdwa09qRmFqN2xwR0M1Sy00NWlhU3FwUVZ4T2QxckpKaWlFckc4NGtVNEpidFVaU01MbnFoY0JTWHZkUldydmZBOGYxWmpSeTlleEVoUjF4c19NeTJiUXNnbzJfd3MzT2dYSXhhTXFsRnU1VlM3VlRWS2RXX1l6UjBYWTBlRlVxcW42TlpGM1JJcUJnb0FDN1BTMEVFSjFGOUtjY2gyaDlaQ0xoR1p6Z9IB3wFBVV95cUxOeHkzSzZZN2VIek9sSi1pUEwyaF9PSXAwLXVXMTVIcm1fMXBoSDdKWjZKYUcyUy1RSGNmSjYyOXhlcHFVVlVfNkljSENuWERYS0g4ZndrN3UzWHpoeFJWWW1UWlQ0VXlGVGZLQnJCZUdHY0VIOTd3bDFpeDNTc05BR2dSM2hXWjNQYlUtXzBsMVNLQUhxd21Pbk1idGtMQV9rNmlYUEs1cTY2ZlVpdWx2TFR3MDgzVEo5SnpoZVluVUt6MldyWDFLMTNTZFZJRXpyVnFlcFZZQVd5WHlpd2Qw?oc=5",
-   "date": "2026-11-20"
-  },
   {
    "provider": "blinkit",
    "city": "bengaluru",
@@ -20,6 +10,16 @@
    "source": "ET Retail",
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQ3Y1TVZ6RkU0YUlRcTR6RWItNnJ2QkhtbzFTS1JqXy1zU0xTdjhOZWdRUUtqTmplWmlKU0hUNGZlMk5QdG9nQ2RTXzVYQzU5d0w5bUpQbnM0T1FieTZQd1pURHJGVGdMTDRFZWZDcVo2RGtFV0NVMlE3cm85MGZwdHlMdW1LbExLSEhPS0RKWVZGcVFTOWhwQ0pFTmpocnd2TGdQejJtYmJXZzJlcU5YbjZFRXAxSG42V1RPUHJuUjA5cGk4NmtDbzhxMGNuZzk0VGh6LUdPaktCN2NLdWk0MS1GX0lMajF4UGJPVm05MnJ0aXpG0gH6AUFVX3lxTE1yaGkyS0V0YlN0Sk9wSVQ4ajFXV0F6ODhYd0FhMmNhbFZ0MFUzNHRWcmxWWHRhR1htLXUxY1E4YUtUZWVTVGhYa05feG9jR1hfLWZRZDByWVhRNmpldWV5OEpXU1p3cG5QNmVGV0hmcXNwamIxZDRCMGRzcldxaXZRQ0NrYVZwMWUyby1HbWRJTDBLWXZZNFR2SjhIOXZMaFNOZ3p1RHN1SG8wZW9uV1N2aFFzVTRFdll5WU83OTdrSVhHSDhtU1JpZVNuODZqSnZoZ0hfMGgzYXJ3cXJONzZzS3BzQzZYOU4yQW5XWWQtX3dNZ1pWYm1ER2c?oc=5",
    "date": "2026-11-18"
+  },
+  {
+   "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches ambulance service in Bengaluru across four areas, opens second training academy - CNBC TV18",
+   "source": "CNBC TV18",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVjcxME1GMmxQNnAzcXppcWJISld2S2JCczNKWlhHS2Q3QWpVSGVhTWFqSzdwa09qRmFqN2xwR0M1Sy00NWlhU3FwUVZ4T2QxckpKaWlFckc4NGtVNEpidFVaU01MbnFoY0JTWHZkUldydmZBOGYxWmpSeTlleEVoUjF4c19NeTJiUXNnbzJfd3MzT2dYSXhhTXFsRnU1VlM3VlRWS2RXX1l6UjBYWTBlRlVxcW42TlpGM1JJcUJnb0FDN1BTMEVFSjFGOUtjY2gyaDlaQ0xoR1p6Z9IB3wFBVV95cUxOeHkzSzZZN2VIek9sSi1pUEwyaF9PSXAwLXVXMTVIcm1fMXBoSDdKWjZKYUcyUy1RSGNmSjYyOXhlcHFVVlVfNkljSENuWERYS0g4ZndrN3UzWHpoeFJWWW1UWlQ0VXlGVGZLQnJCZUdHY0VIOTd3bDFpeDNTc05BR2dSM2hXWjNQYlUtXzBsMVNLQUhxd21Pbk1idGtMQV9rNmlYUEs1cTY2ZlVpdWx2TFR3MDgzVEo5SnpoZVluVUt6MldyWDFLMTNTZFZJRXpyVnFlcFZZQVd5WHlpd2Qw?oc=5",
+   "date": "2026-11-20"
   },
   {
    "provider": "blinkit",
@@ -53,7 +53,7 @@
   },
   {
    "provider": "blinkit",
-   "city": "bengaluru",
+   "city": "delhi",
    "area": null,
    "signal": "news_live",
    "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
@@ -63,7 +63,7 @@
   },
   {
    "provider": "blinkit",
-   "city": "delhi",
+   "city": "bengaluru",
    "area": null,
    "signal": "news_live",
    "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
@@ -280,6 +280,16 @@
    "source": "CNBC TV18",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOODgyNnVzaXQtaVJxX0pPLTFQUk9XSlpUckFiN2tUZnlXNlFXUnhFTlZOaUl6eHBsSEh2cjE5WU01MTNnYXNnYTVYNmcxbmxNQTZmbnNJeWRub2JTNlhNTkZEQWpqTDhBbEt4dlJXN2RyMl8wdWVaMTA1dUxybDdnblBKLXR3T09zSHAyTW9WM3hteER2aGpBOHdlZ1NnR3VkZFBqZTN2Q3RiakNwcUJEQkJ5aXRpSHAxdEU3cDlIZ2dRM200Q2REOXFCQVZ1UnNSZFh1RGV5NWhKN2gtU09MT2tvc3DSAeoBQVVfeXFMUHVZdTFZUzYwT3FpdVpsbF82LUk5bXpvQkcwZUQzVzFJNmM0bTlIQW9Zc1VUdTdhRy16QVRWc1dWX1RpLVFYOGdLMzM4WW4wd2pualhRUmlKUy16dmpSTWxiSFd4SEswWlY3RHZrX0xuZnY0UE9LdFl5Q09BWVpQWWQyX3MtUXh0X3pPNU1hVktZNGF6WDhuZEVRYlE2QzVHcUp6NmVTVTA3eE05cTZqSVdXeXViMldXakJRM3o0WF9VaElnOWtiVndib0J5V2RIbENZMzlpbHVqbm45ejNwdl9FbkM2RzlzZU9R?oc=5",
    "date": "2026-03-03"
+  },
+  {
+   "provider": "nammayatri",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Ride-hailing platform Namma Yatri launches Namma Santhe retail service for drivers in Bengaluru - Indian Startup News",
+   "source": "Indian Startup News",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFJzbjFkQWJJUlNxMkcyc0xsY19RVnJXZWlDWXR3OW1aNlp1cmwxNmxRckFGeTIxT09ETnFPd2FYYTFCbmdLcU5uMG1RVGFzZ1R1eExrQ0VxWFpFWnUxTTlpY2dBOHlZbm5mMFp6VnlWcmVJRnN3SnpZRllVT01Ha05qT0t1QjRDLWxUWlZHemVkTnRTWFlQVVdMdFRTVG8xdndoTDhlTWNhOUhhMG5tWDdoQmR2SFJ1QTVIRHRLaHZneU1zR1g0bEw3SnpCSXBJYzZSOWtR0gHWAUFVX3lxTFBUUnNuMWRBYklSU3EyRzJzTGxjX1FWcldlaUNZdHc5bVo2WnVybDE2bFFyQUZ5MjFPT0ROcU93YVhhMUJuZ0txTm4wbVFUYXNnVHV4TGtDRXFYWkVadTFNOWljZ0E4eVlubmYwWnpWeVZyZUlGc3dKellGWVVPTUdrTmpPS3VCNEMtbFRaVkd6ZWROdFNYWVBVV0x0VFNUbzF2d2hMOGVNY2E5SGEwbm1YN2hCZHZIUnVBNUhEdEtodmd5TXNHWDRsTDdKekJJcEljNlI5a1E?oc=5",
+   "date": "2026-09-12"
   }
  ]
 }
