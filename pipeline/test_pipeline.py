@@ -48,10 +48,8 @@ URLSET = b"""<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 
 def fake_overpass(q, ua, timeout=0, label=""):
-    if '"place"~"^(city|town)$"' in q:
-        return CITIES  # every tile returns the same nodes; duplicates must be ignored
-    if "suburb" in q:
-        return AREAS  # every tile returns the same nodes; duplicates must be ignored
+    if '"place"~' in q:  # every tile returns the same nodes; duplicates must be ignored
+        return {"elements": CITIES["elements"] + AREAS["elements"]}
     return STORES
 
 

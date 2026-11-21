@@ -7,7 +7,7 @@ import sys, time
 
 import common
 
-LAT, LNG, TILE = (6, 38), (68, 98), 4
+TILE = common.TILE
 
 fetch_overpass = common.overpass  # replaced in tests
 
@@ -24,14 +24,13 @@ def run(cfg):
     providers = [p for p in cfg["providers"] if p.get("osm")]
     patterns = sorted({x for p in providers for x in p["osm"]})
     elements, errors = [], []
-    for la in range(LAT[0], LAT[1], TILE):
-        for lo in range(LNG[0], LNG[1], TILE):
-            try:
-                elements += fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=200,
-                                           label=f"stores {la},{lo}").get("elements", [])
-            except Exception as e:  # noqa: BLE001
-                errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
-            time.sleep(3)
+    for la, lo in common.INDIA_TILES:
+        try:
+            elements += fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=200,
+                                       label=f"stores {la},{lo}").get("elements", [])
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
+        time.sleep(2)
     items, seen = [], set()
     for el in elements:
         tags = el.get("tags", {})

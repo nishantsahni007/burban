@@ -100,6 +100,12 @@ stage extension main central north south east west village temple church airport
 bazaar bazar camp cantonment industrial area estate enclave vihar puram pura palli halli hills hill lake
 fort port beach river valley central india indian national state district world group service services
 home delivery store stores now live launch launches people""".split())
+# 4-degree map tiles (south-west corner) that cover part of India; the rest are sea or other countries.
+INDIA_TILES = [(6, 76), (6, 92), (10, 72), (10, 76), (10, 92), (14, 72), (14, 76), (14, 80),
+               (18, 72), (18, 76), (18, 80), (18, 84), (22, 68), (22, 72), (22, 76), (22, 80), (22, 84),
+               (22, 88), (22, 92), (26, 68), (26, 72), (26, 76), (26, 80), (26, 84), (26, 88), (26, 92),
+               (26, 96), (30, 72), (30, 76), (30, 80), (34, 72), (34, 76)]
+TILE = 4
 OVERPASS_URLS = ["https://overpass-api.de/api/interpreter",
                  "https://overpass.private.coffee/api/interpreter",
                  "https://overpass.kumi.systems/api/interpreter"]
