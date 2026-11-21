@@ -40,6 +40,49 @@ def pop(tags):
 fetch_overpass = common.overpass  # replaced in tests
 
 
+def owner(lat, lng, grid):
+    """Big cities swallow nearby towns (HSR Layout belongs to Bengaluru, not to the Electronic City
+    town node next to it). A town wins only when the place is right next to it and far from any city."""
+    near = sorted(grid.near(lat, lng, 30), key=lambda x: x[0])
+    city = next(((d, c) for d, c in near if c["place"] == "city" and d <= 25), None)
+    town = next(((d, c) for d, c in near if c["place"] == "town" and d <= 12), None)
+    if city and not (town and town[0] < 2.5 and city[0] > 12):
+        return city[1]
+    return town[1] if town else None
+
+
+def assign_areas(hood_els, cities, grid):
+    areas, area_ids = [], set()
+    for el in hood_els:
+        name, al = names(el.get("tags", {}))
+        if not name:
+            continue
+        city = owner(el["lat"], el["lon"], grid)
+        if not city or common.norm(name) == common.norm(city["name"]):
+            continue
+        aid = f"{city['id']}-{common.slug(name)}"
+        if aid in area_ids:
+            continue  # same name twice in one city: keep the first
+        area_ids.add(aid)
+        areas.append({"id": aid, "name": name, "city": city["id"], "lat": round(el["lat"], 5),
+                      "lng": round(el["lon"], 5), "aliases": al})
+    return areas
+
+
+def reassign():
+    """Re-run the city assignment on the saved lists (no download). python pipeline/collect_areas.py --reassign"""
+    cities = json.load(open(os.path.join(GEO_DIR, "cities.json"), encoding="utf-8"))
+    old = json.load(open(os.path.join(GEO_DIR, "areas.json"), encoding="utf-8"))
+    grid = common.Grid(cell=0.1)
+    for c in cities:
+        grid.add(c["lat"], c["lng"], c)
+    els = [{"lat": a["lat"], "lon": a["lng"], "tags": {"name": a["name"], "alt_name": ";".join(x for x in a["aliases"] if x != a["name"])}} for a in old]
+    areas = assign_areas(els, cities, grid)
+    with open(os.path.join(GEO_DIR, "areas.json"), "w", encoding="utf-8") as f:
+        json.dump(areas, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"reassigned {len(areas)} neighbourhoods (was {len(old)})")
+
+
 def run(cfg):
     ua = cfg["user_agent"]
     errors = []
@@ -82,25 +125,8 @@ def run(cfg):
     for c in cities:
         grid.add(c["lat"], c["lng"], c)
 
-    # Neighbourhoods: attach each to the nearest city or town.
-    areas, area_ids = [], set()
-    for el in hood_els:
-        name, al = names(el.get("tags", {}))
-        if not name:
-            continue
-        best = min(((d, c) for d, c in grid.near(el["lat"], el["lon"], ASSIGN_KM["city"])
-                    if d <= ASSIGN_KM.get(c["place"], 12)), default=None, key=lambda x: x[0])
-        if not best:
-            continue
-        city = best[1]
-        if common.norm(name) == common.norm(city["name"]):
-            continue
-        aid = f"{city['id']}-{common.slug(name)}"
-        if aid in area_ids:
-            continue  # same name twice in one city: keep the first
-        area_ids.add(aid)
-        areas.append({"id": aid, "name": name, "city": city["id"], "lat": round(el["lat"], 5),
-                      "lng": round(el["lon"], 5), "aliases": al})
+    # Neighbourhoods: attach each to its city (or, outside big cities, its town).
+    areas = assign_areas(hood_els, cities, grid)
     print(f"  {len(cities)} cities/towns, {len(areas)} neighbourhoods so far", flush=True)
     return cities, areas, errors
 
@@ -130,4 +156,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(reassign() if "--reassign" in sys.argv else main())
