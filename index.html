@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burban — what's available near you</title>
+<meta name="description" content="Check which quick-commerce, home-help, gym and broadband services reach your address, and get told when new ones arrive.">
+<meta name="theme-color" content="#0F5C4A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F3EC; --card:#FFFFFF; --ink:#1B1A17; --muted:#6B675E; --line:#E6DFD3;
+    --brand:#0F5C4A; --brand-2:#E9F2EE;
+    --live:#1F8A5B; --live-bg:#E3F4EA;
+    --soon:#B86E00; --soon-bg:#FCEFD9;
+    --no:#8A857B; --no-bg:#EFECE6;
+    --likely:#2E6FB0; --likely-bg:#E4EEF8;
+    --r:16px;
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font:15px/1.5 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo{font-family:"Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em;margin:0}
+  button{font:inherit;cursor:pointer;color:inherit}
+  input,select{font:inherit;color:inherit}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--ink);color:#F7F3EC;font-size:12.5px;text-align:center;padding:7px 12px}
+  .demo b{color:#FFD58A;font-weight:600}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(247,243,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:14px;height:62px}
+  .logo{font-size:24px;font-weight:800;color:var(--brand);display:flex;align-items:center;gap:8px}
+  .logo i{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--brand);color:#fff;font-style:normal;font-size:15px}
+  .addr-chip{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px 6px 10px;font-size:13.5px;max-width:52vw}
+  .addr-chip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .addr-chip:hover{border-color:var(--brand)}
+  nav.tabs{display:flex;gap:4px;padding-bottom:10px}
+  nav.tabs button{background:none;border:0;padding:7px 14px;border-radius:999px;font-weight:600;color:var(--muted);font-size:14px}
+  nav.tabs button.on{background:var(--ink);color:#fff}
+  .badge{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--soon);color:#fff;font-size:11px;padding:0 5px;margin-left:5px}
+
+  /* onboarding */
+  .hero{min-height:calc(100vh - 34px);display:grid;place-items:center;padding:40px 20px}
+  .hero-in{max-width:620px;width:100%;text-align:center}
+  .hero h1{font-size:clamp(34px,6vw,56px);line-height:1.03;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--brand)}
+  .hero p.lede{color:var(--muted);font-size:17px;margin:16px auto 28px;max-width:500px}
+  .search{position:relative;text-align:left}
+  .search-box{display:flex;gap:8px;background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:8px;box-shadow:0 10px 30px -18px rgba(27,26,23,.35)}
+  .search-box:focus-within{border-color:var(--brand)}
+  .search-box input{flex:1;border:0;outline:0;background:none;padding:10px 12px;font-size:16px;min-width:0}
+  .btn{background:var(--brand);color:#fff;border:0;border-radius:12px;padding:10px 18px;font-weight:600}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+  .btn.sm{padding:7px 12px;font-size:13.5px;border-radius:10px}
+  .sugg{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.3);z-index:5;display:none}
+  .sugg button{display:flex;width:100%;justify-content:space-between;background:none;border:0;padding:11px 16px;text-align:left}
+  .sugg button:hover,.sugg button.hl{background:var(--brand-2)}
+  .sugg small{color:var(--muted)}
+  .sugg .empty{padding:14px 16px;color:var(--muted);font-size:14px}
+  .city-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px;font-size:13px;color:var(--muted);align-items:center}
+  .pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 11px;font-size:13px}
+  .pill.on{background:var(--brand);border-color:var(--brand);color:#fff}
+  .pill.off{opacity:.55}
+  .proof{display:flex;gap:22px;justify-content:center;margin-top:34px;color:var(--muted);font-size:13px;flex-wrap:wrap}
+  .proof b{display:block;color:var(--ink);font-family:"Bricolage Grotesque";font-size:22px}
+
+  /* dashboard */
+  main{padding:22px 0 80px}
+  .summary{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+  .sum{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+  .sum h2{font-size:22px;line-height:1.15}
+  .sum .k{font-family:"Bricolage Grotesque";font-size:34px;font-weight:800;line-height:1}
+  .sum .l{color:var(--muted);font-size:13px;margin-top:4px}
+  .sum.live .k{color:var(--live)} .sum.soon .k{color:var(--soon)} .sum.no .k{color:var(--no)} .sum.likely .k{color:var(--likely)}
+  .muted{color:var(--muted)}
+  .filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters .pill{white-space:nowrap}
+  .status-filter{display:flex;gap:6px;margin-left:auto}
+  .toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .seg button{border:0;background:none;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;color:var(--muted)}
+  .seg button.on{background:var(--ink);color:#fff}
+
+  .cat-h{display:flex;align-items:baseline;gap:10px;margin:22px 0 10px}
+  .cat-h h3{font-size:18px}
+  .cat-h small{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;transition:transform .15s, box-shadow .15s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 14px 30px -22px rgba(0,0,0,.4)}
+  .card.no{background:#FBFAF7}
+  .top{display:flex;align-items:center;gap:11px}
+  .mono{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-family:"Bricolage Grotesque";font-weight:800;font-size:15px;flex:none}
+  .name{font-weight:600;line-height:1.2}
+  .sub{font-size:12.5px;color:var(--muted)}
+  .st{margin-left:auto;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .st.live{background:var(--live-bg);color:var(--live)}
+  .st.soon{background:var(--soon-bg);color:var(--soon)}
+  .st.no{background:var(--no-bg);color:var(--no)}
+  .st.likely{background:var(--likely-bg);color:var(--likely)}
+  .why{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px}
+  .why a{color:var(--brand);text-decoration:none;border-bottom:1px solid currentColor}
+  .credit{font-size:11.5px;color:var(--muted);text-align:center;margin-top:30px}
+  .credit a{color:inherit}
+  .detail{font-size:14px}
+  .foot{display:flex;align-items:center;gap:8px;margin-top:auto}
+  .foot .t{font-size:12px;color:var(--muted)}
+  .foot .btn{margin-left:auto}
+  .btn.notify{background:var(--ink)}
+  .btn.set{background:var(--live-bg);color:var(--live)}
+  .link{background:none;border:0;padding:0;color:var(--muted);font-size:12px;text-decoration:underline;text-underline-offset:2px}
+  .link:hover{color:var(--ink)}
+
+  /* alerts */
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+  .alert-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+  .alert-row:first-child{border-top:0}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{font-size:12px;background:var(--brand-2);color:var(--brand);border-radius:999px;padding:2px 9px;font-weight:600}
+  .emptystate{text-align:center;padding:40px 10px;color:var(--muted)}
+  .emptystate h3{color:var(--ink);margin-bottom:6px}
+  .switch{display:flex;align-items:center;gap:12px}
+  .tog{width:42px;height:24px;border-radius:12px;background:var(--line);position:relative;border:0;flex:none;transition:background .15s}
+  .tog::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+  .tog.on{background:var(--brand)}
+  .tog.on::after{left:21px}
+
+  /* compare */
+  .cmp-pick{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;margin-bottom:16px}
+  .cmp-pick label{font-size:12.5px;color:var(--muted);display:block;margin-bottom:4px}
+  select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+  .vs{font-family:"Bricolage Grotesque";font-weight:800;color:var(--muted);padding-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:9px 8px;border-top:1px solid var(--line);text-align:left}
+  th{font-size:12px;color:var(--muted);font-weight:600;border-top:0}
+  td.c{text-align:center}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:middle}
+  .dot.live{background:var(--live)} .dot.soon{background:var(--soon)} .dot.no{background:#CFC9BE} .dot.likely{background:var(--likely)}
+  .score{display:flex;gap:12px;margin-bottom:14px}
+  .score .sum{flex:1}
+  tr.cat td{background:var(--bg);font-weight:600;font-size:12.5px;color:var(--muted)}
+
+  /* modal + toast */
+  .scrim{position:fixed;inset:0;background:rgba(27,26,23,.45);display:none;align-items:flex-end;justify-content:center;z-index:50}
+  .scrim.on{display:flex}
+  @media(min-width:640px){.scrim{align-items:center}}
+  .modal{background:var(--card);width:100%;max-width:440px;border-radius:22px 22px 0 0;padding:22px;animation:up .2s ease}
+  @media(min-width:640px){.modal{border-radius:22px}}
+  @keyframes up{from{transform:translateY(20px);opacity:0}}
+  .modal h3{font-size:21px;margin-bottom:4px}
+  .ch{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}
+  .ch.on{border-color:var(--brand);background:#F6FAF8}
+  .ch input[type=checkbox]{margin-top:3px;accent-color:var(--brand);width:17px;height:17px}
+  .ch .f{flex:1}
+  .ch .f input{width:100%;margin-top:8px;padding:9px 11px;border:1px solid var(--line);border-radius:10px}
+  .ch .f input:focus{outline:2px solid var(--brand);border-color:transparent}
+  .mrow{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+  .err{color:#B3261E;font-size:13px;margin-top:8px;min-height:1em}
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(30px);background:var(--ink);color:#fff;padding:11px 18px;border-radius:12px;font-size:14px;opacity:0;transition:.25s;z-index:60;max-width:calc(100% - 40px);text-align:center}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media(max-width:720px){
+    .summary{grid-template-columns:1fr 1fr 1fr}
+    .summary .sum:first-child{grid-column:1/-1}
+    .cmp-pick{grid-template-columns:1fr}
+    .vs{display:none}
+    .hide-sm{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="demo" id="demo" hidden><b>First data update pending</b> — results appear after the first daily run. Alerts are saved on this device for now.</div>
+
+<!-- ONBOARDING -->
+<section id="onboard" class="hero" hidden>
+  <div class="hero-in">
+    <div class="logo" style="justify-content:center;margin-bottom:26px"><i>b</i>burban</div>
+    <h1>Is it <em>here yet?</em><br>Stop installing apps to find out.</h1>
+    <p class="lede">Enter your address once. See which quick-commerce, home-help, fitness and internet services reach you — and get pinged the day the rest arrive.</p>
+    <div class="search">
+      <div class="search-box">
+        <input id="addrInput" autocomplete="off" placeholder="Search your area or pincode, e.g. HSR Layout or 560102" aria-label="Your area or pincode">
+        <button class="btn" id="addrGo">Check</button>
+      </div>
+      <div class="sugg" id="sugg"></div>
+    </div>
+    <div class="city-row" id="cityRow"></div>
+    <div class="proof">
+      <div><b id="pSvc">0</b>services tracked</div>
+      <div><b id="pLoc">0</b>areas covered</div>
+      <div><b>0</b>apps to install</div>
+    </div>
+  </div>
+</section>
+
+<!-- APP -->
+<div id="app" hidden>
+  <header>
+    <div class="wrap">
+      <div class="hbar">
+        <div class="logo"><i>b</i>burban</div>
+        <button class="addr-chip" id="addrChip" title="Change address">📍 <span id="addrLabel"></span> <small class="muted">Change</small></button>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button data-v="services" class="on">Services</button>
+        <button data-v="alerts">My alerts<span class="badge" id="alertCount" hidden></span></button>
+        <button data-v="compare">Compare areas</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- services -->
+    <section id="v-services">
+      <div class="summary" id="summary"></div>
+      <div class="toolbar">
+        <div class="filters" id="catFilters"></div>
+        <div class="seg" id="stFilter">
+          <button data-s="all" class="on">All</button>
+          <button data-s="live">Live</button>
+          <button data-s="likely">Likely</button>
+          <button data-s="soon">Soon</button>
+          <button data-s="no">No sign</button>
+        </div>
+      </div>
+      <div id="list"></div>
+      <p class="credit">Checked automatically every day from official pages, news reports and store locations.<br>Store locations © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+    </section>
+
+    <!-- alerts -->
+    <section id="v-alerts" hidden>
+      <div class="panel" style="margin-bottom:12px">
+        <div class="switch">
+          <button class="tog" id="digestTog" aria-label="Weekly digest"></button>
+          <div><b>Anything new near me</b><div class="sub">One short weekly message when any new service starts delivering to your area.</div></div>
+        </div>
+      </div>
+      <div class="panel" id="alertList"></div>
+    </section>
+
+    <!-- compare -->
+    <section id="v-compare" hidden>
+      <p class="muted" style="margin-top:0">Moving house? See how two areas stack up before you sign the lease.</p>
+      <div class="cmp-pick">
+        <div><label for="cmpA">Current area</label><select id="cmpA"></select></div>
+        <div class="vs">vs</div>
+        <div><label for="cmpB">Area you're considering</label><select id="cmpB"></select></div>
+      </div>
+      <div class="score" id="cmpScore"></div>
+      <div class="panel" style="padding:6px 12px"><table id="cmpTable"></table></div>
+    </section>
+  </main>
+</div>
+
+<!-- notify modal -->
+<div class="scrim" id="scrim">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <h3 id="mTitle"></h3>
+    <div class="sub" id="mSub"></div>
+    <label class="ch" data-ch="email">
+      <input type="checkbox" id="cEmail">
+      <div class="f"><b>Email</b><div class="sub">Free · one message on launch day</div><input id="vEmail" type="email" placeholder="you@example.com"></div>
+    </label>
+    <label class="ch" data-ch="wa" hidden>
+      <input type="checkbox" id="cWa">
+      <div class="f"><b>WhatsApp</b><div class="sub">Launch alert only, never marketing</div><input id="vWa" type="tel" inputmode="numeric" placeholder="+91 98xxxxxxxx"></div>
+    </label>
+    <label class="ch" data-ch="push">
+      <input type="checkbox" id="cPush">
+      <div class="f"><b>Browser notification</b><div class="sub">Instant, on this device</div></div>
+    </label>
+    <div class="err" id="mErr"></div>
+    <div class="mrow">
+      <button class="btn ghost" id="mCancel">Cancel</button>
+      <button class="btn" id="mSave">Notify me</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------------- data ---------------- */
+const CATS = [
+  {id:'qc',   name:'Quick commerce', icon:'🛒'},
+  {id:'home', name:'Home services',  icon:'🧹'},
+  {id:'fit',  name:'Fitness',        icon:'🏋️'},
+  {id:'food', name:'Food & pharmacy',icon:'🍱'},
+  {id:'net',  name:'Home internet',  icon:'📶'},
+  {id:'ride', name:'Rides',          icon:'🛺'},
+];
+let SERVICES = [], LOCS = [], CITIES = [], DATA = null;
+
+/* ---------------- helpers ---------------- */
+const $ = s=>document.querySelector(s);
+const esc = s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const svc = id=>SERVICES.find(s=>s.id===id);
+const loc = id=>LOCS.find(l=>l.id===id);
+const initials = n=>n.replace(/[^A-Za-z0-9 ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+const LABEL = {live:'Live', likely:'Likely', soon:'Coming soon', no:'No sign yet'};
+function status(s, l){
+  const o = ((DATA.status||{})[l.id]||{})[s.id] || {s:'no'};
+  const detail = o.d || (o.s==='no' ? 'No official page, launch news or nearby store found yet' : '');
+  return {st:o.s, detail, ev:o.e||[]};
+}
+function verifiedText(){
+  if(!DATA.updated) return 'Not checked yet';
+  const days = Math.max(0, Math.floor((Date.now() - Date.parse(DATA.updated)) / 864e5));
+  return days===0 ? 'Checked today' : days===1 ? 'Checked yesterday' : `Checked ${days} days ago`;
+}
+
+/* ---------------- state (per-browser convenience only) ---------------- */
+const KEY='burban.v1';
+let S = {loc:null, alerts:[], digest:false, contact:{email:'',wa:''}};
+try{ const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S, JSON.parse(raw)); }catch(e){}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+let view='services', catF='all', stF='all';
+
+/* ---------------- onboarding ---------------- */
+const input=$('#addrInput'), sugg=$('#sugg');
+let hl=0, matches=[];
+function renderSugg(){
+  const q=input.value.trim().toLowerCase();
+  matches = q ? LOCS.filter(l=>l.name.toLowerCase().includes(q)||l.pin.startsWith(q)) : LOCS.slice(0,6);
+  hl=0;
+  sugg.innerHTML = matches.length
+    ? matches.slice(0,7).map((l,i)=>`<button data-id="${l.id}" class="${i===0?'hl':''}"><span>${esc(l.name)}, Bengaluru</span><small>${l.pin}</small></button>`).join('')
+    : `<div class="empty">We don't cover “${esc(input.value)}” yet. This prototype has ${LOCS.length} Bengaluru areas — try “Koramangala” or “560066”.</div>`;
+  sugg.style.display='block';
+}
+input.addEventListener('focus',renderSugg);
+input.addEventListener('input',renderSugg);
+input.addEventListener('keydown',e=>{
+  const btns=[...sugg.querySelectorAll('button')];
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){ e.preventDefault(); if(!btns.length) return;
+    hl=(hl+(e.key==='ArrowDown'?1:-1)+btns.length)%btns.length; btns.forEach((b,i)=>b.classList.toggle('hl',i===hl)); }
+  if(e.key==='Enter'){ e.preventDefault(); if(btns[hl]) pick(btns[hl].dataset.id); }
+  if(e.key==='Escape') sugg.style.display='none';
+});
+sugg.addEventListener('mousedown',e=>{ const b=e.target.closest('button'); if(b){ e.preventDefault(); pick(b.dataset.id);} });
+input.addEventListener('blur',()=>setTimeout(()=>sugg.style.display='none',120));
+$('#addrGo').onclick=()=>{ renderSugg(); if(matches[0]) pick(matches[0].id); else input.focus(); };
+
+function pick(id){ S.loc=id; save(); sugg.style.display='none'; input.value=''; showApp(); }
+$('#addrChip').onclick=()=>{ $('#app').hidden=true; $('#onboard').hidden=false; window.scrollTo(0,0); setTimeout(()=>input.focus(),50); };
+
+/* ---------------- app ---------------- */
+function showApp(){
+  $('#onboard').hidden=true; $('#app').hidden=false;
+  const l=loc(S.loc); $('#addrLabel').textContent=`${l.name}, Bengaluru ${l.pin}`;
+  setView(view); window.scrollTo(0,0);
+}
+$('#tabs').onclick=e=>{ const b=e.target.closest('button'); if(b) setView(b.dataset.v); };
+function setView(v){
+  view=v;
+  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+  ['services','alerts','compare'].forEach(x=>$('#v-'+x).hidden = x!==v);
+  ({services:renderServices, alerts:renderAlerts, compare:renderCompare})[v]();
+  renderBadge();
+}
+function renderBadge(){ const n=S.alerts.length, b=$('#alertCount'); b.hidden=!n; b.textContent=n; }
+const hasAlert=(sid,lid)=>S.alerts.some(a=>a.sid===sid&&a.lid===lid);
+
+function renderServices(){
+  const l=loc(S.loc);
+  const rows=SERVICES.map(s=>({s, ...status(s,l)}));
+  const c={live:0,likely:0,soon:0,no:0}; rows.forEach(r=>c[r.st]++);
+  $('#summary').innerHTML=`
+    <div class="sum"><div class="l" style="margin:0 0 4px">Your area</div><h2>${esc(l.name)}</h2><div class="l">${verifiedText()}</div></div>
+    <div class="sum live"><div class="k">${c.live}</div><div class="l">live here</div></div>
+    <div class="sum likely"><div class="k">${c.likely}</div><div class="l">likely</div></div>
+    <div class="sum soon"><div class="k">${c.soon}</div><div class="l">coming soon</div></div>`;
+  $('#catFilters').innerHTML=[{id:'all',name:'All',icon:''},...CATS].map(k=>
+    `<button class="pill ${catF===k.id?'on':''}" data-c="${k.id}">${k.icon} ${k.name}</button>`).join('');
+  const cats = CATS.filter(k=>catF==='all'||k.id===catF);
+  let html='';
+  for(const k of cats){
+    const items=rows.filter(r=>r.s.cat===k.id && (stF==='all'||r.st===stF));
+    if(!items.length) continue;
+    const live=rows.filter(r=>r.s.cat===k.id&&r.st==='live').length, tot=rows.filter(r=>r.s.cat===k.id).length;
+    html+=`<div class="cat-h"><h3>${k.icon} ${k.name}</h3><small>${live} of ${tot} live</small></div><div class="grid">`;
+    for(const r of items) html+=card(r,l);
+    html+='</div>';
+  }
+  $('#list').innerHTML = html || `<div class="panel emptystate"><h3>Nothing here</h3>No services match this filter.</div>`;
+}
+function card(r,l){
+  const s=r.s, on=hasAlert(s.id,l.id);
+  let action='';
+  if(r.st!=='live'){
+    action = on ? `<button class="btn sm set" data-act="notify" data-id="${s.id}">✓ Alert set</button>`
+                : `<button class="btn sm notify" data-act="notify" data-id="${s.id}">🔔 Notify me</button>`;
+  }
+  return `<div class="card ${r.st}">
+    <div class="top">
+      <div class="mono" style="background:${s.bg};color:${s.fg}">${initials(s.name)}</div>
+      <div><div class="name">${esc(s.name)}</div><div class="sub">${esc(s.tag)}</div></div>
+      <span class="st ${r.st}">${LABEL[r.st]}</span>
+    </div>
+    <div class="detail">${esc(r.detail)}</div>
+    ${r.ev.length?`<div class="why"><span class="muted">Source:</span>${r.ev.filter(x=>/^https?:\/\//.test(x.u)).map(x=>`<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)} ↗</a>`).join('')}</div>`:''}
+    <div class="foot">
+      <span class="t">${verifiedText()}</span>
+      ${r.st!=='live'?`<button class="link" data-act="report" data-id="${s.id}">Live for you?</button>`:''}
+      ${action}
+    </div>
+  </div>`;
+}
+$('#catFilters').onclick=e=>{ const b=e.target.closest('button'); if(b){ catF=b.dataset.c; renderServices(); } };
+$('#stFilter').onclick=e=>{ const b=e.target.closest('button'); if(!b) return; stF=b.dataset.s;
+  document.querySelectorAll('#stFilter button').forEach(x=>x.classList.toggle('on',x===b)); renderServices(); };
+$('#list').onclick=e=>{
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  if(b.dataset.act==='notify') openNotify(b.dataset.id);
+  if(b.dataset.act==='report') toast(`Thanks! We'll verify ${svc(b.dataset.id).name} in ${loc(S.loc).name} and update the app.`);
+};
+
+/* ---------------- notify modal ---------------- */
+let mSid=null;
+function openNotify(sid){
+  mSid=sid; const s=svc(sid), l=loc(S.loc), existing=S.alerts.find(a=>a.sid===sid&&a.lid===l.id);
+  $('#mTitle').textContent=`Tell me when ${s.name} arrives`;
+  $('#mSub').textContent=`in ${l.name}, Bengaluru. We'll message you once, the day it goes live here.`;
+  const ch = existing ? existing.ch : {email:!!S.contact.email||!S.contact.wa, wa:!!S.contact.wa, push:false};
+  $('#cEmail').checked=ch.email; $('#cWa').checked=ch.wa; $('#cPush').checked=ch.push;
+  $('#vEmail').value=S.contact.email; $('#vWa').value=S.contact.wa;
+  $('#mSave').textContent = existing ? 'Update alert' : 'Notify me';
+  $('#mCancel').textContent = existing ? 'Remove alert' : 'Cancel';
+  $('#mCancel').dataset.remove = existing ? '1' : '';
+  $('#mErr').textContent=''; syncCh(); $('#scrim').classList.add('on');
+}
+function syncCh(){ document.querySelectorAll('.ch').forEach(el=>el.classList.toggle('on', el.querySelector('input[type=checkbox]').checked)); }
+document.querySelectorAll('.ch input[type=checkbox]').forEach(x=>x.addEventListener('change',syncCh));
+['vEmail','vWa'].forEach(id=>$('#'+id).addEventListener('input',e=>{ const cb=e.target.closest('.ch').querySelector('input[type=checkbox]'); if(e.target.value) {cb.checked=true; syncCh();} }));
+function closeModal(){ $('#scrim').classList.remove('on'); }
+$('#scrim').addEventListener('mousedown',e=>{ if(e.target.id==='scrim') closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+$('#mCancel').onclick=()=>{
+  if($('#mCancel').dataset.remove){ removeAlert(mSid,S.loc); toast('Alert removed'); }
+  closeModal();
+};
+$('#mSave').onclick=()=>{
+  const ch={email:$('#cEmail').checked, wa:$('#cWa').checked, push:$('#cPush').checked};
+  const email=$('#vEmail').value.trim(), wa=$('#vWa').value.replace(/[^\d+]/g,'');
+  if(!ch.email&&!ch.wa&&!ch.push) return $('#mErr').textContent='Pick at least one way to reach you.';
+  if(ch.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return $('#mErr').textContent='That email doesn’t look right.';
+  if(ch.wa && wa.replace(/\D/g,'').length<10) return $('#mErr').textContent='Enter a 10-digit WhatsApp number.';
+  if(ch.email) S.contact.email=email; if(ch.wa) S.contact.wa=wa;
+  S.alerts = S.alerts.filter(a=>!(a.sid===mSid&&a.lid===S.loc));
+  S.alerts.unshift({sid:mSid, lid:S.loc, ch, at:Date.now()});
+  save(); closeModal();
+  const ways=[ch.email&&'email',ch.wa&&'WhatsApp',ch.push&&'notification'].filter(Boolean).join(' + ');
+  toast(`Done — we'll ${ways} you when ${svc(mSid).name} reaches ${loc(S.loc).name}.`);
+  setView(view);
+};
+function removeAlert(sid,lid){ S.alerts=S.alerts.filter(a=>!(a.sid===sid&&a.lid===lid)); save(); setView(view); }
+
+/* ---------------- alerts view ---------------- */
+function renderAlerts(){
+  $('#digestTog').classList.toggle('on',!!S.digest);
+  if(!S.alerts.length){
+    $('#alertList').innerHTML=`<div class="emptystate"><h3>No alerts yet</h3>Tap <b>🔔 Notify me</b> on anything that's “coming soon” or “not yet” in your area.<br><br><button class="btn sm" id="goSoon">Show what's coming soon</button></div>`;
+    $('#goSoon').onclick=()=>{ stF='soon'; document.querySelectorAll('#stFilter button').forEach(x=>x.classList.toggle('on',x.dataset.s==='soon')); setView('services'); };
+    return;
+  }
+  $('#alertList').innerHTML = S.alerts.map(a=>{
+    const s=svc(a.sid), l=loc(a.lid), r=status(s,l);
+    const chips=[a.ch.email&&'Email',a.ch.wa&&'WhatsApp',a.ch.push&&'Browser'].filter(Boolean).map(c=>`<span class="chip">${c}</span>`).join('');
+    return `<div class="alert-row">
+      <div class="mono" style="background:${s.bg};color:${s.fg}">${initials(s.name)}</div>
+      <div style="flex:1;min-width:0"><div class="name">${esc(s.name)} <span class="sub">in ${esc(l.name)}</span></div>
+        <div class="sub">${esc(r.detail)}</div><div class="chips" style="margin-top:5px">${chips}</div></div>
+      <span class="st ${r.st} hide-sm">${LABEL[r.st]}</span>
+      <button class="btn sm ghost" data-rm="${a.sid}|${a.lid}">Remove</button>
+    </div>`;
+  }).join('');
+}
+$('#alertList').addEventListener('click',e=>{ const b=e.target.closest('[data-rm]'); if(b){ const [sid,lid]=b.dataset.rm.split('|'); removeAlert(sid,lid); toast('Alert removed'); } });
+$('#digestTog').onclick=()=>{ S.digest=!S.digest; save(); renderAlerts();
+  toast(S.digest?`Weekly “new near you” digest on for ${loc(S.loc).name}.`:'Weekly digest off.'); };
+
+/* ---------------- compare ---------------- */
+let cmpB=null;
+function renderCompare(){
+  const opts=LOCS.map(l=>`<option value="${l.id}">${esc(l.name)} · ${l.pin}</option>`).join('');
+  const A=$('#cmpA'), B=$('#cmpB');
+  A.innerHTML=opts; B.innerHTML=opts; A.value=S.loc;
+  if(!cmpB||cmpB===S.loc) cmpB = LOCS.find(l=>l.id!==S.loc && l.tier!==loc(S.loc).tier)?.id || LOCS.find(l=>l.id!==S.loc).id;
+  B.value=cmpB; drawCompare();
+}
+function drawCompare(){
+  const a=loc($('#cmpA').value), b=loc($('#cmpB').value);
+  const ra=SERVICES.map(s=>status(s,a)), rb=SERVICES.map(s=>status(s,b));
+  const la=ra.filter(r=>r.st==='live').length, lb=rb.filter(r=>r.st==='live').length;
+  const lose=SERVICES.filter((s,i)=>ra[i].st==='live'&&rb[i].st!=='live').map(s=>s.name);
+  $('#cmpScore').innerHTML=`
+    <div class="sum"><div class="k" style="color:var(--brand)">${la}<span class="muted" style="font-size:18px">/${SERVICES.length}</span></div><div class="l">live in ${esc(a.name)}</div></div>
+    <div class="sum"><div class="k" style="color:var(--brand)">${lb}<span class="muted" style="font-size:18px">/${SERVICES.length}</span></div><div class="l">live in ${esc(b.name)}</div></div>
+    <div class="sum" style="flex:2"><div class="l" style="margin:0 0 4px">If you move to ${esc(b.name)}</div>
+      <div>${lose.length?`You'd lose <b>${lose.map(esc).join(', ')}</b>.`:`You keep everything you have now 🎉`}</div></div>`;
+  let t=`<tr><th>Service</th><th class="c">${esc(a.name)}</th><th class="c">${esc(b.name)}</th></tr>`;
+  for(const k of CATS){
+    t+=`<tr class="cat"><td colspan="3">${k.icon} ${k.name}</td></tr>`;
+    SERVICES.forEach((s,i)=>{ if(s.cat!==k.id) return;
+      t+=`<tr><td>${esc(s.name)}</td><td class="c"><span class="dot ${ra[i].st}" title="${LABEL[ra[i].st]}"></span> <span class="sub hide-sm">${LABEL[ra[i].st]}</span></td><td class="c"><span class="dot ${rb[i].st}" title="${LABEL[rb[i].st]}"></span> <span class="sub hide-sm">${LABEL[rb[i].st]}</span></td></tr>`;
+    });
+  }
+  $('#cmpTable').innerHTML=t;
+}
+$('#cmpA').onchange=drawCompare;
+$('#cmpB').onchange=e=>{ cmpB=e.target.value; drawCompare(); };
+
+/* ---------------- toast + boot ---------------- */
+let tt; function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('on'),3200); }
+function init(){
+  $('#demo').hidden = !!DATA.updated && !DATA.sample;
+  $('#cityRow').innerHTML = '<span>Cities:</span>' + CITIES.map(c=>`<span class="pill ${c.live?'on':'off'}" title="${c.live?'':'Coming soon'}">${esc(c.name)}${c.live?'':' · soon'}</span>`).join('');
+  $('#pSvc').textContent=SERVICES.length; $('#pLoc').textContent=LOCS.length;
+  if(S.loc && loc(S.loc)) showApp(); else { $('#onboard').hidden=false; }
+}
+fetch('data.json', {cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  DATA=d; SERVICES=d.services; LOCS=d.areas; CITIES=d.cities||[]; init();
+}).catch(()=>{ document.body.insertAdjacentHTML('beforeend','<p style="padding:24px;text-align:center">Couldn\'t load the latest data. Check your connection and reopen the app.</p>'); });
+if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
+</script>
+</body>
+</html>
