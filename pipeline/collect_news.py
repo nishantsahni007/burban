@@ -45,17 +45,16 @@ def parse_feed(xml_bytes):
         yield title, desc, link, src, date
 
 
-def run(cfg):
+def run(cfg, geo=None):
+    import geo as geomod
+    g = geo or geomod.Geo(cfg)
     ua = cfg["user_agent"]
     cutoff = datetime.now(timezone.utc) - timedelta(days=WINDOW_DAYS)
-    cities = [c for c in cfg["cities"]]
-    areas = cfg["areas"]
     items, errors, seen = [], [], set()
 
     for p in cfg["providers"]:
         for name in p.get("news", []):
-            city_terms = " OR ".join(f'"{c["name"]}"' for c in cities)
-            q = f'"{name}" ({city_terms}) (launch OR launches OR launched OR expands OR expansion OR "now live" OR "coming soon")'
+            q = f'"{name}" (launch OR launches OR launched OR expands OR expansion OR "now live" OR "now available" OR "coming soon")'
             url = FEED.format(q=urllib.parse.quote(q))
             try:
                 xml_bytes = fetch(url, ua)
@@ -78,18 +77,15 @@ def run(cfg):
                     continue
                 # "After Bengaluru, X expands to Hyderabad" is news about Hyderabad, not Bengaluru.
                 full_n = re.sub(r"\b(after|beyond|besides|like) [a-z]+\b", " ", common.norm(title + " " + desc))
-                for c in cities:
-                    if not any(common.contains_phrase(full_n, a) for a in c["aliases"] + [c["name"]]):
-                        continue
-                    hit_areas = [a["id"] for a in areas if a["city"] == c["id"]
-                                 and any(common.contains_phrase(full_n, al) for al in a["aliases"])]
-                    # Live stories also count for the whole city; "coming to Whitefield" should not mark all of Bengaluru.
+                for city_id in g.news_cities.find(full_n):
+                    hit_areas = sorted(g.area_index(city_id).find(full_n))
+                    # Live stories also count for the whole city; "coming to Whitefield" should not mark the whole city.
                     for area_id in hit_areas + ([None] if signal == "news_live" or not hit_areas else []):
-                        key = (p["id"], c["id"], area_id, signal, link)
+                        key = (p["id"], city_id, area_id, signal, link)
                         if key in seen:
                             continue
                         seen.add(key)
-                        items.append({"provider": p["id"], "city": c["id"], "area": area_id, "signal": signal,
+                        items.append({"provider": p["id"], "city": city_id, "area": area_id, "signal": signal,
                                       "title": title, "source": src, "url": link,
                                       "date": date.strftime("%Y-%m-%d") if date else None})
             time.sleep(1.5)  # be gentle with the feed

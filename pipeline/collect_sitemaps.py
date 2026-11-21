@@ -60,7 +60,9 @@ def site_urls(domain, ua, errors):
         time.sleep(1.0)
 
 
-def run(cfg):
+def run(cfg, geo=None):
+    import geo as geomod
+    g = geo or geomod.Geo(cfg)
     ua = cfg["user_agent"]
     items, errors = [], []
     cache = {}
@@ -70,29 +72,24 @@ def run(cfg):
             continue
         if domain not in cache:
             cache[domain] = list(site_urls(domain, ua, errors))
-        urls = cache[domain]
         token = p.get("sitemap_token")
         by_area, by_city = {}, {}
-        for u in urls:
+        for u in cache[domain]:
             path = urllib.parse.urlparse(u).path
             if SKIP_PAGE.search(path + "/"):
                 continue
             path_n = common.norm(path)
             if token and token not in path_n:
                 continue
-            for c in cfg["cities"]:
-                if not any(common.contains_phrase(path_n, a) for a in c["aliases"]):
-                    continue
-                by_city.setdefault(c["id"], []).append(u)
-                for a in cfg["areas"]:
-                    if a["city"] == c["id"] and any(common.contains_phrase(path_n, al) for al in a["aliases"]):
-                        by_area.setdefault(a["id"], []).append(u)
+            for city_id in g.url_cities.find(path_n):
+                by_city.setdefault(city_id, []).append(u)
+                for area_id in g.area_index(city_id).find(path_n):
+                    by_area.setdefault(area_id, []).append(u)
         for city_id, us in by_city.items():
             items.append({"provider": p["id"], "city": city_id, "area": None, "signal": "official_page",
-                          "url": us[0], "pages": len(us)})
+                          "url": sorted(us, key=len)[0], "pages": len(us)})
         for area_id, us in by_area.items():
-            city_id = next(a["city"] for a in cfg["areas"] if a["id"] == area_id)
-            items.append({"provider": p["id"], "city": city_id, "area": area_id, "signal": "official_page",
+            items.append({"provider": p["id"], "city": g.area[area_id]["city"], "area": area_id, "signal": "official_page",
                           "url": sorted(us, key=len)[0], "pages": len(us)})
     return items, errors
 

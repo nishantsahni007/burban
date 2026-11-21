@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -23,16 +23,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Collect evidence and rebuild data.json
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          OWNER_EMAIL: ${{ secrets.OWNER_EMAIL }}
-        run: python pipeline/run_all.py
+      - name: Collect evidence and rebuild the app's data
+        run: python -u pipeline/run_all.py
 
       - name: Save results
         run: |
           git config user.name "burban-bot"
           git config user.email "burban-bot@users.noreply.github.com"
-          git add data.json pipeline/evidence
-          git diff --cached --quiet && echo "No changes" || git commit -m "Daily data update $(date -u +%F)"
+          git add -A data pipeline/evidence pipeline/geo
+          git diff --cached --quiet && echo "No changes" || git commit -q -m "Daily data update $(date -u +%F)"
           git push
+
+      # If something broke, fail here so GitHub emails you. The app keeps the last good data.
+      - name: Check health
+        run: |
+          python -c "import json,sys; h=json.load(open('pipeline/evidence/health.json')); [print('PROBLEM:', p) for p in h['problems']]; sys.exit(0 if h['ok'] else 1)"

@@ -90,3 +90,77 @@ def read_evidence(name):
         return {"collected_at": None, "items": []}
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+# ---------- pan-India helpers ----------
+
+# Single words too common in English or in place names to count as a match on their own.
+STOPWORDS = set("""new old city town nagar colony road market station park garden layout sector block phase
+stage extension main central north south east west village temple church airport junction cross circle
+bazaar bazar camp cantonment industrial area estate enclave vihar puram pura palli halli hills hill lake
+fort port beach river valley central india indian national state district world group service services
+home delivery store stores now live launch launches people""".split())
+OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
+
+
+def overpass(query, ua, timeout=900):
+    """Run an Overpass query, trying a second public server if the first fails."""
+    import urllib.parse
+    last = None
+    for url in OVERPASS_URLS:
+        try:
+            raw = http_get(url, ua, timeout=timeout, retries=1, data=urllib.parse.urlencode({"data": query}).encode())
+            return json.loads(raw)
+        except Exception as e:  # noqa: BLE001
+            last = e
+    raise last
+
+
+class PhraseIndex:
+    """Find known place names inside a normalised text quickly, by looking up word n-grams."""
+
+    def __init__(self, max_words=4, min_single=5):
+        self.map, self.max_words, self.min_single = {}, max_words, min_single
+
+    def add(self, phrase, value):
+        p = norm(phrase)
+        if not p:
+            return
+        words = p.split(" ")
+        if len(words) > self.max_words:
+            return
+        if len(words) == 1 and (len(p) < self.min_single or p in STOPWORDS or p.isdigit()):
+            return
+        self.map.setdefault(p, set()).add(value)
+
+    def find(self, text_norm):
+        words = text_norm.split(" ")
+        hits = set()
+        for i in range(len(words)):
+            for n in range(1, self.max_words + 1):
+                if i + n > len(words):
+                    break
+                hit = self.map.get(" ".join(words[i:i + n]))
+                if hit:
+                    hits |= hit
+        return hits
+
+
+class Grid:
+    """Points bucketed in ~5 km cells for fast "what is near here" lookups."""
+
+    def __init__(self, cell=0.05):
+        self.cell, self.cells = cell, {}
+
+    def add(self, lat, lng, value):
+        self.cells.setdefault((int(lat // self.cell), int(lng // self.cell)), []).append((lat, lng, value))
+
+    def near(self, lat, lng, km):
+        r = int(km / (111 * self.cell)) + 1
+        ci, cj = int(lat // self.cell), int(lng // self.cell)
+        for di in range(-r, r + 1):
+            for dj in range(-r, r + 1):
+                for la, lo, v in self.cells.get((ci + di, cj + dj), ()):
+                    d = km_between(lat, lng, la, lo)
+                    if d <= km:
+                        yield d, v

@@ -1,54 +1,38 @@
 # Burban
 
-Shows which services reach your area, and updates itself every day with no server and no monthly bill.
+Shows which services reach any area in India, updates itself every day, and notifies people when something they're waiting for arrives. No server, no accounts, no monthly bill.
+
+Live at https://nishantsahni007.github.io/burban/ — share any area with a link like `#bengaluru-hsr-layout`.
 
 ```
-index.html, manifest.webmanifest, sw.js, icons/   the app (installable web app)
-data.json                                          what the app shows. Written by the pipeline; never edit by hand
-pipeline/config.json                               cities, areas, providers. The only file you edit
-pipeline/collect_news.py                           launch and "coming soon" stories from Google News
-pipeline/collect_sitemaps.py                       city and neighbourhood pages from providers' public sitemaps
-pipeline/collect_places.py                         stores, gyms, pharmacies from OpenStreetMap + distance rule
-pipeline/build.py                                  merges everything into data.json, finds changes, checks health
-pipeline/notify.py                                 emails you only if something launched or broke
-pipeline/run_all.py                                runs all of the above
-pipeline/test_pipeline.py                          offline test (no internet needed)
-.github/workflows/update-data.yml                  runs the pipeline every morning on GitHub, for free
+index.html, sw.js, manifest.webmanifest, icons/   the app (installable web app + background alert checker)
+data/index.json, data/places.json, data/city/*    what the app shows. Written by the pipeline; never edit by hand
+pipeline/config.json                               providers, city name spellings, canaries. The only file you edit
+pipeline/collect_areas.py                          every city, town and neighbourhood in India from OpenStreetMap (monthly)
+pipeline/collect_news.py                           launch and "coming soon" stories from Google News (daily)
+pipeline/collect_sitemaps.py                       city/neighbourhood pages from providers' public sitemaps (daily)
+pipeline/collect_places.py                         stores, gyms, pharmacies from OpenStreetMap (weekly)
+pipeline/build.py                                  turns evidence into the data files and checks health
+.github/workflows/update-data.yml                  runs it all every morning on GitHub, for free
 ```
 
-## How each status is decided
+## Statuses
 
-| Status | Meaning | Evidence that triggers it |
-| --- | --- | --- |
-| Live | Confirmed for this area | Provider has an official page for this area, or a launch story names this area |
-| Likely | Very probably available | A store/centre within range (3 km for quick commerce and gyms, 2 km for pharmacies), or the provider officially operates in the city |
-| Coming soon | Announced | A "set to launch / coming soon" story for this area or city (kept for 8 months) |
-| No sign yet | Nothing found | None of the above |
+The app shows **Live** or **Not available**. Behind the scenes the data keeps four levels:
+live (official neighbourhood page or launch news naming the area), likely (store nearby, several stores in the city, or official in the city), soon (reported coming) and no. Live + likely show as **Live**. It's a rough guide, not a guarantee, and every card links to its evidence.
 
-Every card links to its evidence, so users can see why.
+## Alerts
 
-## One-time setup (about 30 minutes)
+"Notify me" saves the alert on the phone. The app checks when it opens, and on Android, once Burban is installed, a background check runs about once a day and sends a notification. iPhones show the alert next time the app is opened.
 
-1. **Create a public GitHub repository** and upload this whole folder, including the hidden `.github` and `.well-known` folders. On github.com, use "Add file → Upload files" and drag in the folder contents. Keep it public: scheduled jobs are free and unlimited in public repositories.
-2. **Allow the job to save its results:** repository → Settings → Actions → General → Workflow permissions → "Read and write permissions" → Save.
-3. **Turn on the website:** Settings → Pages → Deploy from branch `main`, folder `/ (root)`. Your app will be at `https://<username>.github.io/<repo>/`.
-4. **Run it once now:** Actions tab → "Update availability data" → "Run workflow". Wait about 5–10 minutes, then open the app: the "First data update pending" banner disappears and real results appear.
-5. **Optional: emails to you.** Create a free Resend account, make an API key, then in GitHub go to Settings → Secrets and variables → Actions and add `RESEND_API_KEY` and `OWNER_EMAIL`. Without these, reports appear in the Actions log instead.
+## When something breaks
 
-From then on it runs every morning at about 7 am IST. Store locations refresh on Mondays.
+The daily job fails and GitHub emails you ("Run failed: Update availability data"). The app keeps showing the last good data. Open the failed run, copy the "PROBLEM:" lines, and paste them to Claude.
 
-## What you'll ever need to do
-
-- **Nothing on a normal day.** Quiet days send no email.
-- **When you get a "Needs a look" email:** a source has changed shape, such as a provider renaming its sitemap. The app keeps showing the last good data, so nothing breaks for users. Paste the email to Claude, or fix it yourself.
-- **To add an area, city or provider:** edit `pipeline/config.json` and the next run picks it up. An area needs a name, pincode, latitude/longitude, and the spellings it appears under (`aliases`). A provider needs the names used in the news (`news`), its website domain if it has neighbourhood pages (`sitemap`), and its store name on maps (`osm`).
-
-## Test it on your own computer (optional)
+## Test offline
 
 ```
-python pipeline/test_pipeline.py      # offline test, should print 14 PASS lines
-python pipeline/run_all.py --all      # real run (needs internet), writes data.json
-python -m http.server                 # then open http://localhost:8000
+python pipeline/test_pipeline.py      # should print 17 PASS lines
 ```
 
 ## Publish to Google Play

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Burban — what's available near you</title>
-<meta name="description" content="Check which quick-commerce, home-help, gym and broadband services reach your address, and get told when new ones arrive.">
+<meta name="description" content="Check which quick-commerce, home-help, gym and broadband services reach your area anywhere in India, and get a notification when new ones arrive.">
 <meta name="theme-color" content="#0F5C4A">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
@@ -175,29 +175,35 @@
     .vs{display:none}
     .hide-sm{display:none}
   }
+  .locbtn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-weight:600;font-size:14px;color:var(--brand)}
+  .locbtn:hover{border-color:var(--brand)}
+  .sum .acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .cmp-search{position:relative}
+  .cmp-search input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+  .note{font-size:13px;color:var(--muted);margin-top:10px}
 </style>
 </head>
 <body>
-<div class="demo" id="demo" hidden><b>First data update pending</b> — results appear after the first daily run. Alerts are saved on this device for now.</div>
+<div class="demo" id="demo" hidden><b>First data update is running</b> — results appear here within the hour.</div>
 
 <!-- ONBOARDING -->
 <section id="onboard" class="hero" hidden>
   <div class="hero-in">
     <div class="logo" style="justify-content:center;margin-bottom:26px"><i>b</i>burban</div>
     <h1>Is it <em>here yet?</em><br>Stop installing apps to find out.</h1>
-    <p class="lede">Enter your address once. See which quick-commerce, home-help, fitness and internet services reach you — and get pinged the day the rest arrive.</p>
+    <p class="lede">See which quick-commerce, home-help, fitness and internet services reach your area — anywhere in India — and get a notification the day the rest arrive.</p>
     <div class="search">
       <div class="search-box">
-        <input id="addrInput" autocomplete="off" placeholder="Search your area or pincode, e.g. HSR Layout or 560102" aria-label="Your area or pincode">
+        <input id="addrInput" autocomplete="off" placeholder="Search your area or city, e.g. HSR Layout or Indore" aria-label="Your area or city">
         <button class="btn" id="addrGo">Check</button>
       </div>
       <div class="sugg" id="sugg"></div>
     </div>
-    <div class="city-row" id="cityRow"></div>
+    <button class="locbtn" id="locBtn">📍 Use my location</button>
     <div class="proof">
-      <div><b id="pSvc">0</b>services tracked</div>
-      <div><b id="pLoc">0</b>areas covered</div>
-      <div><b>0</b>apps to install</div>
+      <div><b id="pSvc">–</b>services tracked</div>
+      <div><b id="pCity">–</b>cities &amp; towns</div>
+      <div><b id="pLoc">–</b>neighbourhoods</div>
     </div>
   </div>
 </section>
@@ -208,7 +214,7 @@
     <div class="wrap">
       <div class="hbar">
         <div class="logo"><i>b</i>burban</div>
-        <button class="addr-chip" id="addrChip" title="Change address">📍 <span id="addrLabel"></span> <small class="muted">Change</small></button>
+        <button class="addr-chip" id="addrChip" title="Change area">📍 <span id="addrLabel"></span> <small class="muted">Change</small></button>
       </div>
       <nav class="tabs" id="tabs">
         <button data-v="services" class="on">Services</button>
@@ -219,7 +225,6 @@
   </header>
 
   <main class="wrap">
-    <!-- services -->
     <section id="v-services">
       <div class="summary" id="summary"></div>
       <div class="toolbar">
@@ -231,27 +236,20 @@
         </div>
       </div>
       <div id="list"></div>
-      <p class="credit">Checked automatically every day from official pages, news reports and store locations.<br>Store locations © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+      <p class="credit">Checked automatically every day from official pages, news reports and store locations. It's a rough guide, not a guarantee.<br>Places and store locations © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
     </section>
 
-    <!-- alerts -->
     <section id="v-alerts" hidden>
-      <div class="panel" style="margin-bottom:12px">
-        <div class="switch">
-          <button class="tog" id="digestTog" aria-label="Weekly digest"></button>
-          <div><b>Anything new near me</b><div class="sub">One short weekly message when any new service starts delivering to your area.</div></div>
-        </div>
-      </div>
+      <div class="panel" style="margin-bottom:12px" id="notifPanel"></div>
       <div class="panel" id="alertList"></div>
     </section>
 
-    <!-- compare -->
     <section id="v-compare" hidden>
       <p class="muted" style="margin-top:0">Moving house? See how two areas stack up before you sign the lease.</p>
       <div class="cmp-pick">
-        <div><label for="cmpA">Current area</label><select id="cmpA"></select></div>
+        <div><label>Current area</label><div class="cmp-search"><input id="cmpA" readonly></div></div>
         <div class="vs">vs</div>
-        <div><label for="cmpB">Area you're considering</label><select id="cmpB"></select></div>
+        <div><label for="cmpB">Area you're considering</label><div class="cmp-search"><input id="cmpB" autocomplete="off" placeholder="Search an area or city"><div class="sugg" id="cmpSugg"></div></div></div>
       </div>
       <div class="score" id="cmpScore"></div>
       <div class="panel" style="padding:6px 12px"><table id="cmpTable"></table></div>
@@ -264,18 +262,7 @@
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
     <h3 id="mTitle"></h3>
     <div class="sub" id="mSub"></div>
-    <label class="ch" data-ch="email">
-      <input type="checkbox" id="cEmail">
-      <div class="f"><b>Email</b><div class="sub">Free · one message on launch day</div><input id="vEmail" type="email" placeholder="you@example.com"></div>
-    </label>
-    <label class="ch" data-ch="wa" hidden>
-      <input type="checkbox" id="cWa">
-      <div class="f"><b>WhatsApp</b><div class="sub">Launch alert only, never marketing</div><input id="vWa" type="tel" inputmode="numeric" placeholder="+91 98xxxxxxxx"></div>
-    </label>
-    <label class="ch" data-ch="push" hidden>
-      <input type="checkbox" id="cPush">
-      <div class="f"><b>Browser notification</b><div class="sub">Instant, on this device</div></div>
-    </label>
+    <p class="note" id="mNote"></p>
     <div class="err" id="mErr"></div>
     <div class="mrow">
       <button class="btn ghost" id="mCancel">Cancel</button>
@@ -286,7 +273,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-/* ---------------- data ---------------- */
+/* ================= basics ================= */
 const CATS = [
   {id:'qc',   name:'Quick commerce', icon:'🛒'},
   {id:'home', name:'Home services',  icon:'🧹'},
@@ -295,259 +282,323 @@ const CATS = [
   {id:'net',  name:'Home internet',  icon:'📶'},
   {id:'ride', name:'Rides',          icon:'🛺'},
 ];
-let SERVICES = [], LOCS = [], CITIES = [], DATA = null;
-
-/* ---------------- helpers ---------------- */
+const LABEL = {live:'Live', no:'Not available'};
+const GROUP = {live:'live', likely:'live', soon:'no', no:'no'};   // data keeps finer detail; the app shows two groups
+const IOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const svc = id=>SERVICES.find(s=>s.id===id);
-const loc = id=>LOCS.find(l=>l.id===id);
 const initials = n=>n.replace(/[^A-Za-z0-9 ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
-const LABEL = {live:'Live', no:'Not available'};
-// The data keeps finer detail (live / likely / soon / no); the app shows two groups.
-const GROUP = {live:'live', likely:'live', soon:'no', no:'no'};
-const IOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+const norm = s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+let tt; function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('on'),3400); }
+
 function storeLink(s){
   if(IOS && s.ios) return s.ios;
   if(!IOS && s.android) return s.android;
   const q = encodeURIComponent(s.store_q || s.name);
   return IOS ? `https://apps.apple.com/in/search?term=${q}` : `https://play.google.com/store/search?q=${q}&c=apps`;
 }
-function status(s, l){
-  const o = ((DATA.status||{})[l.id]||{})[s.id] || {s:'no'};
-  const detail = o.d || (o.s==='no' ? 'No sign of it in your area yet' : '');
-  return {st:GROUP[o.s]||'no', raw:o.s, detail, ev:o.e||[]};
-}
-function verifiedText(){
-  if(!DATA.updated) return 'Not checked yet';
-  const days = Math.max(0, Math.floor((Date.now() - Date.parse(DATA.updated)) / 864e5));
-  return days===0 ? 'Checked today' : days===1 ? 'Checked yesterday' : `Checked ${days} days ago`;
-}
 
-/* ---------------- state (per-browser convenience only) ---------------- */
-const KEY='burban.v1';
-let S = {loc:null, alerts:[], digest:false, contact:{email:'',wa:''}};
+/* ================= storage (IndexedDB is shared with the background checker in sw.js) ================= */
+const KEY='burban.v2';
+let S = {loc:null, alerts:[]};
 try{ const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S, JSON.parse(raw)); }catch(e){}
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
-let view='services', catF='all', stF='all';
-
-/* ---------------- onboarding ---------------- */
-const input=$('#addrInput'), sugg=$('#sugg');
-let hl=0, matches=[];
-function renderSugg(){
-  const q=input.value.trim().toLowerCase();
-  matches = q ? LOCS.filter(l=>l.name.toLowerCase().includes(q)||l.pin.startsWith(q)) : LOCS.slice(0,6);
-  hl=0;
-  sugg.innerHTML = matches.length
-    ? matches.slice(0,7).map((l,i)=>`<button data-id="${l.id}" class="${i===0?'hl':''}"><span>${esc(l.name)}, Bengaluru</span><small>${l.pin}</small></button>`).join('')
-    : `<div class="empty">We don't cover “${esc(input.value)}” yet. This prototype has ${LOCS.length} Bengaluru areas — try “Koramangala” or “560066”.</div>`;
-  sugg.style.display='block';
+function idb(){ return new Promise((res,rej)=>{ const r=indexedDB.open('burban',1); r.onupgradeneeded=()=>r.result.createObjectStore('kv'); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+async function idbSet(k,v){ try{ const db=await idb(); await new Promise((res,rej)=>{ const t=db.transaction('kv','readwrite'); t.objectStore('kv').put(v,k); t.oncomplete=res; t.onerror=rej; }); }catch(e){} }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} idbSet('alerts', S.alerts); }
+async function idbGet(k){ try{ const db=await idb(); return await new Promise((res,rej)=>{ const t=db.transaction('kv','readonly'); const r=t.objectStore('kv').get(k); t.oncomplete=()=>res(r.result); t.onerror=rej; }); }catch(e){ return undefined; } }
+// The background checker may have already notified for some alerts; take its record as the truth for "done".
+async function syncFromWorker(){
+  const w=await idbGet('alerts'); if(!w) return;
+  const done=new Set(w.filter(a=>a.done).map(a=>a.sid+'@'+a.pid));
+  S.alerts.forEach(a=>{ if(done.has(a.sid+'@'+a.pid)) a.done=true; });
 }
-input.addEventListener('focus',renderSugg);
-input.addEventListener('input',renderSugg);
-input.addEventListener('keydown',e=>{
-  const btns=[...sugg.querySelectorAll('button')];
-  if(e.key==='ArrowDown'||e.key==='ArrowUp'){ e.preventDefault(); if(!btns.length) return;
-    hl=(hl+(e.key==='ArrowDown'?1:-1)+btns.length)%btns.length; btns.forEach((b,i)=>b.classList.toggle('hl',i===hl)); }
-  if(e.key==='Enter'){ e.preventDefault(); if(btns[hl]) pick(btns[hl].dataset.id); }
-  if(e.key==='Escape') sugg.style.display='none';
-});
-sugg.addEventListener('mousedown',e=>{ const b=e.target.closest('button'); if(b){ e.preventDefault(); pick(b.dataset.id);} });
-input.addEventListener('blur',()=>setTimeout(()=>sugg.style.display='none',120));
-$('#addrGo').onclick=()=>{ renderSugg(); if(matches[0]) pick(matches[0].id); else input.focus(); };
 
-function pick(id){ S.loc=id; save(); sugg.style.display='none'; input.value=''; showApp(); }
-$('#addrChip').onclick=()=>{ $('#app').hidden=true; $('#onboard').hidden=false; window.scrollTo(0,0); setTimeout(()=>input.focus(),50); };
+/* ================= data ================= */
+let IDX=null, PL=null, CITY_BY_ID={}, AREA_BY_ID={}, SVC={};
+const cityCache={};
+async function getJSON(url, fresh){ const r=await fetch(url, {cache: fresh?'no-cache':'default'}); if(!r.ok) throw new Error(r.status); return r.json(); }
 
-/* ---------------- app ---------------- */
-function showApp(){
+function buildPlaces(p){
+  PL = {cities: p.c.map(c=>({id:c[0], name:c[1], state:c[2], lat:c[3], lng:c[4], has:!!c[5], big:!!c[6], n:norm(c[1])})), areas:[]};
+  PL.cities.forEach((c,i)=>{ CITY_BY_ID[c.id]=c; c.i=i; });
+  PL.areas = p.a.map(a=>({id:a[0], name:a[1], city:PL.cities[a[2]], lat:a[3], lng:a[4], n:norm(a[1])}));
+  PL.areas.forEach(a=>AREA_BY_ID[a.id]=a);
+}
+const placeById = id => AREA_BY_ID[id] || CITY_BY_ID[id] || null;
+const cityOf = p => p.city || p;
+const placeLabel = p => p.city ? `${p.name}, ${p.city.name}` : (p.state ? `${p.name}, ${p.state}` : p.name);
+
+async function loadCity(c, fresh){
+  if(!c.has) return {d:{}, a:{}};
+  if(!fresh && cityCache[c.id]) return cityCache[c.id];
+  try{ cityCache[c.id] = await getJSON(`data/city/${c.id}.json`, fresh); }
+  catch(e){ cityCache[c.id] = {d:{}, a:{}}; }
+  return cityCache[c.id];
+}
+function statusIn(cf, place, sid){
+  const v = (cf.a[place.id]||{})[sid] || cf.d[sid] || ['no'];
+  return {st: GROUP[v[0]]||'no', raw:v[0], detail: v[1] || (v[0]==='no' ? 'No sign of it here yet' : ''), ev: v[2]||[]};
+}
+
+/* ================= search ================= */
+function search(q, limit=8){
+  const n = norm(q); if(!n || !PL) return [];
+  const out=[];
+  const score=(name,big)=> (name===n?0: name.startsWith(n)?1: 2) * 2 + (big?0:1);
+  for(const c of PL.cities) if(c.n.includes(n)) out.push([score(c.n,c.big), c]);
+  for(const a of PL.areas) if(a.n.includes(n)) out.push([score(a.n,a.city.big)+0.5, a]);
+  out.sort((x,y)=>x[0]-y[0] || x[1].name.length-y[1].name.length);
+  return out.slice(0,limit).map(x=>x[1]);
+}
+function attachSearch(input, box, onPick){
+  let hl=0, res=[];
+  const render=()=>{
+    res = search(input.value);
+    if(!input.value.trim()){ box.style.display='none'; return; }
+    box.innerHTML = res.length ? res.map((p,i)=>`<button data-id="${esc(p.id)}" class="${i===0?'hl':''}"><span>${esc(placeLabel(p))}</span><small>${p.city?'area':(p.big?'city':'town')}</small></button>`).join('')
+      : `<div class="empty">${PL ? 'No match yet. Try your city name, or use your location.' : 'Loading places…'}</div>`;
+    hl=0; box.style.display='block';
+  };
+  input.addEventListener('input',render);
+  input.addEventListener('focus',()=>{ if(input.value) render(); });
+  input.addEventListener('keydown',e=>{
+    const bs=[...box.querySelectorAll('button')];
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){ e.preventDefault(); if(!bs.length) return; hl=(hl+(e.key==='ArrowDown'?1:-1)+bs.length)%bs.length; bs.forEach((b,i)=>b.classList.toggle('hl',i===hl)); }
+    if(e.key==='Enter'){ e.preventDefault(); if(bs[hl]) { box.style.display='none'; onPick(bs[hl].dataset.id); } }
+    if(e.key==='Escape') box.style.display='none';
+  });
+  box.addEventListener('mousedown',e=>{ const b=e.target.closest('button'); if(b){ e.preventDefault(); box.style.display='none'; onPick(b.dataset.id); } });
+  input.addEventListener('blur',()=>setTimeout(()=>box.style.display='none',150));
+  return render;
+}
+const renderMain = attachSearch($('#addrInput'), $('#sugg'), id=>pick(id));
+$('#addrGo').onclick=()=>{ const r=search($('#addrInput').value); if(r[0]) pick(r[0].id); else renderMain(); };
+
+/* ================= use my location ================= */
+$('#locBtn').onclick=()=>{
+  if(!navigator.geolocation) return toast('Location is not available on this device.');
+  const b=$('#locBtn'); b.textContent='📍 Finding you…';
+  navigator.geolocation.getCurrentPosition(async pos=>{
+    b.textContent='📍 Use my location';
+    await placesReady;
+    const {latitude:la, longitude:lo} = pos.coords, k=Math.cos(la*Math.PI/180);
+    const d2=p=>(p.lat-la)**2+((p.lng-lo)*k)**2;
+    let best=null, bd=1e9;
+    for(const a of PL.areas){ const d=d2(a); if(d<bd){bd=d; best=a;} }
+    if(!best || Math.sqrt(bd)*111 > 4){ best=null; bd=1e9; for(const c of PL.cities){ const d=d2(c); if(d<bd){bd=d; best=c;} } }
+    if(!best || Math.sqrt(bd)*111 > 40) return toast("We don't have a place listed near you yet. Try searching your city.");
+    pick(best.id);
+  }, ()=>{ b.textContent='📍 Use my location'; toast('Location permission was declined. You can search instead.'); }, {enableHighAccuracy:false, timeout:15000, maximumAge:600000});
+};
+
+/* ================= app views ================= */
+let view='services', catF='all', stF='all', CUR=null, CF=null;
+async function pick(id){
+  await placesReady;
+  const p=placeById(id); if(!p) return;
+  S.loc=id; save();
+  if(location.hash!=='#'+id) history.replaceState(null,'','#'+id);
+  CUR=p; CF=await loadCity(cityOf(p));
   $('#onboard').hidden=true; $('#app').hidden=false;
-  const l=loc(S.loc); $('#addrLabel').textContent=`${l.name}, Bengaluru ${l.pin}`;
+  $('#addrLabel').textContent=placeLabel(p);
+  document.title=`What's available in ${p.name} · Burban`;
   setView(view); window.scrollTo(0,0);
 }
+$('#addrChip').onclick=()=>{ $('#app').hidden=true; $('#onboard').hidden=false; window.scrollTo(0,0); setTimeout(()=>$('#addrInput').focus(),50); };
 $('#tabs').onclick=e=>{ const b=e.target.closest('button'); if(b) setView(b.dataset.v); };
 function setView(v){
   view=v;
   document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
   ['services','alerts','compare'].forEach(x=>$('#v-'+x).hidden = x!==v);
   ({services:renderServices, alerts:renderAlerts, compare:renderCompare})[v]();
-  renderBadge();
+  const n=S.alerts.filter(a=>!a.done).length, b=$('#alertCount'); b.hidden=!n; b.textContent=n;
 }
-function renderBadge(){ const n=S.alerts.length, b=$('#alertCount'); b.hidden=!n; b.textContent=n; }
-const hasAlert=(sid,lid)=>S.alerts.some(a=>a.sid===sid&&a.lid===lid);
+const hasAlert=(sid,pid)=>S.alerts.some(a=>a.sid===sid&&a.pid===pid&&!a.done);
+function verifiedText(){
+  if(!IDX||!IDX.updated) return 'Not checked yet';
+  const days=Math.max(0,Math.floor((Date.now()-Date.parse(IDX.updated))/864e5));
+  return days===0?'Checked today':days===1?'Checked yesterday':`Checked ${days} days ago`;
+}
 
 function renderServices(){
-  const l=loc(S.loc);
-  const rows=SERVICES.map(s=>({s, ...status(s,l)}));
-  const c={live:0,no:0,soon:0}; rows.forEach(r=>{ c[r.st]++; if(r.raw==='soon') c.soon++; });
+  const p=CUR, rows=IDX.services.map(s=>({s, ...statusIn(CF,p,s.id)}));
+  const c={live:0,no:0}; rows.forEach(r=>c[r.st]++);
   $('#summary').innerHTML=`
-    <div class="sum"><div class="l" style="margin:0 0 4px">Your area</div><h2>${esc(l.name)}</h2><div class="l">${verifiedText()}</div></div>
+    <div class="sum"><div class="l" style="margin:0 0 4px">Your area</div><h2>${esc(p.name)}</h2>
+      <div class="l">${esc(p.city?p.city.name:(p.state||''))}${p.city||p.state?' · ':''}${verifiedText()}</div>
+      <div class="acts"><button class="btn sm ghost" id="shareBtn">Share this area</button></div></div>
     <div class="sum live"><div class="k">${c.live}</div><div class="l">live here</div></div>
     <div class="sum no"><div class="k">${c.no}</div><div class="l">not available</div></div>`;
-  $('#catFilters').innerHTML=[{id:'all',name:'All',icon:''},...CATS].map(k=>
-    `<button class="pill ${catF===k.id?'on':''}" data-c="${k.id}">${k.icon} ${k.name}</button>`).join('');
-  const cats = CATS.filter(k=>catF==='all'||k.id===catF);
+  $('#shareBtn').onclick=shareArea;
+  $('#catFilters').innerHTML=[{id:'all',name:'All',icon:''},...CATS].map(k=>`<button class="pill ${catF===k.id?'on':''}" data-c="${k.id}">${k.icon} ${k.name}</button>`).join('');
   let html='';
-  for(const k of cats){
+  for(const k of CATS.filter(k=>catF==='all'||k.id===catF)){
     const items=rows.filter(r=>r.s.cat===k.id && (stF==='all'||r.st===stF));
     if(!items.length) continue;
     const live=rows.filter(r=>r.s.cat===k.id&&r.st==='live').length, tot=rows.filter(r=>r.s.cat===k.id).length;
-    html+=`<div class="cat-h"><h3>${k.icon} ${k.name}</h3><small>${live} of ${tot} live</small></div><div class="grid">`;
-    for(const r of items) html+=card(r,l);
-    html+='</div>';
+    html+=`<div class="cat-h"><h3>${k.icon} ${k.name}</h3><small>${live} of ${tot} live</small></div><div class="grid">${items.map(card).join('')}</div>`;
   }
   $('#list').innerHTML = html || `<div class="panel emptystate"><h3>Nothing here</h3>No services match this filter.</div>`;
 }
-function card(r,l){
-  const s=r.s, on=hasAlert(s.id,l.id);
-  let action='';
-  if(r.st==='live'){
-    action = `<a class="btn sm" href="${esc(storeLink(s))}" target="_blank" rel="noopener">Get app</a>`;
-  } else {
-    action = on ? `<button class="btn sm set" data-act="notify" data-id="${s.id}">✓ Alert set</button>`
-                : `<button class="btn sm notify" data-act="notify" data-id="${s.id}">🔔 Notify me</button>`;
-  }
+function card(r){
+  const s=r.s, on=hasAlert(s.id,CUR.id);
+  const action = r.st==='live'
+    ? `<a class="btn sm" href="${esc(storeLink(s))}" target="_blank" rel="noopener">Get app</a>`
+    : (on ? `<button class="btn sm set" data-act="notify" data-id="${s.id}">✓ Alert set</button>`
+          : `<button class="btn sm notify" data-act="notify" data-id="${s.id}">🔔 Notify me</button>`);
+  const links=r.ev.filter(x=>/^https?:\/\//.test(x[1]));
   return `<div class="card ${r.st}">
-    <div class="top">
-      <div class="mono" style="background:${s.bg};color:${s.fg}">${initials(s.name)}</div>
+    <div class="top"><div class="mono" style="background:${esc(s.bg)};color:${esc(s.fg)}">${initials(s.name)}</div>
       <div><div class="name">${esc(s.name)}</div><div class="sub">${esc(s.tag)}</div></div>
-      <span class="st ${r.st}">${LABEL[r.st]}</span>
-    </div>
+      <span class="st ${r.st}">${LABEL[r.st]}</span></div>
     <div class="detail">${esc(r.detail)}</div>
-    ${r.ev.length?`<div class="why"><span class="muted">Source:</span>${r.ev.filter(x=>/^https?:\/\//.test(x.u)).map(x=>`<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)} ↗</a>`).join('')}</div>`:''}
-    <div class="foot">
-      <span class="t">${verifiedText()}</span>
-      ${action}
-    </div>
+    ${links.length?`<div class="why"><span class="muted">Source:</span>${links.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])} ↗</a>`).join('')}</div>`:''}
+    <div class="foot"><span class="t">${verifiedText()}</span>${action}</div>
   </div>`;
 }
 $('#catFilters').onclick=e=>{ const b=e.target.closest('button'); if(b){ catF=b.dataset.c; renderServices(); } };
-$('#stFilter').onclick=e=>{ const b=e.target.closest('button'); if(!b) return; stF=b.dataset.s;
-  document.querySelectorAll('#stFilter button').forEach(x=>x.classList.toggle('on',x===b)); renderServices(); };
-$('#list').onclick=e=>{
-  const b=e.target.closest('[data-act]'); if(!b) return;
-  if(b.dataset.act==='notify') openNotify(b.dataset.id);
-};
+$('#stFilter').onclick=e=>{ const b=e.target.closest('button'); if(!b) return; stF=b.dataset.s; document.querySelectorAll('#stFilter button').forEach(x=>x.classList.toggle('on',x===b)); renderServices(); };
+$('#list').onclick=e=>{ const b=e.target.closest('[data-act=notify]'); if(b) openNotify(b.dataset.id); };
 
-/* ---------------- notify modal ---------------- */
+async function shareArea(){
+  const url=location.href.split('#')[0]+'#'+CUR.id, text=`What delivers in ${placeLabel(CUR)}`;
+  try{ if(navigator.share){ await navigator.share({title:text, url}); return; } }catch(e){ return; }
+  try{ await navigator.clipboard.writeText(url); toast('Link copied. Paste it anywhere to share this area.'); }
+  catch(e){ toast(url); }
+}
+
+/* ================= alerts (notifications) ================= */
 let mSid=null;
 function openNotify(sid){
-  mSid=sid; const s=svc(sid), l=loc(S.loc), existing=S.alerts.find(a=>a.sid===sid&&a.lid===l.id);
+  mSid=sid; const s=SVC[sid], existing=S.alerts.find(a=>a.sid===sid&&a.pid===CUR.id&&!a.done);
   $('#mTitle').textContent=`Tell me when ${s.name} arrives`;
-  $('#mSub').textContent=`in ${l.name}, Bengaluru. We'll email you once, the day it goes live here.`;
-  const ch = existing ? existing.ch : {email:true, wa:false, push:false};
-  $('#cEmail').checked=ch.email; $('#cWa').checked=ch.wa; $('#cPush').checked=ch.push;
-  $('#vEmail').value=S.contact.email; $('#vWa').value=S.contact.wa;
-  $('#mSave').textContent = existing ? 'Update alert' : 'Notify me';
+  $('#mSub').textContent=`in ${placeLabel(CUR)}.`;
+  const perm = ('Notification' in window) ? Notification.permission : 'unsupported';
+  $('#mNote').textContent = perm==='denied' ? "Notifications are blocked for this app in your phone's settings, so we'll show it here when you next open Burban."
+    : perm==='unsupported' ? "This browser can't show notifications, so we'll show it here when you next open Burban."
+    : IOS ? "On iPhone you'll see it when you next open Burban." : "We check daily and send one notification to this phone when it goes live.";
+  $('#mSave').textContent = existing ? 'Keep alert' : 'Notify me';
   $('#mCancel').textContent = existing ? 'Remove alert' : 'Cancel';
   $('#mCancel').dataset.remove = existing ? '1' : '';
-  $('#mErr').textContent=''; syncCh(); $('#scrim').classList.add('on');
+  $('#mErr').textContent=''; $('#scrim').classList.add('on');
 }
-function syncCh(){ document.querySelectorAll('.ch').forEach(el=>el.classList.toggle('on', el.querySelector('input[type=checkbox]').checked)); }
-document.querySelectorAll('.ch input[type=checkbox]').forEach(x=>x.addEventListener('change',syncCh));
-['vEmail','vWa'].forEach(id=>$('#'+id).addEventListener('input',e=>{ const cb=e.target.closest('.ch').querySelector('input[type=checkbox]'); if(e.target.value) {cb.checked=true; syncCh();} }));
 function closeModal(){ $('#scrim').classList.remove('on'); }
 $('#scrim').addEventListener('mousedown',e=>{ if(e.target.id==='scrim') closeModal(); });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
-$('#mCancel').onclick=()=>{
-  if($('#mCancel').dataset.remove){ removeAlert(mSid,S.loc); toast('Alert removed'); }
+$('#mCancel').onclick=()=>{ if($('#mCancel').dataset.remove){ removeAlert(mSid,CUR.id); toast('Alert removed'); } closeModal(); };
+$('#mSave').onclick=async()=>{
+  if(!hasAlert(mSid,CUR.id)){
+    S.alerts.unshift({sid:mSid, pid:CUR.id, cid:cityOf(CUR).id, place:placeLabel(CUR), svc:SVC[mSid].name, at:Date.now(), done:false});
+    save();
+  }
   closeModal();
-};
-$('#mSave').onclick=()=>{
-  const ch={email:$('#cEmail').checked, wa:$('#cWa').checked, push:$('#cPush').checked};
-  const email=$('#vEmail').value.trim(), wa=$('#vWa').value.replace(/[^\d+]/g,'');
-  if(!ch.email&&!ch.wa&&!ch.push) return $('#mErr').textContent='Pick at least one way to reach you.';
-  if(ch.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return $('#mErr').textContent='That email doesn’t look right.';
-  if(ch.wa && wa.replace(/\D/g,'').length<10) return $('#mErr').textContent='Enter a 10-digit WhatsApp number.';
-  if(ch.email) S.contact.email=email; if(ch.wa) S.contact.wa=wa;
-  S.alerts = S.alerts.filter(a=>!(a.sid===mSid&&a.lid===S.loc));
-  S.alerts.unshift({sid:mSid, lid:S.loc, ch, at:Date.now(), email: ch.email ? email : ''});
-  save(); closeModal();
-  if(ch.email) sendAlert('subscribe', email, S.loc, mSid);
-  toast(DATA.alerts_url
-    ? `Check your inbox to confirm. We'll email you when ${svc(mSid).name} reaches ${loc(S.loc).name}.`
-    : `Saved on this device. Email alerts are being switched on soon.`);
+  const ok = await enableNotifications();
+  toast(ok ? `Done. We'll notify you when ${SVC[mSid].name} reaches ${CUR.name}.` : `Saved. We'll show it here when ${SVC[mSid].name} reaches ${CUR.name}.`);
   setView(view);
 };
-function removeAlert(sid,lid){
-  const a=S.alerts.find(a=>a.sid===sid&&a.lid===lid);
-  if(a&&a.email) sendAlert('unsubscribe', a.email, lid, sid);
-  S.alerts=S.alerts.filter(a=>!(a.sid===sid&&a.lid===lid)); save(); setView(view);
-}
-function sendAlert(action, email, area, service){
-  if(!DATA.alerts_url) return;
-  // Google Apps Script web apps don't send CORS headers, so this is fire-and-forget.
-  try{ fetch(DATA.alerts_url, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain'},
-    body: JSON.stringify({action, email, area, service})}).catch(()=>{}); }catch(e){}
+function removeAlert(sid,pid){ S.alerts=S.alerts.filter(a=>!(a.sid===sid&&a.pid===pid)); save(); setView(view); }
+
+async function enableNotifications(){
+  if(!('Notification' in window) || IOS) return false;
+  let p=Notification.permission;
+  if(p==='default'){ try{ p=await Notification.requestPermission(); }catch(e){} }
+  if(p!=='granted') return false;
+  try{
+    const reg=await navigator.serviceWorker.ready;
+    if('periodicSync' in reg){
+      const st=await navigator.permissions.query({name:'periodic-background-sync'}).catch(()=>({state:'denied'}));
+      if(st.state==='granted') await reg.periodicSync.register('burban-check',{minInterval:12*60*60*1000});
+    }
+  }catch(e){}
+  return true;
 }
 
-/* ---------------- alerts view ---------------- */
+// Check alerts whenever the app opens or comes back to the screen (the background checker does the same daily).
+async function checkAlerts(){
+  if(!IDX||!PL) return;
+  let changed=false;
+  for(const a of S.alerts.filter(a=>!a.done)){
+    const c=CITY_BY_ID[a.cid], p=placeById(a.pid); if(!c||!p) continue;
+    const cf=await loadCity(c, true);
+    if(statusIn(cf,p,a.sid).st==='live'){
+      a.done=true; a.doneAt=Date.now(); changed=true;
+      const msg=`${a.svc} is now available in ${a.place}`;
+      toast('🎉 '+msg);
+      try{ if(Notification.permission==='granted'){ const reg=await navigator.serviceWorker.ready; reg.showNotification('Now available near you', {body:msg, icon:'icons/icon-192.png', tag:a.sid+'@'+a.pid, data:{url:'./#'+a.pid}}); } }catch(e){}
+    }
+  }
+  if(changed){ save(); if(CUR) setView(view); }
+}
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') checkAlerts(); });
+
 function renderAlerts(){
-  $('#digestTog').classList.toggle('on',!!S.digest);
-  if(!S.alerts.length){
-    $('#alertList').innerHTML=`<div class="emptystate"><h3>No alerts yet</h3>Tap <b>🔔 Notify me</b> on anything that's “coming soon” or “not yet” in your area.<br><br><button class="btn sm" id="goSoon">Show what's coming soon</button></div>`;
-    $('#goSoon').onclick=()=>{ stF='soon'; document.querySelectorAll('#stFilter button').forEach(x=>x.classList.toggle('on',x.dataset.s==='soon')); setView('services'); };
+  const perm=('Notification' in window)?Notification.permission:'unsupported';
+  $('#notifPanel').innerHTML = perm==='granted'
+    ? `<b>Notifications are on</b><div class="sub">We check once a day in the background${IOS?'':' (Android, when Burban is installed)'} and every time you open the app.</div>`
+    : perm==='denied' ? `<b>Notifications are blocked</b><div class="sub">Turn them on for Burban in your phone's settings. Until then, new launches show here when you open the app.</div>`
+    : (perm==='unsupported'||IOS) ? `<b>Alerts show when you open Burban</b><div class="sub">This device can't receive background notifications from web apps.</div>`
+    : `<div class="switch"><div style="flex:1"><b>Get a notification on this phone</b><div class="sub">One notification when something you're waiting for goes live.</div></div><button class="btn sm" id="notifOn">Turn on</button></div>`;
+  const nb=$('#notifOn'); if(nb) nb.onclick=async()=>{ await enableNotifications(); renderAlerts(); };
+  const list=S.alerts;
+  if(!list.length){
+    $('#alertList').innerHTML=`<div class="emptystate"><h3>No alerts yet</h3>Tap <b>🔔 Notify me</b> on anything that's not available in your area.</div>`;
     return;
   }
-  $('#alertList').innerHTML = S.alerts.map(a=>{
-    const s=svc(a.sid), l=loc(a.lid), r=status(s,l);
-    const chips=[a.ch.email&&'Email',a.ch.wa&&'WhatsApp',a.ch.push&&'Browser'].filter(Boolean).map(c=>`<span class="chip">${c}</span>`).join('');
-    return `<div class="alert-row">
-      <div class="mono" style="background:${s.bg};color:${s.fg}">${initials(s.name)}</div>
-      <div style="flex:1;min-width:0"><div class="name">${esc(s.name)} <span class="sub">in ${esc(l.name)}</span></div>
-        <div class="sub">${esc(r.detail)}</div><div class="chips" style="margin-top:5px">${chips}</div></div>
-      <span class="st ${r.st} hide-sm">${LABEL[r.st]}</span>
-      <button class="btn sm ghost" data-rm="${a.sid}|${a.lid}">Remove</button>
-    </div>`;
-  }).join('');
+  $('#alertList').innerHTML=list.map(a=>{ const s=SVC[a.sid]||{name:a.svc,bg:'#ccc',fg:'#000'};
+    return `<div class="alert-row"><div class="mono" style="background:${esc(s.bg)};color:${esc(s.fg)}">${initials(s.name)}</div>
+      <div style="flex:1;min-width:0"><div class="name">${esc(s.name)} <span class="sub">in ${esc(a.place)}</span></div>
+      <div class="sub">${a.done?'🎉 Now available':'Waiting'}</div></div>
+      ${a.done?`<a class="btn sm" href="${esc(storeLink(s))}" target="_blank" rel="noopener">Get app</a>`:''}
+      <button class="btn sm ghost" data-rm="${esc(a.sid)}|${esc(a.pid)}">Remove</button></div>`; }).join('');
 }
-$('#alertList').addEventListener('click',e=>{ const b=e.target.closest('[data-rm]'); if(b){ const [sid,lid]=b.dataset.rm.split('|'); removeAlert(sid,lid); toast('Alert removed'); } });
-$('#digestTog').onclick=()=>{ S.digest=!S.digest; save(); renderAlerts();
-  toast(S.digest?`Weekly “new near you” digest on for ${loc(S.loc).name}.`:'Weekly digest off.'); };
+$('#alertList').addEventListener('click',e=>{ const b=e.target.closest('[data-rm]'); if(b){ const [sid,pid]=b.dataset.rm.split('|'); removeAlert(sid,pid); toast('Alert removed'); } });
 
-/* ---------------- compare ---------------- */
-let cmpB=null;
-function renderCompare(){
-  const opts=LOCS.map(l=>`<option value="${l.id}">${esc(l.name)} · ${l.pin}</option>`).join('');
-  const A=$('#cmpA'), B=$('#cmpB');
-  A.innerHTML=opts; B.innerHTML=opts; A.value=S.loc;
-  if(!cmpB||cmpB===S.loc) cmpB = LOCS.find(l=>l.id!==S.loc && l.tier!==loc(S.loc).tier)?.id || LOCS.find(l=>l.id!==S.loc).id;
-  B.value=cmpB; drawCompare();
-}
-function drawCompare(){
-  const a=loc($('#cmpA').value), b=loc($('#cmpB').value);
-  const ra=SERVICES.map(s=>status(s,a)), rb=SERVICES.map(s=>status(s,b));
-  const la=ra.filter(r=>r.st==='live').length, lb=rb.filter(r=>r.st==='live').length;
-  const lose=SERVICES.filter((s,i)=>ra[i].st==='live'&&rb[i].st!=='live').map(s=>s.name);
+/* ================= compare ================= */
+let CMP=null;
+attachSearch($('#cmpB'), $('#cmpSugg'), async id=>{ CMP=placeById(id); $('#cmpB').value=placeLabel(CMP); drawCompare(); });
+function renderCompare(){ $('#cmpA').value=placeLabel(CUR); drawCompare(); }
+async function drawCompare(){
+  if(!CMP){ $('#cmpScore').innerHTML=''; $('#cmpTable').innerHTML='<tr><td class="muted">Search for an area to compare with.</td></tr>'; return; }
+  const [fa,fb]=await Promise.all([loadCity(cityOf(CUR)), loadCity(cityOf(CMP))]);
+  const ra=IDX.services.map(s=>statusIn(fa,CUR,s.id).st), rb=IDX.services.map(s=>statusIn(fb,CMP,s.id).st);
+  const la=ra.filter(x=>x==='live').length, lb=rb.filter(x=>x==='live').length;
+  const lose=IDX.services.filter((s,i)=>ra[i]==='live'&&rb[i]!=='live').map(s=>s.name);
   $('#cmpScore').innerHTML=`
-    <div class="sum"><div class="k" style="color:var(--brand)">${la}<span class="muted" style="font-size:18px">/${SERVICES.length}</span></div><div class="l">live in ${esc(a.name)}</div></div>
-    <div class="sum"><div class="k" style="color:var(--brand)">${lb}<span class="muted" style="font-size:18px">/${SERVICES.length}</span></div><div class="l">live in ${esc(b.name)}</div></div>
-    <div class="sum" style="flex:2"><div class="l" style="margin:0 0 4px">If you move to ${esc(b.name)}</div>
+    <div class="sum"><div class="k" style="color:var(--brand)">${la}<span class="muted" style="font-size:18px">/${ra.length}</span></div><div class="l">live in ${esc(CUR.name)}</div></div>
+    <div class="sum"><div class="k" style="color:var(--brand)">${lb}<span class="muted" style="font-size:18px">/${rb.length}</span></div><div class="l">live in ${esc(CMP.name)}</div></div>
+    <div class="sum" style="flex:2"><div class="l" style="margin:0 0 4px">If you move to ${esc(CMP.name)}</div>
       <div>${lose.length?`You'd lose <b>${lose.map(esc).join(', ')}</b>.`:`You keep everything you have now 🎉`}</div></div>`;
-  let t=`<tr><th>Service</th><th class="c">${esc(a.name)}</th><th class="c">${esc(b.name)}</th></tr>`;
+  let t=`<tr><th>Service</th><th class="c">${esc(CUR.name)}</th><th class="c">${esc(CMP.name)}</th></tr>`;
   for(const k of CATS){
     t+=`<tr class="cat"><td colspan="3">${k.icon} ${k.name}</td></tr>`;
-    SERVICES.forEach((s,i)=>{ if(s.cat!==k.id) return;
-      t+=`<tr><td>${esc(s.name)}</td><td class="c"><span class="dot ${ra[i].st}" title="${LABEL[ra[i].st]}"></span> <span class="sub hide-sm">${LABEL[ra[i].st]}</span></td><td class="c"><span class="dot ${rb[i].st}" title="${LABEL[rb[i].st]}"></span> <span class="sub hide-sm">${LABEL[rb[i].st]}</span></td></tr>`;
-    });
+    IDX.services.forEach((s,i)=>{ if(s.cat!==k.id) return;
+      t+=`<tr><td>${esc(s.name)}</td><td class="c"><span class="dot ${ra[i]}"></span> <span class="sub hide-sm">${LABEL[ra[i]]}</span></td><td class="c"><span class="dot ${rb[i]}"></span> <span class="sub hide-sm">${LABEL[rb[i]]}</span></td></tr>`; });
   }
   $('#cmpTable').innerHTML=t;
 }
-$('#cmpA').onchange=drawCompare;
-$('#cmpB').onchange=e=>{ cmpB=e.target.value; drawCompare(); };
 
-/* ---------------- toast + boot ---------------- */
-let tt; function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('on'),3200); }
-function init(){
-  $('#demo').hidden = !!DATA.updated && !DATA.sample;
-  $('#cityRow').innerHTML = '<span>Cities:</span>' + CITIES.map(c=>`<span class="pill ${c.live?'on':'off'}" title="${c.live?'':'Coming soon'}">${esc(c.name)}${c.live?'':' · soon'}</span>`).join('');
-  $('#pSvc').textContent=SERVICES.length; $('#pLoc').textContent=LOCS.length;
-  if(S.loc && loc(S.loc)) showApp(); else { $('#onboard').hidden=false; }
+/* ================= boot ================= */
+let placesReadyResolve; const placesReady=new Promise(r=>placesReadyResolve=r);
+async function boot(){
+  try{ IDX=await getJSON('data/index.json', true); }
+  catch(e){ $('#demo').hidden=false; $('#onboard').hidden=false; return; }
+  IDX.services.forEach(s=>SVC[s.id]=s);
+  $('#pSvc').textContent=IDX.services.length;
+  $('#pCity').textContent=(IDX.stats.cities||0).toLocaleString('en-IN');
+  $('#pLoc').textContent=(IDX.stats.areas||0).toLocaleString('en-IN');
+  const want = decodeURIComponent(location.hash.slice(1)) || S.loc;
+  if(!want) $('#onboard').hidden=false;
+  try{ buildPlaces(await getJSON('data/places.json')); }catch(e){ toast("Couldn't load the place list. Check your connection."); }
+  placesReadyResolve();
+  await syncFromWorker();
+  if(want && placeById(want)) await pick(want); else $('#onboard').hidden=false;
+  checkAlerts();
 }
-fetch('data.json', {cache:'no-cache'}).then(r=>r.json()).then(d=>{
-  DATA=d; SERVICES=d.services; LOCS=d.areas; CITIES=d.cities||[]; init();
-}).catch(()=>{ document.body.insertAdjacentHTML('beforeend','<p style="padding:24px;text-align:center">Couldn\'t load the latest data. Check your connection and reopen the app.</p>'); });
+window.addEventListener('hashchange',()=>{ const id=decodeURIComponent(location.hash.slice(1)); if(id && (!CUR||CUR.id!==id)) pick(id); });
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
+// Older versions stored alerts differently; start fresh rather than break.
+S.alerts=(S.alerts||[]).filter(a=>a.pid&&a.cid);
+boot();
 </script>
 </body>
 </html>

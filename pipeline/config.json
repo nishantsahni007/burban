@@ -1,274 +1,82 @@
 {
  "_readme": "The only file you edit to add cities, areas or providers. Everything else is automatic.",
  "user_agent": "BurbanBot/1.0 (availability tracker; contact: set OWNER_EMAIL)",
- "alerts_url": "",
- "cities": [
+ "news_min_population": 100000,
+ "city_aliases": {
+  "Bengaluru": [
+   "Bangalore",
+   "BLR"
+  ],
+  "Mumbai": [
+   "Bombay"
+  ],
+  "Kolkata": [
+   "Calcutta"
+  ],
+  "Chennai": [
+   "Madras"
+  ],
+  "Gurugram": [
+   "Gurgaon"
+  ],
+  "Thiruvananthapuram": [
+   "Trivandrum"
+  ],
+  "Kochi": [
+   "Cochin"
+  ],
+  "Puducherry": [
+   "Pondicherry"
+  ],
+  "Mysuru": [
+   "Mysore"
+  ],
+  "Mangaluru": [
+   "Mangalore"
+  ],
+  "Vadodara": [
+   "Baroda"
+  ],
+  "Prayagraj": [
+   "Allahabad"
+  ],
+  "Varanasi": [
+   "Banaras",
+   "Benares"
+  ],
+  "Belagavi": [
+   "Belgaum"
+  ],
+  "Hubballi": [
+   "Hubli"
+  ],
+  "Kozhikode": [
+   "Calicut"
+  ],
+  "Delhi": [
+   "New Delhi",
+   "Delhi NCR"
+  ],
+  "Visakhapatnam": [
+   "Vizag"
+  ],
+  "Thrissur": [
+   "Trichur"
+  ],
+  "Tiruchirappalli": [
+   "Trichy"
+  ]
+ },
+ "canaries": [
   {
-   "id": "bengaluru",
-   "name": "Bengaluru",
-   "live": true,
-   "aliases": [
-    "bengaluru",
-    "bangalore",
-    "blr"
-   ],
-   "bbox": [
-    12.75,
-    77.35,
-    13.3,
-    77.85
-   ]
+   "provider": "uc",
+   "city": "Bengaluru",
+   "area": "Koramangala"
   },
   {
-   "id": "mumbai",
-   "name": "Mumbai",
-   "live": false,
-   "aliases": [
-    "mumbai"
-   ]
-  },
-  {
-   "id": "delhi",
-   "name": "Delhi NCR",
-   "live": false,
-   "aliases": [
-    "delhi",
-    "delhi-ncr",
-    "gurugram",
-    "gurgaon",
-    "noida"
-   ]
-  },
-  {
-   "id": "hyderabad",
-   "name": "Hyderabad",
-   "live": false,
-   "aliases": [
-    "hyderabad"
-   ]
-  },
-  {
-   "id": "pune",
-   "name": "Pune",
-   "live": false,
-   "aliases": [
-    "pune"
-   ]
-  },
-  {
-   "id": "chennai",
-   "name": "Chennai",
-   "live": false,
-   "aliases": [
-    "chennai"
-   ]
-  }
- ],
- "areas": [
-  {
-   "id": "koramangala",
-   "name": "Koramangala",
-   "pin": "560034",
-   "city": "bengaluru",
-   "lat": 12.9352,
-   "lng": 77.6245,
-   "aliases": [
-    "koramangala"
-   ]
-  },
-  {
-   "id": "hsr",
-   "name": "HSR Layout",
-   "pin": "560102",
-   "city": "bengaluru",
-   "lat": 12.9116,
-   "lng": 77.6474,
-   "aliases": [
-    "hsr layout",
-    "hsr"
-   ]
-  },
-  {
-   "id": "indiranagar",
-   "name": "Indiranagar",
-   "pin": "560038",
-   "city": "bengaluru",
-   "lat": 12.9784,
-   "lng": 77.6408,
-   "aliases": [
-    "indiranagar",
-    "indira nagar"
-   ]
-  },
-  {
-   "id": "bellandur",
-   "name": "Bellandur",
-   "pin": "560103",
-   "city": "bengaluru",
-   "lat": 12.9304,
-   "lng": 77.6784,
-   "aliases": [
-    "bellandur"
-   ]
-  },
-  {
-   "id": "jayanagar",
-   "name": "Jayanagar",
-   "pin": "560041",
-   "city": "bengaluru",
-   "lat": 12.925,
-   "lng": 77.5938,
-   "aliases": [
-    "jayanagar"
-   ]
-  },
-  {
-   "id": "whitefield",
-   "name": "Whitefield",
-   "pin": "560066",
-   "city": "bengaluru",
-   "lat": 12.9698,
-   "lng": 77.75,
-   "aliases": [
-    "whitefield"
-   ]
-  },
-  {
-   "id": "marathahalli",
-   "name": "Marathahalli",
-   "pin": "560037",
-   "city": "bengaluru",
-   "lat": 12.9569,
-   "lng": 77.7011,
-   "aliases": [
-    "marathahalli"
-   ]
-  },
-  {
-   "id": "jpnagar",
-   "name": "JP Nagar",
-   "pin": "560078",
-   "city": "bengaluru",
-   "lat": 12.9063,
-   "lng": 77.5857,
-   "aliases": [
-    "jp nagar",
-    "j p nagar"
-   ]
-  },
-  {
-   "id": "malleshwaram",
-   "name": "Malleshwaram",
-   "pin": "560003",
-   "city": "bengaluru",
-   "lat": 13.0031,
-   "lng": 77.5643,
-   "aliases": [
-    "malleshwaram",
-    "malleswaram"
-   ]
-  },
-  {
-   "id": "hebbal",
-   "name": "Hebbal",
-   "pin": "560024",
-   "city": "bengaluru",
-   "lat": 13.0358,
-   "lng": 77.597,
-   "aliases": [
-    "hebbal"
-   ]
-  },
-  {
-   "id": "sarjapur",
-   "name": "Sarjapur Road",
-   "pin": "560035",
-   "city": "bengaluru",
-   "lat": 12.9105,
-   "lng": 77.6855,
-   "aliases": [
-    "sarjapur road",
-    "sarjapur"
-   ]
-  },
-  {
-   "id": "ecity",
-   "name": "Electronic City",
-   "pin": "560100",
-   "city": "bengaluru",
-   "lat": 12.8452,
-   "lng": 77.6602,
-   "aliases": [
-    "electronic city",
-    "electronics city"
-   ]
-  },
-  {
-   "id": "banashankari",
-   "name": "Banashankari",
-   "pin": "560070",
-   "city": "bengaluru",
-   "lat": 12.9255,
-   "lng": 77.5468,
-   "aliases": [
-    "banashankari"
-   ]
-  },
-  {
-   "id": "rajajinagar",
-   "name": "Rajajinagar",
-   "pin": "560010",
-   "city": "bengaluru",
-   "lat": 12.9915,
-   "lng": 77.5545,
-   "aliases": [
-    "rajajinagar",
-    "rajaji nagar"
-   ]
-  },
-  {
-   "id": "yelahanka",
-   "name": "Yelahanka",
-   "pin": "560064",
-   "city": "bengaluru",
-   "lat": 13.1007,
-   "lng": 77.5963,
-   "aliases": [
-    "yelahanka"
-   ]
-  },
-  {
-   "id": "kengeri",
-   "name": "Kengeri",
-   "pin": "560060",
-   "city": "bengaluru",
-   "lat": 12.9177,
-   "lng": 77.4838,
-   "aliases": [
-    "kengeri"
-   ]
-  },
-  {
-   "id": "devanahalli",
-   "name": "Devanahalli",
-   "pin": "562110",
-   "city": "bengaluru",
-   "lat": 13.2437,
-   "lng": 77.7172,
-   "aliases": [
-    "devanahalli"
-   ]
-  },
-  {
-   "id": "hoskote",
-   "name": "Hoskote",
-   "pin": "562114",
-   "city": "bengaluru",
-   "lat": 13.0707,
-   "lng": 77.7982,
-   "aliases": [
-    "hoskote"
-   ]
+   "provider": "swiggy",
+   "city": "Bengaluru",
+   "area": "Indiranagar"
   }
  ],
  "categories": {
