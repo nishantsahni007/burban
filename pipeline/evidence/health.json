@@ -1,0 +1,11 @@
+{
+ "at": "2026-11-21T12:17:00Z",
+ "ok": true,
+ "problems": [],
+ "stats": {
+  "cities": 4551,
+  "areas": 18243,
+  "cities_with_data": 1467,
+  "live_pairs": 42768
+ }
+}

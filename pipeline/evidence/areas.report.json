@@ -1,0 +1,8 @@
+{
+ "collector": "areas",
+ "ran_at": "2026-11-21T11:38:52Z",
+ "ok": true,
+ "cities": 4551,
+ "items": 18243,
+ "errors": []
+}

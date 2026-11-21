@@ -1,0 +1,4093 @@
+{
+ "collected_at": "2026-11-21T12:16:56Z",
+ "items": [
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 8.3798,
+   "lng": 77.04688,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 8.5386,
+   "lng": 76.94031,
+   "store": "gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 8.51148,
+   "lng": 76.96559,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.10623,
+   "lng": 77.46754,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.17453,
+   "lng": 77.43164,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.14823,
+   "lng": 77.57095,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.31436,
+   "lng": 77.203,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.38402,
+   "lng": 77.61008,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.69946,
+   "lng": 77.72548,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.7173,
+   "lng": 77.76082,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.7139,
+   "lng": 77.77268,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.73106,
+   "lng": 77.71004,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.7305,
+   "lng": 77.72198,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.62987,
+   "lng": 77.91128,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.7899,
+   "lng": 78.1151,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.80251,
+   "lng": 78.13984,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.45137,
+   "lng": 77.79715,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.50816,
+   "lng": 77.6335,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.59066,
+   "lng": 77.95157,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.59181,
+   "lng": 77.95384,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.94584,
+   "lng": 76.29356,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 9.94619,
+   "lng": 76.2995,
+   "store": "Swiggy Instamart"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 9.96587,
+   "lng": 76.3058,
+   "store": "Swiggy Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.97641,
+   "lng": 76.29767,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.96914,
+   "lng": 76.31929,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 9.98286,
+   "lng": 76.28225,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.99137,
+   "lng": 76.28497,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.98489,
+   "lng": 76.33008,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.91878,
+   "lng": 78.0936,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.93299,
+   "lng": 78.09212,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.93643,
+   "lng": 78.14276,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 8.54032,
+   "lng": 76.92433,
+   "store": "Apollo Pharmacy Pongumoodu"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 9.61229,
+   "lng": 76.50755,
+   "store": "Golden Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 9.67018,
+   "lng": 76.33942,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.26802,
+   "lng": 75.11322,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.34019,
+   "lng": 74.7496,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.84303,
+   "lng": 75.7002,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.85075,
+   "lng": 75.70503,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.00951,
+   "lng": 76.31699,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.1464,
+   "lng": 76.25319,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.34143,
+   "lng": 76.27803,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.01729,
+   "lng": 76.36911,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.10903,
+   "lng": 76.35183,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.94146,
+   "lng": 76.93535,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.98789,
+   "lng": 76.93848,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 11.00513,
+   "lng": 76.95143,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.02968,
+   "lng": 76.89296,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 11.02764,
+   "lng": 77.15275,
+   "store": "Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.25787,
+   "lng": 76.95405,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.29013,
+   "lng": 76.94157,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.30113,
+   "lng": 76.94043,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.41219,
+   "lng": 76.70853,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00309,
+   "lng": 76.10632,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00849,
+   "lng": 76.1101,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00721,
+   "lng": 76.11344,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.01262,
+   "lng": 76.11444,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.289,
+   "lng": 76.64956,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.52383,
+   "lng": 76.88729,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.5238,
+   "lng": 76.88723,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.52366,
+   "lng": 76.88717,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.5237,
+   "lng": 76.88714,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.52375,
+   "lng": 76.88731,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.52569,
+   "lng": 76.8946,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.23589,
+   "lng": 77.49356,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.35434,
+   "lng": 77.96566,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.07329,
+   "lng": 78.77506,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.07718,
+   "lng": 78.77566,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.08802,
+   "lng": 78.7798,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.58602,
+   "lng": 77.24565,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.7977,
+   "lng": 78.68121,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.81838,
+   "lng": 78.68855,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.39914,
+   "lng": 79.49765,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.91794,
+   "lng": 79.83329,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.9329,
+   "lng": 79.83169,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88766,
+   "lng": 77.47198,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91023,
+   "lng": 77.48341,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.85684,
+   "lng": 77.54173,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.87168,
+   "lng": 77.54267,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.87542,
+   "lng": 77.54366,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.88291,
+   "lng": 77.54888,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88286,
+   "lng": 77.56604,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88293,
+   "lng": 77.58337,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88336,
+   "lng": 77.58974,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.8944,
+   "lng": 77.56551,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.90958,
+   "lng": 77.56416,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.89203,
+   "lng": 77.58084,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.89197,
+   "lng": 77.58176,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.89663,
+   "lng": 77.58627,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.89645,
+   "lng": 77.58638,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.90659,
+   "lng": 77.59257,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91051,
+   "lng": 77.58194,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91044,
+   "lng": 77.59153,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.923,
+   "lng": 77.48447,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.92898,
+   "lng": 77.51422,
+   "store": "Cult Fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92406,
+   "lng": 77.55343,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93329,
+   "lng": 77.54271,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93832,
+   "lng": 77.55491,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93236,
+   "lng": 77.56761,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92405,
+   "lng": 77.57078,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91754,
+   "lng": 77.59343,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93797,
+   "lng": 77.56843,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 12.95222,
+   "lng": 77.59433,
+   "store": "Instamart"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.99232,
+   "lng": 77.53849,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.9878,
+   "lng": 77.53778,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98505,
+   "lng": 77.55325,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98649,
+   "lng": 77.55582,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96641,
+   "lng": 77.59254,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98671,
+   "lng": 77.5796,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.99761,
+   "lng": 77.55126,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.99958,
+   "lng": 77.55252,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00876,
+   "lng": 77.54327,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.00848,
+   "lng": 77.54913,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.00586,
+   "lng": 77.56912,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.724,
+   "lng": 77.83315,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.85042,
+   "lng": 77.65567,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.83548,
+   "lng": 77.68099,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.83562,
+   "lng": 77.69152,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88666,
+   "lng": 77.60595,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.87636,
+   "lng": 77.61396,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.87724,
+   "lng": 77.63909,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.89281,
+   "lng": 77.61993,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.90641,
+   "lng": 77.59672,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.90646,
+   "lng": 77.59675,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.90901,
+   "lng": 77.6064,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91373,
+   "lng": 77.60638,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91335,
+   "lng": 77.61016,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.89785,
+   "lng": 77.63409,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91233,
+   "lng": 77.63263,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.9123,
+   "lng": 77.63279,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.90484,
+   "lng": 77.6445,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91155,
+   "lng": 77.64184,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.91239,
+   "lng": 77.64065,
+   "store": "Zepto"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.9118,
+   "lng": 77.64397,
+   "store": "Zepto"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.88275,
+   "lng": 77.65036,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.88299,
+   "lng": 77.67209,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.90811,
+   "lng": 77.64932,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91206,
+   "lng": 77.64882,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91355,
+   "lng": 77.66635,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.90198,
+   "lng": 77.67584,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91293,
+   "lng": 77.67961,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91373,
+   "lng": 77.67924,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.85983,
+   "lng": 77.79312,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91623,
+   "lng": 77.59492,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91683,
+   "lng": 77.60392,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91576,
+   "lng": 77.61033,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.91631,
+   "lng": 77.61201,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92069,
+   "lng": 77.61076,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92488,
+   "lng": 77.61501,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 12.93558,
+   "lng": 77.60815,
+   "store": "Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93635,
+   "lng": 77.61468,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91757,
+   "lng": 77.63194,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.91555,
+   "lng": 77.63522,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.92498,
+   "lng": 77.63708,
+   "store": "Zepto"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.93237,
+   "lng": 77.63212,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.9373,
+   "lng": 77.62445,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93556,
+   "lng": 77.63098,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.93603,
+   "lng": 77.62987,
+   "store": "Zepto"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.94961,
+   "lng": 77.59623,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.94237,
+   "lng": 77.61746,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.95825,
+   "lng": 77.64125,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.96366,
+   "lng": 77.64185,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.91544,
+   "lng": 77.65158,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.91547,
+   "lng": 77.64915,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91959,
+   "lng": 77.66703,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.91653,
+   "lng": 77.67141,
+   "store": "Zepto Cafe"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.92315,
+   "lng": 77.66974,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.9264,
+   "lng": 77.6696,
+   "store": "Blinkit Dark Store"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92728,
+   "lng": 77.6694,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.92709,
+   "lng": 77.66992,
+   "store": "Cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.92639,
+   "lng": 77.67661,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.91542,
+   "lng": 77.69877,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.9234,
+   "lng": 77.69508,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.95843,
+   "lng": 77.65956,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.95908,
+   "lng": 77.65654,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.95584,
+   "lng": 77.69791,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.96654,
+   "lng": 77.60377,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.97086,
+   "lng": 77.60729,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.97228,
+   "lng": 77.63704,
+   "store": "Zepto"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.9701,
+   "lng": 77.6409,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.97058,
+   "lng": 77.6449,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.97716,
+   "lng": 77.63904,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 12.97863,
+   "lng": 77.64262,
+   "store": "Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98006,
+   "lng": 77.63868,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98103,
+   "lng": 77.63661,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.99254,
+   "lng": 77.59842,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.99702,
+   "lng": 77.61414,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.99744,
+   "lng": 77.61445,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.99674,
+   "lng": 77.61429,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00383,
+   "lng": 77.61547,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00525,
+   "lng": 77.62331,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00273,
+   "lng": 77.63489,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.01391,
+   "lng": 77.64236,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.01277,
+   "lng": 77.64669,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96862,
+   "lng": 77.64894,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.99166,
+   "lng": 77.66384,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.97456,
+   "lng": 77.67873,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.97562,
+   "lng": 77.69745,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.97297,
+   "lng": 77.69944,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.99197,
+   "lng": 77.68026,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.98209,
+   "lng": 77.69278,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00335,
+   "lng": 77.66071,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93958,
+   "lng": 77.73612,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.93085,
+   "lng": 77.74148,
+   "store": "Cult.Fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93485,
+   "lng": 77.74337,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.951,
+   "lng": 77.71565,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.9589,
+   "lng": 77.7016,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.95688,
+   "lng": 77.70878,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.96345,
+   "lng": 77.7084,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.95613,
+   "lng": 77.71705,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.95583,
+   "lng": 77.71305,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.95616,
+   "lng": 77.7216,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96029,
+   "lng": 77.71368,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96048,
+   "lng": 77.71744,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "bbnow",
+   "signal": "store",
+   "lat": 12.96397,
+   "lng": 77.71322,
+   "store": "Fresho - by BigBasket"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96347,
+   "lng": 77.71331,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.96263,
+   "lng": 77.71667,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.96155,
+   "lng": 77.71685,
+   "store": "Zepto"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.94215,
+   "lng": 77.74728,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "fkmin",
+   "signal": "store",
+   "lat": 12.9642,
+   "lng": 77.73335,
+   "store": "Flipkart Minutes"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.96743,
+   "lng": 77.71882,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.98448,
+   "lng": 77.70858,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.98841,
+   "lng": 77.71169,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 12.97722,
+   "lng": 77.72572,
+   "store": "Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.96984,
+   "lng": 77.74974,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 12.97219,
+   "lng": 77.75061,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.96848,
+   "lng": 77.74934,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.96985,
+   "lng": 77.74935,
+   "store": "Zepto"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.98809,
+   "lng": 77.7301,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.97942,
+   "lng": 77.75129,
+   "store": "Elite Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 12.9836,
+   "lng": 77.75192,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.54298,
+   "lng": 78.35643,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.51573,
+   "lng": 79.32052,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.51846,
+   "lng": 79.33886,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.43576,
+   "lng": 79.54149,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.55503,
+   "lng": 79.55557,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.61349,
+   "lng": 79.48552,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.6058,
+   "lng": 79.50797,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.62171,
+   "lng": 79.5497,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93728,
+   "lng": 79.50479,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93707,
+   "lng": 79.50831,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.72898,
+   "lng": 79.7651,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.76421,
+   "lng": 79.75016,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.76134,
+   "lng": 79.76396,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93154,
+   "lng": 79.80127,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93149,
+   "lng": 79.80643,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93409,
+   "lng": 79.80719,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.94151,
+   "lng": 79.7967,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.93917,
+   "lng": 79.82982,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 11.94887,
+   "lng": 79.81188,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.22448,
+   "lng": 79.06624,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.94997,
+   "lng": 79.13696,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.93347,
+   "lng": 79.33179,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.82914,
+   "lng": 79.70365,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.02766,
+   "lng": 76.10182,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.02622,
+   "lng": 76.10864,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.31296,
+   "lng": 76.94102,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.05267,
+   "lng": 77.51255,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 13.0406,
+   "lng": 77.56378,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.04033,
+   "lng": 77.56387,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.0274,
+   "lng": 77.576,
+   "store": "Cult.fit"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 13.02642,
+   "lng": 77.58865,
+   "store": "Swiggy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 13.03225,
+   "lng": 77.57305,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.05165,
+   "lng": 77.5516,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.05814,
+   "lng": 77.54624,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.06685,
+   "lng": 77.55386,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.0709,
+   "lng": 77.55593,
+   "store": "Trident Fitness"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.06354,
+   "lng": 77.58702,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.06327,
+   "lng": 77.59125,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.0634,
+   "lng": 77.59145,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.09377,
+   "lng": 77.58167,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.09346,
+   "lng": 77.58325,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.10385,
+   "lng": 77.57499,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.10387,
+   "lng": 77.57497,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.10314,
+   "lng": 77.5768,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 13.09942,
+   "lng": 77.58913,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.02579,
+   "lng": 77.62745,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 13.02399,
+   "lng": 77.64319,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.03086,
+   "lng": 77.63555,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.04411,
+   "lng": 77.62597,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.02307,
+   "lng": 77.65082,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.07281,
+   "lng": 77.60325,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.09963,
+   "lng": 77.59794,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.12202,
+   "lng": 77.63035,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 13.02494,
+   "lng": 77.76132,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.63925,
+   "lng": 77.51717,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.21706,
+   "lng": 79.09851,
+   "store": "apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.61616,
+   "lng": 79.40794,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.38835,
+   "lng": 79.79407,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 10.02842,
+   "lng": 76.37074,
+   "store": "InstaMart Swiggy Warehouse"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.33469,
+   "lng": 76.61465,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 10.82647,
+   "lng": 78.69877,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.91666,
+   "lng": 77.67135,
+   "store": "Zepto HQ-Bharat IT Park"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.91672,
+   "lng": 77.67142,
+   "store": "Zepto HQ-Bharat IT Park"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.92853,
+   "lng": 77.6705,
+   "store": "Zepto Bellandur New"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 12.91893,
+   "lng": 77.69653,
+   "store": "Zepto Bellandur New"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 12.92346,
+   "lng": 77.695,
+   "store": "Swiggy instamart"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.92356,
+   "lng": 77.69497,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.00917,
+   "lng": 77.6565,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 12.95591,
+   "lng": 77.71712,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.98924,
+   "lng": 77.71716,
+   "store": "Blinkit Commerce Pvt. Ltd."
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 12.99143,
+   "lng": 77.72032,
+   "store": "Blinkit Commerce Pvt. Ltd."
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.41214,
+   "lng": 76.62176,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.05782,
+   "lng": 77.58938,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.03865,
+   "lng": 77.664,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 13.61615,
+   "lng": 79.40797,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.61591,
+   "lng": 73.78758,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.00722,
+   "lng": 74.04809,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.21194,
+   "lng": 73.95035,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.2584,
+   "lng": 73.96547,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.27166,
+   "lng": 73.96221,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.29091,
+   "lng": 73.96396,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.28841,
+   "lng": 73.98215,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.32653,
+   "lng": 74.0918,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.33217,
+   "lng": 74.76407,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.35198,
+   "lng": 75.098,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.59718,
+   "lng": 73.82144,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.58991,
+   "lng": 73.86694,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.73242,
+   "lng": 73.86798,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.27288,
+   "lng": 76.39061,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.80186,
+   "lng": 78.0481,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 15.83501,
+   "lng": 78.04174,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.38549,
+   "lng": 78.33039,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.37438,
+   "lng": 78.41849,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42086,
+   "lng": 78.40256,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.4145,
+   "lng": 78.40894,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.41763,
+   "lng": 78.41142,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.59727,
+   "lng": 78.12654,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42949,
+   "lng": 78.32543,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.4876,
+   "lng": 78.31366,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.47878,
+   "lng": 78.32001,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.47965,
+   "lng": 78.3201,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49208,
+   "lng": 78.32789,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48902,
+   "lng": 78.32361,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.51177,
+   "lng": 78.30182,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43392,
+   "lng": 78.36887,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.4336,
+   "lng": 78.36916,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.43486,
+   "lng": 78.36883,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44138,
+   "lng": 78.35943,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44095,
+   "lng": 78.35984,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44881,
+   "lng": 78.35708,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.46477,
+   "lng": 78.34509,
+   "store": "Cult Fit Botanical Garden"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44112,
+   "lng": 78.39222,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 17.44548,
+   "lng": 78.3852,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44364,
+   "lng": 78.38709,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.4382,
+   "lng": 78.39823,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42888,
+   "lng": 78.4095,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.42667,
+   "lng": 78.41497,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.45457,
+   "lng": 78.42356,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49349,
+   "lng": 78.33207,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49221,
+   "lng": 78.33155,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49711,
+   "lng": 78.34017,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.49597,
+   "lng": 78.33727,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49703,
+   "lng": 78.3546,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.49525,
+   "lng": 78.35836,
+   "store": "cultfit bodyline gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.50523,
+   "lng": 78.35663,
+   "store": "More;Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48638,
+   "lng": 78.38834,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48748,
+   "lng": 78.39519,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49439,
+   "lng": 78.39846,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49405,
+   "lng": 78.40319,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49646,
+   "lng": 78.40585,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48414,
+   "lng": 78.41188,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48414,
+   "lng": 78.41188,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49964,
+   "lng": 78.41597,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.36197,
+   "lng": 78.53039,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.39445,
+   "lng": 78.43932,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.39438,
+   "lng": 78.44023,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.39394,
+   "lng": 78.50964,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40922,
+   "lng": 78.48902,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40239,
+   "lng": 78.50963,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40572,
+   "lng": 78.51127,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.3991,
+   "lng": 78.51288,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.33078,
+   "lng": 78.56908,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.32947,
+   "lng": 78.57977,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.35105,
+   "lng": 78.56505,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.3739,
+   "lng": 78.56168,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40757,
+   "lng": 78.5565,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40845,
+   "lng": 78.56978,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40819,
+   "lng": 78.56988,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.41899,
+   "lng": 78.56534,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.40204,
+   "lng": 78.60612,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43585,
+   "lng": 78.44451,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42536,
+   "lng": 78.45688,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43626,
+   "lng": 78.43504,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44175,
+   "lng": 78.43909,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44208,
+   "lng": 78.43948,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44089,
+   "lng": 78.43481,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44155,
+   "lng": 78.44551,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43871,
+   "lng": 78.45037,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.44678,
+   "lng": 78.44706,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.45608,
+   "lng": 78.43481,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42322,
+   "lng": 78.5138,
+   "store": "Apollo Pharmacy - Namalagundy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.45547,
+   "lng": 78.4983,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.45515,
+   "lng": 78.50339,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.4666,
+   "lng": 78.4937,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.48932,
+   "lng": 78.45087,
+   "store": "Cult fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49561,
+   "lng": 78.45251,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.48227,
+   "lng": 78.48064,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49557,
+   "lng": 78.46456,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.42945,
+   "lng": 78.55197,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.50146,
+   "lng": 78.58996,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49375,
+   "lng": 78.60589,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.05381,
+   "lng": 79.26806,
+   "store": "Apollo Pharmacy Prakasham Bazar Nalgonda"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.058,
+   "lng": 79.26835,
+   "store": "Apollo Pharmacy Clock Tower Nalgonda"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.14636,
+   "lng": 79.62421,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.48086,
+   "lng": 79.88595,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.23187,
+   "lng": 79.12794,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43343,
+   "lng": 78.36926,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 17.46199,
+   "lng": 78.36784,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.43287,
+   "lng": 78.4262,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.49349,
+   "lng": 78.33211,
+   "store": "apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.35557,
+   "lng": 78.52156,
+   "store": "apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.39002,
+   "lng": 78.53018,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.4012,
+   "lng": 78.56567,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 17.46512,
+   "lng": 78.48341,
+   "store": "Zepto Dark Store"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.05801,
+   "lng": 79.26862,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.98664,
+   "lng": 79.61452,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.23597,
+   "lng": 80.05368,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.28969,
+   "lng": 80.44127,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.99755,
+   "lng": 80.52222,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.2343,
+   "lng": 80.14689,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4763,
+   "lng": 80.70693,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.47601,
+   "lng": 80.70689,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4771,
+   "lng": 80.709,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4796,
+   "lng": 80.61683,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.53045,
+   "lng": 80.59677,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.51823,
+   "lng": 80.63008,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.53675,
+   "lng": 80.59917,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4979,
+   "lng": 80.6368,
+   "store": "apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4979,
+   "lng": 80.6368,
+   "store": "apollo pharmacy vijayawada"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4979,
+   "lng": 80.6368,
+   "store": "apollo pharmacy vijayawada"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4979,
+   "lng": 80.63681,
+   "store": "apollo pharmacy vijayawada"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.49791,
+   "lng": 80.63681,
+   "store": "apollo pharmacy vijayawada"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.50268,
+   "lng": 80.63991,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.50136,
+   "lng": 80.64227,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.4898,
+   "lng": 80.67274,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.48732,
+   "lng": 80.67851,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "blinkit",
+   "signal": "store",
+   "lat": 16.48904,
+   "lng": 80.68768,
+   "store": "Blinkit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.51004,
+   "lng": 80.6385,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.5063,
+   "lng": 80.64832,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.51749,
+   "lng": 80.64631,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.52312,
+   "lng": 80.68684,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.49008,
+   "lng": 80.68809,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.49615,
+   "lng": 80.69068,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.53957,
+   "lng": 80.80053,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.5416,
+   "lng": 81.50269,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.54202,
+   "lng": 81.51662,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.54499,
+   "lng": 81.52617,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.00669,
+   "lng": 81.78335,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.01782,
+   "lng": 81.78136,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.86569,
+   "lng": 81.92739,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.93488,
+   "lng": 82.2271,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.68714,
+   "lng": 83.01321,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.8283,
+   "lng": 82.93161,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.82539,
+   "lng": 82.93896,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.99043,
+   "lng": 82.98253,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.68807,
+   "lng": 83.13384,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.6839,
+   "lng": 83.19836,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.69931,
+   "lng": 83.15922,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.7161,
+   "lng": 83.19656,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.70918,
+   "lng": 83.20484,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.79057,
+   "lng": 83.12397,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74873,
+   "lng": 83.21942,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74683,
+   "lng": 83.22213,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74581,
+   "lng": 83.22248,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.75301,
+   "lng": 83.21743,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74359,
+   "lng": 83.23332,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74052,
+   "lng": 83.24494,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.7402,
+   "lng": 83.25269,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74,
+   "lng": 83.2513,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.75015,
+   "lng": 83.24857,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74963,
+   "lng": 83.25609,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.77655,
+   "lng": 83.21612,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.77137,
+   "lng": 83.23695,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.79926,
+   "lng": 83.2108,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.82041,
+   "lng": 83.20574,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.70432,
+   "lng": 83.29754,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73503,
+   "lng": 83.27166,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73419,
+   "lng": 83.27315,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.7349,
+   "lng": 83.2705,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.72695,
+   "lng": 83.29968,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.72981,
+   "lng": 83.30642,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.7323,
+   "lng": 83.29925,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73503,
+   "lng": 83.30425,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73384,
+   "lng": 83.30728,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.71519,
+   "lng": 83.31164,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.71855,
+   "lng": 83.3112,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.72388,
+   "lng": 83.31841,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 17.72427,
+   "lng": 83.31763,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73721,
+   "lng": 83.32198,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73213,
+   "lng": 83.31689,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.72899,
+   "lng": 83.32815,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73613,
+   "lng": 83.3345,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73204,
+   "lng": 83.33321,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.73842,
+   "lng": 83.31308,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74362,
+   "lng": 83.31508,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74473,
+   "lng": 83.32801,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.74645,
+   "lng": 83.33203,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.7637,
+   "lng": 83.33067,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.80451,
+   "lng": 83.34302,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.80345,
+   "lng": 83.35277,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.82438,
+   "lng": 83.35676,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.89821,
+   "lng": 83.18686,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.90135,
+   "lng": 83.18991,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.93123,
+   "lng": 83.42584,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.92946,
+   "lng": 83.42921,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.97675,
+   "lng": 83.50682,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.30855,
+   "lng": 80.43697,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.33331,
+   "lng": 80.44331,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.01201,
+   "lng": 81.78022,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.02489,
+   "lng": 81.77542,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 16.93495,
+   "lng": 82.22707,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.37968,
+   "lng": 82.36883,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 17.80531,
+   "lng": 83.2092,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.51979,
+   "lng": 73.77865,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.56443,
+   "lng": 73.77504,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.56021,
+   "lng": 73.80474,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.55364,
+   "lng": 73.8076,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "fkmin",
+   "signal": "store",
+   "lat": 18.58603,
+   "lng": 73.73846,
+   "store": "Flipkart Minutes"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.58862,
+   "lng": 73.782,
+   "store": "Apollo pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.5962,
+   "lng": 73.77209,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.60027,
+   "lng": 73.76961,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.59681,
+   "lng": 73.79034,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "cult",
+   "signal": "store",
+   "lat": 18.59392,
+   "lng": 73.79397,
+   "store": "cult.fit"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.65128,
+   "lng": 73.73864,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.02692,
+   "lng": 72.85458,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.05874,
+   "lng": 72.83653,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 19.06127,
+   "lng": 72.82939,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.09485,
+   "lng": 72.87227,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.13011,
+   "lng": 72.81788,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.03337,
+   "lng": 73.01699,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.91333,
+   "lng": 73.19564,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.11756,
+   "lng": 72.99629,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.18253,
+   "lng": 72.99413,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.16678,
+   "lng": 73.23681,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.45493,
+   "lng": 73.82818,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.4991,
+   "lng": 73.82203,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.51716,
+   "lng": 73.83395,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.51899,
+   "lng": 73.84993,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.50639,
+   "lng": 73.89907,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.53578,
+   "lng": 73.87625,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.54331,
+   "lng": 73.90489,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.5394,
+   "lng": 73.89862,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.52101,
+   "lng": 73.92655,
+   "store": "Gold's gym"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.75994,
+   "lng": 73.85946,
+   "store": "Gold's Gym"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.85927,
+   "lng": 75.34763,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 19.86828,
+   "lng": 75.35067,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "zepto",
+   "signal": "store",
+   "lat": 18.57215,
+   "lng": 73.75354,
+   "store": "Zepto Dark Store"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 19.21295,
+   "lng": 72.87427,
+   "store": "Gold's Gym Thakur Village"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 18.52106,
+   "lng": 73.92627,
+   "store": "Golds Gym"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 20.01627,
+   "lng": 73.83715,
+   "store": "Instamart"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.0516,
+   "lng": 79.53142,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "instamart",
+   "signal": "store",
+   "lat": 18.00146,
+   "lng": 79.55684,
+   "store": "Swiggy Instamart Public Garden"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.00661,
+   "lng": 79.57081,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.38917,
+   "lng": 78.80712,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "golds",
+   "signal": "store",
+   "lat": 19.17112,
+   "lng": 77.31852,
+   "store": "Gold's Gym Nanded"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.77963,
+   "lng": 78.9132,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.74858,
+   "lng": 79.51061,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.89325,
+   "lng": 79.20646,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 21.11403,
+   "lng": 79.10406,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.08047,
+   "lng": 82.66508,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.12449,
+   "lng": 83.38741,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.10702,
+   "lng": 83.39702,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.11253,
+   "lng": 83.41256,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.11523,
+   "lng": 83.41425,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.20142,
+   "lng": 83.68979,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.30412,
+   "lng": 83.87506,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.77511,
+   "lng": 83.42443,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.29461,
+   "lng": 83.89355,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.29466,
+   "lng": 83.90175,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.30486,
+   "lng": 83.89424,
+   "store": "Apollo Pharmacy Srikakulam"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 18.31398,
+   "lng": 83.89464,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 21.25874,
+   "lng": 81.64958,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 21.27214,
+   "lng": 81.63296,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 21.98714,
+   "lng": 83.10566,
+   "store": "APOLLO PHARMACY"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 20.25617,
+   "lng": 85.82439,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 20.28694,
+   "lng": 85.83931,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 20.30908,
+   "lng": 85.87033,
+   "store": "Apollo Pharmacy Satya Vihar"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 23.01681,
+   "lng": 72.47023,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 23.04567,
+   "lng": 72.55227,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 22.71577,
+   "lng": 75.9155,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 22.72387,
+   "lng": 75.82754,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 22.73652,
+   "lng": 75.88553,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 24.5538,
+   "lng": 73.6937,
+   "store": "Apollo Pharmacy"
+  },
+  {
+   "provider": "apollo",
+   "signal": "store",
+   "lat": 25.14024,
+   "lng": 75.84363,
+   "store": "apollo pharmacy mahaveer nagar 2 kota"
+  }
+ ]
+}

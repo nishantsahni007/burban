@@ -1,0 +1,27 @@
+{
+ "collector": "places",
+ "ran_at": "2026-11-21T12:16:56Z",
+ "ok": true,
+ "items": 584,
+ "prev_items": 0,
+ "errors": [
+  "stores tile 22,76 failed",
+  "stores tile 22,80 failed",
+  "stores tile 22,84 failed",
+  "stores tile 22,88 failed",
+  "stores tile 22,92 failed",
+  "stores tile 26,68 failed",
+  "stores tile 26,72 failed",
+  "stores tile 26,76 failed",
+  "stores tile 26,80 failed",
+  "stores tile 26,84 failed",
+  "stores tile 26,88 failed",
+  "stores tile 26,92 failed",
+  "stores tile 26,96 failed",
+  "stores tile 30,72 failed",
+  "stores tile 30,76 failed",
+  "stores tile 30,80 failed",
+  "stores tile 34,72 failed",
+  "stores tile 34,76 failed"
+ ]
+}
