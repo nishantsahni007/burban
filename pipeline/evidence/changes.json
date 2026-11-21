@@ -1,0 +1,1261 @@
+{
+ "at": "2026-11-21T08:37:36Z",
+ "changes": [
+  {
+   "area": "koramangala",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.5 km away"
+  },
+  {
+   "area": "koramangala",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.6 km away"
+  },
+  {
+   "area": "koramangala",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.8 km away"
+  },
+  {
+   "area": "koramangala",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Koramangala"
+  },
+  {
+   "area": "koramangala",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "koramangala",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Koramangala"
+  },
+  {
+   "area": "koramangala",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Koramangala"
+  },
+  {
+   "area": "koramangala",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.2 km away"
+  },
+  {
+   "area": "koramangala",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "hsr",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.4 km away"
+  },
+  {
+   "area": "hsr",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.4 km away"
+  },
+  {
+   "area": "hsr",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "hsr",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for HSR Layout"
+  },
+  {
+   "area": "hsr",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "hsr",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for HSR Layout"
+  },
+  {
+   "area": "hsr",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.6 km away"
+  },
+  {
+   "area": "hsr",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for HSR Layout"
+  },
+  {
+   "area": "hsr",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.4 km away"
+  },
+  {
+   "area": "hsr",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.2 km away"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.8 km away"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.2 km away"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Indiranagar"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Indiranagar"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.9 km away"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Indiranagar"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.3 km away"
+  },
+  {
+   "area": "indiranagar",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "bellandur",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.1 km away"
+  },
+  {
+   "area": "bellandur",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.9 km away"
+  },
+  {
+   "area": "bellandur",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.0 km away"
+  },
+  {
+   "area": "bellandur",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Bellandur"
+  },
+  {
+   "area": "bellandur",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "bellandur",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Bellandur"
+  },
+  {
+   "area": "bellandur",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Bellandur"
+  },
+  {
+   "area": "bellandur",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.5 km away"
+  },
+  {
+   "area": "bellandur",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.2 km away"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.0 km away"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Jayanagar"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Jayanagar"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.1 km away"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Jayanagar"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.8 km away"
+  },
+  {
+   "area": "jayanagar",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "whitefield",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "whitefield",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.1 km away"
+  },
+  {
+   "area": "whitefield",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.8 km away"
+  },
+  {
+   "area": "whitefield",
+   "provider": "fkmin",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.9 km away"
+  },
+  {
+   "area": "whitefield",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Whitefield"
+  },
+  {
+   "area": "whitefield",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "whitefield",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Whitefield"
+  },
+  {
+   "area": "whitefield",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.3 km away"
+  },
+  {
+   "area": "whitefield",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Whitefield"
+  },
+  {
+   "area": "whitefield",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.0 km away"
+  },
+  {
+   "area": "whitefield",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.1 km away"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.8 km away"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "bbnow",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.5 km away"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Marathahalli"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Marathahalli"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Marathahalli"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.2 km away"
+  },
+  {
+   "area": "marathahalli",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.6 km away"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for JP Nagar"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for JP Nagar"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.2 km away"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for JP Nagar"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.6 km away"
+  },
+  {
+   "area": "jpnagar",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.3 km away"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Malleshwaram"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Malleshwaram"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Malleshwaram"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.5 km away"
+  },
+  {
+   "area": "malleshwaram",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "hebbal",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~2.6 km away"
+  },
+  {
+   "area": "hebbal",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.4 km away"
+  },
+  {
+   "area": "hebbal",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Hebbal"
+  },
+  {
+   "area": "hebbal",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "hebbal",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Hebbal"
+  },
+  {
+   "area": "hebbal",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Hebbal"
+  },
+  {
+   "area": "hebbal",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.8 km away"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "zepto",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.5 km away"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.8 km away"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Sarjapur Road"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Sarjapur Road"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Sarjapur Road"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.7 km away"
+  },
+  {
+   "area": "sarjapur",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "ecity",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "ecity",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "ecity",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Electronic City"
+  },
+  {
+   "area": "ecity",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "ecity",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Electronic City"
+  },
+  {
+   "area": "ecity",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Electronic City"
+  },
+  {
+   "area": "ecity",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.8 km away"
+  },
+  {
+   "area": "ecity",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "banashankari",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "banashankari",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "banashankari",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Banashankari"
+  },
+  {
+   "area": "banashankari",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "banashankari",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Banashankari"
+  },
+  {
+   "area": "banashankari",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Banashankari"
+  },
+  {
+   "area": "banashankari",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.7 km away"
+  },
+  {
+   "area": "banashankari",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.9 km away"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Rajajinagar"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Rajajinagar"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~1.7 km away"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Rajajinagar"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.6 km away"
+  },
+  {
+   "area": "rajajinagar",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Yelahanka"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "cult",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Yelahanka"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "golds",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.8 km away"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Yelahanka"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.2 km away"
+  },
+  {
+   "area": "yelahanka",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "kengeri",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "kengeri",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "kengeri",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Kengeri"
+  },
+  {
+   "area": "kengeri",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "kengeri",
+   "provider": "cult",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Operates in Bengaluru; your area not confirmed"
+  },
+  {
+   "area": "kengeri",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Kengeri"
+  },
+  {
+   "area": "kengeri",
+   "provider": "apollo",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Store ~0.6 km away"
+  },
+  {
+   "area": "kengeri",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "uc",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Devanahalli"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "cult",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Operates in Bengaluru; your area not confirmed"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Devanahalli"
+  },
+  {
+   "area": "devanahalli",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "blinkit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Nov 2026; area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "instamart",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Jul 2026; area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "uc",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Operates in Bengaluru; your area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "snabbit",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · May 2026; area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "cult",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Operates in Bengaluru; your area not confirmed"
+  },
+  {
+   "area": "hoskote",
+   "provider": "swiggy",
+   "from": "no",
+   "to": "live",
+   "up": true,
+   "detail": "Has a page for Hoskote"
+  },
+  {
+   "area": "hoskote",
+   "provider": "rapido",
+   "from": "no",
+   "to": "likely",
+   "up": true,
+   "detail": "Live in Bengaluru · Sep 2026; area not confirmed"
+  }
+ ]
+}
