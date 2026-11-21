@@ -1,0 +1,586 @@
+{
+ "_readme": "The only file you edit to add cities, areas or providers. Everything else is automatic.",
+ "user_agent": "BurbanBot/1.0 (availability tracker; contact: set OWNER_EMAIL)",
+ "cities": [
+  {
+   "id": "bengaluru",
+   "name": "Bengaluru",
+   "live": true,
+   "aliases": [
+    "bengaluru",
+    "bangalore",
+    "blr"
+   ],
+   "bbox": [
+    12.75,
+    77.35,
+    13.3,
+    77.85
+   ]
+  },
+  {
+   "id": "mumbai",
+   "name": "Mumbai",
+   "live": false,
+   "aliases": [
+    "mumbai"
+   ]
+  },
+  {
+   "id": "delhi",
+   "name": "Delhi NCR",
+   "live": false,
+   "aliases": [
+    "delhi",
+    "delhi-ncr",
+    "gurugram",
+    "gurgaon",
+    "noida"
+   ]
+  },
+  {
+   "id": "hyderabad",
+   "name": "Hyderabad",
+   "live": false,
+   "aliases": [
+    "hyderabad"
+   ]
+  },
+  {
+   "id": "pune",
+   "name": "Pune",
+   "live": false,
+   "aliases": [
+    "pune"
+   ]
+  },
+  {
+   "id": "chennai",
+   "name": "Chennai",
+   "live": false,
+   "aliases": [
+    "chennai"
+   ]
+  }
+ ],
+ "areas": [
+  {
+   "id": "koramangala",
+   "name": "Koramangala",
+   "pin": "560034",
+   "city": "bengaluru",
+   "lat": 12.9352,
+   "lng": 77.6245,
+   "aliases": [
+    "koramangala"
+   ]
+  },
+  {
+   "id": "hsr",
+   "name": "HSR Layout",
+   "pin": "560102",
+   "city": "bengaluru",
+   "lat": 12.9116,
+   "lng": 77.6474,
+   "aliases": [
+    "hsr layout",
+    "hsr"
+   ]
+  },
+  {
+   "id": "indiranagar",
+   "name": "Indiranagar",
+   "pin": "560038",
+   "city": "bengaluru",
+   "lat": 12.9784,
+   "lng": 77.6408,
+   "aliases": [
+    "indiranagar",
+    "indira nagar"
+   ]
+  },
+  {
+   "id": "bellandur",
+   "name": "Bellandur",
+   "pin": "560103",
+   "city": "bengaluru",
+   "lat": 12.9304,
+   "lng": 77.6784,
+   "aliases": [
+    "bellandur"
+   ]
+  },
+  {
+   "id": "jayanagar",
+   "name": "Jayanagar",
+   "pin": "560041",
+   "city": "bengaluru",
+   "lat": 12.925,
+   "lng": 77.5938,
+   "aliases": [
+    "jayanagar"
+   ]
+  },
+  {
+   "id": "whitefield",
+   "name": "Whitefield",
+   "pin": "560066",
+   "city": "bengaluru",
+   "lat": 12.9698,
+   "lng": 77.75,
+   "aliases": [
+    "whitefield"
+   ]
+  },
+  {
+   "id": "marathahalli",
+   "name": "Marathahalli",
+   "pin": "560037",
+   "city": "bengaluru",
+   "lat": 12.9569,
+   "lng": 77.7011,
+   "aliases": [
+    "marathahalli"
+   ]
+  },
+  {
+   "id": "jpnagar",
+   "name": "JP Nagar",
+   "pin": "560078",
+   "city": "bengaluru",
+   "lat": 12.9063,
+   "lng": 77.5857,
+   "aliases": [
+    "jp nagar",
+    "j p nagar"
+   ]
+  },
+  {
+   "id": "malleshwaram",
+   "name": "Malleshwaram",
+   "pin": "560003",
+   "city": "bengaluru",
+   "lat": 13.0031,
+   "lng": 77.5643,
+   "aliases": [
+    "malleshwaram",
+    "malleswaram"
+   ]
+  },
+  {
+   "id": "hebbal",
+   "name": "Hebbal",
+   "pin": "560024",
+   "city": "bengaluru",
+   "lat": 13.0358,
+   "lng": 77.597,
+   "aliases": [
+    "hebbal"
+   ]
+  },
+  {
+   "id": "sarjapur",
+   "name": "Sarjapur Road",
+   "pin": "560035",
+   "city": "bengaluru",
+   "lat": 12.9105,
+   "lng": 77.6855,
+   "aliases": [
+    "sarjapur road",
+    "sarjapur"
+   ]
+  },
+  {
+   "id": "ecity",
+   "name": "Electronic City",
+   "pin": "560100",
+   "city": "bengaluru",
+   "lat": 12.8452,
+   "lng": 77.6602,
+   "aliases": [
+    "electronic city",
+    "electronics city"
+   ]
+  },
+  {
+   "id": "banashankari",
+   "name": "Banashankari",
+   "pin": "560070",
+   "city": "bengaluru",
+   "lat": 12.9255,
+   "lng": 77.5468,
+   "aliases": [
+    "banashankari"
+   ]
+  },
+  {
+   "id": "rajajinagar",
+   "name": "Rajajinagar",
+   "pin": "560010",
+   "city": "bengaluru",
+   "lat": 12.9915,
+   "lng": 77.5545,
+   "aliases": [
+    "rajajinagar",
+    "rajaji nagar"
+   ]
+  },
+  {
+   "id": "yelahanka",
+   "name": "Yelahanka",
+   "pin": "560064",
+   "city": "bengaluru",
+   "lat": 13.1007,
+   "lng": 77.5963,
+   "aliases": [
+    "yelahanka"
+   ]
+  },
+  {
+   "id": "kengeri",
+   "name": "Kengeri",
+   "pin": "560060",
+   "city": "bengaluru",
+   "lat": 12.9177,
+   "lng": 77.4838,
+   "aliases": [
+    "kengeri"
+   ]
+  },
+  {
+   "id": "devanahalli",
+   "name": "Devanahalli",
+   "pin": "562110",
+   "city": "bengaluru",
+   "lat": 13.2437,
+   "lng": 77.7172,
+   "aliases": [
+    "devanahalli"
+   ]
+  },
+  {
+   "id": "hoskote",
+   "name": "Hoskote",
+   "pin": "562114",
+   "city": "bengaluru",
+   "lat": 13.0707,
+   "lng": 77.7982,
+   "aliases": [
+    "hoskote"
+   ]
+  }
+ ],
+ "categories": {
+  "qc": {
+   "store_radius_km": 3.0
+  },
+  "home": {
+   "store_radius_km": 0
+  },
+  "fit": {
+   "store_radius_km": 3.0
+  },
+  "food": {
+   "store_radius_km": 2.0
+  },
+  "net": {
+   "store_radius_km": 0
+  },
+  "ride": {
+   "store_radius_km": 0
+  }
+ },
+ "providers": [
+  {
+   "id": "blinkit",
+   "name": "Blinkit",
+   "cat": "qc",
+   "tag": "Groceries in minutes",
+   "bg": "#F8CB46",
+   "fg": "#1B1A17",
+   "news": [
+    "Blinkit"
+   ],
+   "sitemap": null,
+   "osm": [
+    "blinkit"
+   ]
+  },
+  {
+   "id": "zepto",
+   "name": "Zepto",
+   "cat": "qc",
+   "tag": "Groceries in minutes",
+   "bg": "#5A1E8C",
+   "fg": "#fff",
+   "news": [
+    "Zepto"
+   ],
+   "sitemap": null,
+   "osm": [
+    "zepto"
+   ]
+  },
+  {
+   "id": "instamart",
+   "name": "Swiggy Instamart",
+   "cat": "qc",
+   "tag": "Groceries in minutes",
+   "bg": "#FC8019",
+   "fg": "#fff",
+   "news": [
+    "Instamart"
+   ],
+   "sitemap": "www.swiggy.com",
+   "sitemap_token": "instamart",
+   "osm": [
+    "instamart"
+   ]
+  },
+  {
+   "id": "fkmin",
+   "name": "Flipkart Minutes",
+   "cat": "qc",
+   "tag": "Electronics & essentials",
+   "bg": "#2874F0",
+   "fg": "#fff",
+   "news": [
+    "Flipkart Minutes"
+   ],
+   "sitemap": null,
+   "osm": [
+    "flipkart minutes"
+   ]
+  },
+  {
+   "id": "bbnow",
+   "name": "BB Now",
+   "cat": "qc",
+   "tag": "Groceries in minutes",
+   "bg": "#84C225",
+   "fg": "#1B1A17",
+   "news": [
+    "BB Now",
+    "BigBasket"
+   ],
+   "sitemap": "www.bigbasket.com",
+   "osm": [
+    "bbnow",
+    "bb now",
+    "bigbasket"
+   ]
+  },
+  {
+   "id": "amznow",
+   "name": "Amazon Now",
+   "cat": "qc",
+   "tag": "Essentials in minutes",
+   "bg": "#232F3E",
+   "fg": "#FF9900",
+   "news": [
+    "Amazon Now"
+   ],
+   "sitemap": null,
+   "osm": [
+    "amazon now"
+   ]
+  },
+  {
+   "id": "uc",
+   "name": "Urban Company",
+   "cat": "home",
+   "tag": "Salon, repairs, cleaning",
+   "bg": "#111111",
+   "fg": "#fff",
+   "news": [
+    "Urban Company"
+   ],
+   "sitemap": "www.urbancompany.com",
+   "canary": "koramangala"
+  },
+  {
+   "id": "instahelp",
+   "name": "UC InstaHelp",
+   "cat": "home",
+   "tag": "House help in minutes",
+   "bg": "#3B3B3B",
+   "fg": "#fff",
+   "news": [
+    "InstaHelp"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "snabbit",
+   "name": "Snabbit",
+   "cat": "home",
+   "tag": "House help in minutes",
+   "bg": "#FF5A5F",
+   "fg": "#fff",
+   "news": [
+    "Snabbit"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "pronto",
+   "name": "Pronto",
+   "cat": "home",
+   "tag": "House help in minutes",
+   "bg": "#0B6E4F",
+   "fg": "#fff",
+   "news": [
+    "Pronto house help",
+    "Pronto home services"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "cult",
+   "name": "cult.fit",
+   "cat": "fit",
+   "tag": "Gyms & group classes",
+   "bg": "#1B1A17",
+   "fg": "#FF3278",
+   "news": [
+    "cult.fit",
+    "Cultfit"
+   ],
+   "sitemap": "www.cult.fit",
+   "osm": [
+    "cult.fit",
+    "cultfit",
+    "cult fit"
+   ]
+  },
+  {
+   "id": "golds",
+   "name": "Gold's Gym",
+   "cat": "fit",
+   "tag": "Gym",
+   "bg": "#FFC72C",
+   "fg": "#1B1A17",
+   "news": [
+    "Gold's Gym"
+   ],
+   "sitemap": null,
+   "osm": [
+    "gold's gym",
+    "golds gym"
+   ]
+  },
+  {
+   "id": "swiggy",
+   "name": "Swiggy",
+   "cat": "food",
+   "tag": "Food delivery",
+   "bg": "#FC8019",
+   "fg": "#fff",
+   "news": [
+    "Swiggy"
+   ],
+   "sitemap": "www.swiggy.com",
+   "sitemap_token": "restaurants"
+  },
+  {
+   "id": "zomato",
+   "name": "Zomato",
+   "cat": "food",
+   "tag": "Food delivery",
+   "bg": "#E23744",
+   "fg": "#fff",
+   "news": [
+    "Zomato"
+   ],
+   "sitemap": "www.zomato.com"
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo 24|7",
+   "cat": "food",
+   "tag": "Medicine delivery",
+   "bg": "#0A6BA8",
+   "fg": "#fff",
+   "news": [
+    "Apollo 24/7"
+   ],
+   "sitemap": null,
+   "osm": [
+    "apollo pharmacy"
+   ]
+  },
+  {
+   "id": "onemg",
+   "name": "Tata 1mg",
+   "cat": "food",
+   "tag": "Medicine delivery",
+   "bg": "#FF6F61",
+   "fg": "#fff",
+   "news": [
+    "Tata 1mg"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "airtel",
+   "name": "Airtel Xstream Fiber",
+   "cat": "net",
+   "tag": "Broadband",
+   "bg": "#E40000",
+   "fg": "#fff",
+   "news": [
+    "Airtel Xstream Fiber"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "jio",
+   "name": "JioFiber",
+   "cat": "net",
+   "tag": "Broadband",
+   "bg": "#0F3CC9",
+   "fg": "#fff",
+   "news": [
+    "JioFiber",
+    "Jio AirFiber"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "act",
+   "name": "ACT Fibernet",
+   "cat": "net",
+   "tag": "Broadband",
+   "bg": "#EC1C24",
+   "fg": "#fff",
+   "news": [
+    "ACT Fibernet"
+   ],
+   "sitemap": "www.actcorp.in"
+  },
+  {
+   "id": "rapido",
+   "name": "Rapido",
+   "cat": "ride",
+   "tag": "Bike taxi & autos",
+   "bg": "#F9D71C",
+   "fg": "#1B1A17",
+   "news": [
+    "Rapido"
+   ],
+   "sitemap": null
+  },
+  {
+   "id": "nammayatri",
+   "name": "Namma Yatri",
+   "cat": "ride",
+   "tag": "Autos & cabs",
+   "bg": "#FCC32C",
+   "fg": "#1B1A17",
+   "news": [
+    "Namma Yatri"
+   ],
+   "sitemap": null
+  }
+ ]
+}
