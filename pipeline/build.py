@@ -112,7 +112,9 @@ def main():
         "updated": common.now_iso(),
         "sample": False,
         "cities": [{"name": c["name"], "live": c.get("live", False)} for c in cfg["cities"]],
-        "services": [{k: p[k] for k in ("id", "name", "cat", "tag", "bg", "fg")} for p in providers],
+        "services": [{k: p[k] for k in ("id", "name", "cat", "tag", "bg", "fg", "android", "ios", "store_q") if p.get(k)}
+                     for p in providers],
+        "alerts_url": cfg.get("alerts_url") or None,
         "areas": [{k: a[k] for k in ("id", "name", "pin", "city")} | {"city": cities[a["city"]]["name"]} for a in cfg["areas"]],
         "status": status,
     }
