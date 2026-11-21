@@ -46,21 +46,17 @@ def run(cfg):
     extra = {common.norm(k): v for k, v in cfg.get("city_aliases", {}).items()}
 
     # One request per tile fetches towns and neighbourhoods together (a country-wide query is too slow).
-    started = time.time()
-    elements, seen = [], set()
-    for la, lo in common.INDIA_TILES:
-        if time.time() - started > 60 * 60:
-            errors.append("stopped early to stay inside the time limit; the rest comes next month")
-            break
+    def tile(la, lo):
         q = (f'[out:json][timeout:180];{INDIA}node["place"~"^(city|town|suburb|neighbourhood|quarter)$"]'
              f'(area.in)({la},{lo},{la + common.TILE},{lo + common.TILE});out body qt;')
-        try:
-            for el in fetch_overpass(q, ua, timeout=200, label=f"places {la},{lo}").get("elements", []):
-                if el["id"] not in seen:
-                    seen.add(el["id"]); elements.append(el)
-        except Exception as e:  # noqa: BLE001
-            errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
-        time.sleep(2)
+        return fetch_overpass(q, ua, timeout=200, label=f"places {la},{lo}").get("elements", [])
+    chunks, errs = common.tiled(tile, "places", time.time() + 50 * 60)
+    errors += errs
+    elements, seen = [], set()
+    for ch in chunks:
+        for el in ch:
+            if el["id"] not in seen:
+                seen.add(el["id"]); elements.append(el)
     town_els = [el for el in elements if el.get("tags", {}).get("place") in ("city", "town")]
     hood_els = [el for el in elements if el.get("tags", {}).get("place") in ("suburb", "neighbourhood", "quarter")]
     cities, used = [], set()

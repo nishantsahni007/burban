@@ -77,7 +77,7 @@ def main():
     import common, collect_areas, collect_news, collect_sitemaps, collect_places, build  # noqa: E402
     collect_areas.fetch_overpass = collect_places.fetch_overpass = fake_overpass
     collect_news.fetch = collect_sitemaps.fetch = fake_fetch
-    for m in (collect_areas, collect_news, collect_sitemaps, collect_places):
+    for m in (collect_areas, collect_news, collect_sitemaps, collect_places, common):
         m.time.sleep = lambda s: None
     collect_areas.main(); collect_news.main(); collect_sitemaps.main(); collect_places.main(); build.main()
 

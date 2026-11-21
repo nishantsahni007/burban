@@ -23,14 +23,11 @@ def build_query(patterns, la, lo):
 def run(cfg):
     providers = [p for p in cfg["providers"] if p.get("osm")]
     patterns = sorted({x for p in providers for x in p["osm"]})
-    elements, errors = [], []
-    for la, lo in common.INDIA_TILES:
-        try:
-            elements += fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=200,
-                                       label=f"stores {la},{lo}").get("elements", [])
-        except Exception as e:  # noqa: BLE001
-            errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
-        time.sleep(2)
+    def tile(la, lo):
+        return fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=200,
+                              label=f"stores {la},{lo}").get("elements", [])
+    chunks, errors = common.tiled(tile, "stores", time.time() + 30 * 60)
+    elements = [el for ch in chunks for el in ch]
     items, seen = [], set()
     for el in elements:
         tags = el.get("tags", {})

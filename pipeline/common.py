@@ -112,22 +112,49 @@ OVERPASS_URLS = ["https://overpass-api.de/api/interpreter",
 
 
 def overpass(query, ua, timeout=200, label=""):
-    """Run an Overpass query, moving to the next public server if one is slow or refuses.
+    """Run an Overpass query. The main public server rate-limits (502/429) right after a heavy
+    request, so wait and retry it a few times before trying the slower backup servers.
     Prints one progress line per attempt so the GitHub log shows what is happening."""
     import urllib.parse
+    plan = [(OVERPASS_URLS[0], 0), (OVERPASS_URLS[0], 20), (OVERPASS_URLS[0], 40), (OVERPASS_URLS[0], 60)] + \
+           [(u, 5) for u in OVERPASS_URLS[1:]]
     last = None
-    for url in OVERPASS_URLS:
+    for url, wait in plan:
+        time.sleep(wait)
         t0 = time.time()
         try:
             raw = http_get(url, ua, timeout=timeout, retries=0, data=urllib.parse.urlencode({"data": query}).encode(),
                            headers={"Accept": "application/json, */*"})
             res = json.loads(raw)
+            if "remark" in res and not res.get("elements") and "runtime error" in res["remark"]:
+                raise RuntimeError(res["remark"][:80])
             print(f"  overpass {label} ok via {url.split('/')[2]} in {time.time() - t0:.0f}s, {len(res.get('elements', []))} items", flush=True)
             return res
         except Exception as e:  # noqa: BLE001
-            print(f"  overpass {label} failed via {url.split('/')[2]} after {time.time() - t0:.0f}s: {e.__class__.__name__} {str(e)[:80]}", flush=True)
+            print(f"  overpass {label} failed via {url.split('/')[2]} after {time.time() - t0:.0f}s: {e.__class__.__name__} {str(e)[:60]}", flush=True)
             last = e
     raise last
+
+
+def tiled(fn, label, deadline):
+    """Call fn(lat, lng) for every India tile, then retry the failed ones once. Returns (results, errors)."""
+    out, failed = [], []
+    for attempt in (1, 2):
+        todo = INDIA_TILES if attempt == 1 else failed
+        failed = []
+        for la, lo in todo:
+            if time.time() > deadline:
+                failed.append((la, lo))
+                continue
+            try:
+                out.append(fn(la, lo))
+            except Exception:  # noqa: BLE001
+                failed.append((la, lo))
+            time.sleep(3)
+        if not failed:
+            break
+        print(f"  {label}: retrying {len(failed)} tiles", flush=True)
+    return out, [f"{label} tile {la},{lo} failed" for la, lo in failed]
 
 
 class PhraseIndex:
