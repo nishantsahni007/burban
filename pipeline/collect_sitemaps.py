@@ -13,6 +13,8 @@ MAX_FILES_PER_SITE = 25
 SKIP = re.compile(r"product|blog|recipe|brand|article|image|video|news|press|career|job|faq|offer|coupon|dish|menu|cuisine", re.I)
 PREFER = re.compile(r"city|cities|local|locality|area|location|near|categor|store|centre|center|restaurant|service", re.I)
 NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+# Pages that merely mention a city (blog posts, articles) are not evidence of service.
+SKIP_PAGE = re.compile(r"/(blog|blogs|article|articles|news|press|careers?|jobs?|stories)/", re.I)
 
 fetch = common.http_get  # replaced in tests
 
@@ -72,7 +74,10 @@ def run(cfg):
         token = p.get("sitemap_token")
         by_area, by_city = {}, {}
         for u in urls:
-            path_n = common.norm(urllib.parse.urlparse(u).path)
+            path = urllib.parse.urlparse(u).path
+            if SKIP_PAGE.search(path + "/"):
+                continue
+            path_n = common.norm(path)
             if token and token not in path_n:
                 continue
             for c in cfg["cities"]:

@@ -76,7 +76,8 @@ def run(cfg):
                 signal = classify(title_n)
                 if not signal:
                     continue
-                full_n = common.norm(title + " " + desc)
+                # "After Bengaluru, X expands to Hyderabad" is news about Hyderabad, not Bengaluru.
+                full_n = re.sub(r"\b(after|beyond|besides|like) [a-z]+\b", " ", common.norm(title + " " + desc))
                 for c in cities:
                     if not any(common.contains_phrase(full_n, a) for a in c["aliases"] + [c["name"]]):
                         continue
