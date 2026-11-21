@@ -47,11 +47,22 @@ def run(cfg):
     errors = []
     extra = {common.norm(k): v for k, v in cfg.get("city_aliases", {}).items()}
 
-    # 1) Cities and towns: one query for the whole country.
-    q = f'[out:json][timeout:600];{INDIA}node["place"~"^(city|town)$"](area.in);out body qt;'
-    res = fetch_overpass(q, ua)
+    # 1) Cities and towns, tile by tile (one country-wide query is too slow on the free servers).
+    started = time.time()
+    elements, seen_c = [], set()
+    for la in range(LAT[0], LAT[1], TILE):
+        for lo in range(LNG[0], LNG[1], TILE):
+            q = (f'[out:json][timeout:180];{INDIA}node["place"~"^(city|town)$"]'
+                 f'(area.in)({la},{lo},{la + TILE},{lo + TILE});out body qt;')
+            try:
+                for el in fetch_overpass(q, ua, timeout=200, label=f"towns {la},{lo}").get("elements", []):
+                    if el["id"] not in seen_c:
+                        seen_c.add(el["id"]); elements.append(el)
+            except Exception as e:  # noqa: BLE001
+                errors.append(f"towns tile {la},{lo}: {e.__class__.__name__}")
+            time.sleep(2)
     cities, used = [], set()
-    for el in res.get("elements", []):
+    for el in elements:
         t = el.get("tags", {})
         name, al = names(t)
         if not name:
@@ -65,6 +76,7 @@ def run(cfg):
         cities.append({"id": cid, "name": name, "lat": round(el["lat"], 5), "lng": round(el["lon"], 5),
                        "place": t.get("place"), "pop": pop(t), "state": t.get("is_in:state") or t.get("addr:state") or "",
                        "aliases": al})
+    print(f"  {len(cities)} cities and towns", flush=True)
     if len(cities) < 100:
         raise RuntimeError(f"only {len(cities)} cities returned; refusing to replace the list")
 
@@ -76,10 +88,13 @@ def run(cfg):
     seen, areas, area_ids = set(), [], set()
     for la in range(LAT[0], LAT[1], TILE):
         for lo in range(LNG[0], LNG[1], TILE):
-            q = (f'[out:json][timeout:300];{INDIA}node["place"~"^(suburb|neighbourhood|quarter)$"]'
+            q = (f'[out:json][timeout:180];{INDIA}node["place"~"^(suburb|neighbourhood|quarter)$"]'
                  f'(area.in)({la},{lo},{la + TILE},{lo + TILE});out body qt;')
+            if time.time() - started > 55 * 60:
+                errors.append("stopped early to stay inside the time limit; the rest comes next month")
+                break
             try:
-                res = fetch_overpass(q, ua, timeout=360)
+                res = fetch_overpass(q, ua, timeout=200, label=f"neighbourhoods {la},{lo}")
             except Exception as e:  # noqa: BLE001
                 errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
                 continue
@@ -103,7 +118,8 @@ def run(cfg):
                 area_ids.add(aid)
                 areas.append({"id": aid, "name": name, "city": city["id"], "lat": round(el["lat"], 5),
                               "lng": round(el["lon"], 5), "aliases": al})
-            time.sleep(4)
+            time.sleep(2)
+    print(f"  {len(cities)} cities/towns, {len(areas)} neighbourhoods so far", flush=True)
     return cities, areas, errors
 
 

@@ -100,18 +100,26 @@ stage extension main central north south east west village temple church airport
 bazaar bazar camp cantonment industrial area estate enclave vihar puram pura palli halli hills hill lake
 fort port beach river valley central india indian national state district world group service services
 home delivery store stores now live launch launches people""".split())
-OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
+OVERPASS_URLS = ["https://overpass-api.de/api/interpreter",
+                 "https://overpass.private.coffee/api/interpreter",
+                 "https://overpass.kumi.systems/api/interpreter"]
 
 
-def overpass(query, ua, timeout=900):
-    """Run an Overpass query, trying a second public server if the first fails."""
+def overpass(query, ua, timeout=200, label=""):
+    """Run an Overpass query, moving to the next public server if one is slow or refuses.
+    Prints one progress line per attempt so the GitHub log shows what is happening."""
     import urllib.parse
     last = None
     for url in OVERPASS_URLS:
+        t0 = time.time()
         try:
-            raw = http_get(url, ua, timeout=timeout, retries=1, data=urllib.parse.urlencode({"data": query}).encode())
-            return json.loads(raw)
+            raw = http_get(url, ua, timeout=timeout, retries=0, data=urllib.parse.urlencode({"data": query}).encode(),
+                           headers={"Accept": "application/json, */*"})
+            res = json.loads(raw)
+            print(f"  overpass {label} ok via {url.split('/')[2]} in {time.time() - t0:.0f}s, {len(res.get('elements', []))} items", flush=True)
+            return res
         except Exception as e:  # noqa: BLE001
+            print(f"  overpass {label} failed via {url.split('/')[2]} after {time.time() - t0:.0f}s: {e.__class__.__name__} {str(e)[:80]}", flush=True)
             last = e
     raise last
 

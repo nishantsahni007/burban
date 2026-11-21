@@ -47,9 +47,9 @@ URLSET = b"""<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://www.urbancompany.com/bangalore-ac-repair-indiranagar</loc></url></urlset>"""
 
 
-def fake_overpass(q, ua, timeout=0):
+def fake_overpass(q, ua, timeout=0, label=""):
     if '"place"~"^(city|town)$"' in q:
-        return CITIES
+        return CITIES  # every tile returns the same nodes; duplicates must be ignored
     if "suburb" in q:
         return AREAS  # every tile returns the same nodes; duplicates must be ignored
     return STORES

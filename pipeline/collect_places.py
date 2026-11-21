@@ -15,7 +15,7 @@ fetch_overpass = common.overpass  # replaced in tests
 def build_query(patterns, la, lo):
     rx = "|".join(p.replace(".", "[.]").replace('"', "") for p in patterns)
     bb = f"({la},{lo},{la + TILE},{lo + TILE})"
-    return ('[out:json][timeout:300];area["ISO3166-1"="IN"][admin_level=2]->.in;('
+    return ('[out:json][timeout:180];area["ISO3166-1"="IN"][admin_level=2]->.in;('
             f'nwr["brand"~"{rx}",i](area.in){bb};nwr["name"~"{rx}",i](area.in){bb};'
             ');out center tags qt;')
 
@@ -27,7 +27,8 @@ def run(cfg):
     for la in range(LAT[0], LAT[1], TILE):
         for lo in range(LNG[0], LNG[1], TILE):
             try:
-                elements += fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=360).get("elements", [])
+                elements += fetch_overpass(build_query(patterns, la, lo), cfg["user_agent"], timeout=200,
+                                           label=f"stores {la},{lo}").get("elements", [])
             except Exception as e:  # noqa: BLE001
                 errors.append(f"tile {la},{lo}: {e.__class__.__name__}")
             time.sleep(3)
