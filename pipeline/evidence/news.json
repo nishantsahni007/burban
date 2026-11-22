@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-21T12:28:46Z",
+ "collected_at": "2026-11-22T08:44:59Z",
  "items": [
   {
    "provider": "blinkit",
@@ -53,6 +53,16 @@
   },
   {
    "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
+   "source": "Hindustan Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQbVdSNms3TG1RQTM0M3F3c3Z6UjNyRVVRaDVrZERQWEx6eG16N012M2NsRi1QQ2hSakxkdFlPdDlHQW91Q0pwNTZXU1IybVVhWFJVWUpkZzJRU2Q5b3QtZy1JQjctcTVPNXhBQVhvQ1BYempYZ19PSWt6TUQ2RTF6NGxucm1qbGVNMmp2RlZtT2RNbi1PYllwUHBQUkVnMVo4ZXNxajZXYThYZkhnQXdOMkoxSE5xU09jdDNTY0xsVThrWEZuVmpWeEdnZGpQZ3JlaUhERVZWWWFnYmRqblkwd2kwY09zeEEwWW1OcGZ5d21UeVZHbTVacmgydEFIMjFVbFhmVFduUFlLRmtPazlqUTlQM2lwSHpSLUg0SDJaV1BaWkl5dF84V9IBrgJBVV95cUxQRFpidmlCNDF2TlZEOWd3UjZqY0VsSFN3NXpDS1pkM0c5MXo4NTduWjVHTDZYUTRjMGhadzRlMGJKZGU1UjNmNFZLenJzd3NLRTZKdEVndUktS1RBbTB6Y0NtZmt6TkZac1dPaXBPRzhXMUN2OVIwM0lxZFZ2QWRuUk5OOVVkbHRieldWUktWR0tYVWVLZGttSDc4SHgtcW5Rc055aU8wMnoyZXR3UDhBWjU1T1lZNktFa1Z1bVN5VFp1bGNfSjFZbEJiVlR1Vld6S1UwMEZOaldQbWl2V3ZvWTkzaFl1VmtXbVNNRWhsMWtjZDkxVG1wSklHTmpmLUhvNFUwc2o4cmYxSENnbzNDUUNVQUE0S3hyOThFVnVyUlFCTU5XM3EwWHdfRGNKZw?oc=5",
+   "date": "2026-11-18"
+  },
+  {
+   "provider": "blinkit",
    "city": "delhi",
    "area": null,
    "signal": "news_live",
@@ -66,26 +76,6 @@
    "city": "bengaluru",
    "area": null,
    "signal": "news_live",
-   "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
-   "source": "Hindustan Times",
-   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQbVdSNms3TG1RQTM0M3F3c3Z6UjNyRVVRaDVrZERQWEx6eG16N012M2NsRi1QQ2hSakxkdFlPdDlHQW91Q0pwNTZXU1IybVVhWFJVWUpkZzJRU2Q5b3QtZy1JQjctcTVPNXhBQVhvQ1BYempYZ19PSWt6TUQ2RTF6NGxucm1qbGVNMmp2RlZtT2RNbi1PYllwUHBQUkVnMVo4ZXNxajZXYThYZkhnQXdOMkoxSE5xU09jdDNTY0xsVThrWEZuVmpWeEdnZGpQZ3JlaUhERVZWWWFnYmRqblkwd2kwY09zeEEwWW1OcGZ5d21UeVZHbTVacmgydEFIMjFVbFhmVFduUFlLRmtPazlqUTlQM2lwSHpSLUg0SDJaV1BaWkl5dF84V9IBrgJBVV95cUxQRFpidmlCNDF2TlZEOWd3UjZqY0VsSFN3NXpDS1pkM0c5MXo4NTduWjVHTDZYUTRjMGhadzRlMGJKZGU1UjNmNFZLenJzd3NLRTZKdEVndUktS1RBbTB6Y0NtZmt6TkZac1dPaXBPRzhXMUN2OVIwM0lxZFZ2QWRuUk5OOVVkbHRieldWUktWR0tYVWVLZGttSDc4SHgtcW5Rc055aU8wMnoyZXR3UDhBWjU1T1lZNktFa1Z1bVN5VFp1bGNfSjFZbEJiVlR1Vld6S1UwMEZOaldQbWl2V3ZvWTkzaFl1VmtXbVNNRWhsMWtjZDkxVG1wSklHTmpmLUhvNFUwc2o4cmYxSENnbzNDUUNVQUE0S3hyOThFVnVyUlFCTU5XM3EwWHdfRGNKZw?oc=5",
-   "date": "2026-11-18"
-  },
-  {
-   "provider": "blinkit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
-   "title": "Blinkit launches ambulance service in Bengaluru, its first South Indian city, with 4 ambulances across 2 depots - Startup Pedia",
-   "source": "Startup Pedia",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNN0pxZXdQZm9QbHpCUEpuR2pwRkxlRFNxUDZXX044d21Hb1J0T2dpQUtVUU5hcWwwWGh6S29LMUVnQTdlb1JIb2xSWm1vNjZWcV8xV1dnMTdZZ05oZzFHVVZfb1VIbE5EM0tfbUdVTTFwUFgyd2o5c292Tjl5QUdmdUViR2ljaG9OdV9nNnZMSjFLcGVmZmZkQmtTZ2JQOUpxQlFndXdzUlpyeUp5MlpmMzh4aU5FMFdzbHc5eEsyaUxlSXFtU2wzOFN1c3p3RXJIVHVlZkZjT2xPSDEtdTg2SGNpU1RRdw?oc=5",
-   "date": "2026-11-13"
-  },
-  {
-   "provider": "blinkit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
    "title": "Blinkit Launches 10-Minute Ambulance Service In Bengaluru, Expands Beyond Delhi-NCR - Mashable India",
    "source": "Mashable India",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOLVdLcDFkMnI0ZVlBZGRIU2ozNjl3ekZFeUVqcHVZVUdtc0JvMFRfYzd1YzRTVXVjYVhGXzJialc4LWM3dXItcEZPLUk2MTlJVHB6NFYzbmQ3dlMwNXpQNXBjQzI5b0NmUjM1OG9FSTJZU01LS3FUcFBWS3ZqTkZkc1YyREh4YmZtcUtlcjFEZVh3RzZSRm93bXBjc1FqZmJPZHJsaUNZdndZX0s2Vy1ldWVzcnBjMGNiZVE?oc=5",
@@ -93,13 +83,13 @@
   },
   {
    "provider": "blinkit",
-   "city": "mumbai",
+   "city": "bengaluru",
    "area": null,
    "signal": "news_live",
-   "title": "Blinkit launches quick commerce service at Mumbai airport in partnership with Adani - The Economic Times",
-   "source": "The Economic Times",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPT2NJY3pyQ2MzcU1mZFNESWpGN05XMmt4T28yMVpLX0FYLWYtOVZTS21kS1E5R1BKRjFtTkdJVHh5NnNwTmRfNjhmYlQ3WG9JbTBtWUpJUDBwVTFNSE1lbjRqcjJwNmR0QklFdWNwYmFPVlVYd1I2ZXBkN2VfLVpqTkxVLXNDQVVQSFA1aEt2OVJuV0c1OGJBRm85VUUxV2M5RXJoUGI0LWdOaW8yTmpiaENxeUVpLS04ekZkc1FPRW5YRTVjV2hBSTFySEZYUXBxeEJUcmxaWk1ydXBtMDhxVC1RRDBYMFN20gHuAUFVX3lxTE9rMTJRZnprbzgxdURxXzdXOWlZR0NEODdKcnI2RVJuTW0tRnpLbWE4MGwzUmxsS215Q0RmcHM1RHB6OEY1c1h3Vkt4dWdYdDRMZWhMWVlZMXlWOE9rME8wR0pYai1mYmgzanplWU5mVnVmMDZzUTVoN2dCNmdXVm40dzBMWDd5NXotQTFhS0pvc3prZ3JJakI0RzVGYmQzMjMyODZ5cHNWRVFkRUtuQXV4Q3VNNjlUSE5zNjVRTWVnRmJXTDNZTElGUURxaGxNellSWjhiZUlRVDlZVnBCRW42d3A3S0hZN2Y5a2c0bkE?oc=5",
-   "date": "2026-04-01"
+   "title": "Blinkit launches ambulance service in Bengaluru: Check locations, prices and booking steps - News9live",
+   "source": "News9live",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaS1zV2JMLVV0SEtMMjdub2hyLWdYWElKdURvaEx0WEpDSjBpWlBrMGFnSHZOMTJIaFoxWmN6ZjJkSklCMk1kTWFyclRxVHJWN3BUUEVSODdycHhwVnlVc05UaEh6SjRfcXl5eWZFTnc4TlBCOVhRLVBuZ2tJc2VKWHV1Wm52RDUzMF9EdTZJSEE5bWxod05uZE85U01ZNGh2M2dMMVdVeGczRk15WjF0NllZOW1ZZXRoa2pUdlRn0gHDAUFVX3lxTE9majNrQlBFSktKMGpJbnR5aU9zVE9nbEFmVXN5bmhpWkdDSmFPZXh2Z0xTMGNlMUVYcWVfcXhaWS05X082emlhd0VkX2g1ZjdfdWwwUGZPSnRLSjVYc2xaVl9vVi1aTGxoTmozTThkRl9xOE40T282QXR4V3lnMFE1MHhrTVg1OUxHdzU3MTFfWmMtMVV2QU01TTM3OElmNkpvLU1UT2NVT3B2QXZ2d1pDVVFWOW1TTjdxSWVqQU53Y1NXNA?oc=5",
+   "date": "2026-11-13"
   },
   {
    "provider": "instamart",
@@ -123,6 +113,16 @@
   },
   {
    "provider": "amznow",
+   "city": "kochi",
+   "area": null,
+   "signal": "news_live",
+   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
+   "source": "About Amazon India",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
+   "date": "2026-10-01"
+  },
+  {
+   "provider": "amznow",
    "city": "bhubaneshwar",
    "area": null,
    "signal": "news_live",
@@ -143,16 +143,6 @@
   },
   {
    "provider": "amznow",
-   "city": "kochi",
-   "area": null,
-   "signal": "news_live",
-   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
-   "source": "About Amazon India",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
-   "date": "2026-10-01"
-  },
-  {
-   "provider": "amznow",
    "city": "kolkata",
    "area": null,
    "signal": "news_live",
@@ -160,26 +150,6 @@
    "source": "t2ONLINE",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU0dxTDFZVmtKd1VvSFZwdGxKQk11ZWFSVXYwRmxselNId0ZsVUlxOWIyWXRmb2NjVmRfWWl0Nl81S01oVVl5QWNVOWlySEVYWnVpa3JFaDhsRnA3b3pXcjN6MXVBLWRsSTRNN05WQXJlLWUyZHg1NXpWM3U5WjBlTlNlcGFLZ3ZzdUhjTWNVNk5FdC1lUGlmX1RaakhYWnM?oc=5",
    "date": "2026-09-23"
-  },
-  {
-   "provider": "amznow",
-   "city": "jaipur",
-   "area": null,
-   "signal": "news_live",
-   "title": "Amazon Now Launches Fast Delivery in Amritsar & Jaipur - Rediff MoneyWiz",
-   "source": "Rediff MoneyWiz",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3ZRY05VZ1BVMFZkcC1fVzNsOXFvNDhfSHVTTkdRNHRhZTRGbi14NEF6eE9RR2hSZG9rMGZBUzktVGRsOGVLZFZOMUNkc084ZjJPUzN3T3Y4YkhyRXBObFRQREF4TkZwODczT0hCdFh4bXoyZTJDQWVRMmtEWXJESmRDVmE2V1J3cFBVUHdGZ0o4VHdaWk9QdU0wOFBBZVg4TVZseU84d9IBrAFBVV95cUxPWEZPUDcyQnVIaE0tdUVPamdqbWYtdDVSRndWQXhvckc2UTl1dWo2VXducExINXNDZEl1LVV5d1k0a3g1ZUNreFBPSG0wbHN2Q216VG8zTThDLXBibmdtOFJnbTNjcXN6R25CY3hyTzBGYnFsamdHQjNZdkxPOXVORVUzZkhzc2R5dl91dGZRMTZKbHpiZnM0dnZzSHRYUGlmTElCRnFla1NOaFBI?oc=5",
-   "date": "2026-09-24"
-  },
-  {
-   "provider": "amznow",
-   "city": "amritsar",
-   "area": null,
-   "signal": "news_live",
-   "title": "Amazon Now Launches Fast Delivery in Amritsar & Jaipur - Rediff MoneyWiz",
-   "source": "Rediff MoneyWiz",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3ZRY05VZ1BVMFZkcC1fVzNsOXFvNDhfSHVTTkdRNHRhZTRGbi14NEF6eE9RR2hSZG9rMGZBUzktVGRsOGVLZFZOMUNkc084ZjJPUzN3T3Y4YkhyRXBObFRQREF4TkZwODczT0hCdFh4bXoyZTJDQWVRMmtEWXJESmRDVmE2V1J3cFBVUHdGZ0o4VHdaWk9QdU0wOFBBZVg4TVZseU84d9IBrAFBVV95cUxPWEZPUDcyQnVIaE0tdUVPamdqbWYtdDVSRndWQXhvckc2UTl1dWo2VXducExINXNDZEl1LVV5d1k0a3g1ZUNreFBPSG0wbHN2Q216VG8zTThDLXBibmdtOFJnbTNjcXN6R25CY3hyTzBGYnFsamdHQjNZdkxPOXVORVUzZkhzc2R5dl91dGZRMTZKbHpiZnM0dnZzSHRYUGlmTElCRnFla1NOaFBI?oc=5",
-   "date": "2026-09-24"
   },
   {
    "provider": "amznow",
@@ -290,6 +260,46 @@
    "source": "Indian Startup News",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFJzbjFkQWJJUlNxMkcyc0xsY19RVnJXZWlDWXR3OW1aNlp1cmwxNmxRckFGeTIxT09ETnFPd2FYYTFCbmdLcU5uMG1RVGFzZ1R1eExrQ0VxWFpFWnUxTTlpY2dBOHlZbm5mMFp6VnlWcmVJRnN3SnpZRllVT01Ha05qT0t1QjRDLWxUWlZHemVkTnRTWFlQVVdMdFRTVG8xdndoTDhlTWNhOUhhMG5tWDdoQmR2SFJ1QTVIRHRLaHZneU1zR1g0bEw3SnpCSXBJYzZSOWtR0gHWAUFVX3lxTFBUUnNuMWRBYklSU3EyRzJzTGxjX1FWcldlaUNZdHc5bVo2WnVybDE2bFFyQUZ5MjFPT0ROcU93YVhhMUJuZ0txTm4wbVFUYXNnVHV4TGtDRXFYWkVadTFNOWljZ0E4eVlubmYwWnpWeVZyZUlGc3dKellGWVVPTUdrTmpPS3VCNEMtbFRaVkd6ZWROdFNYWVBVV0x0VFNUbzF2d2hMOGVNY2E5SGEwbm1YN2hCZHZIUnVBNUhEdEtodmd5TXNHWDRsTDdKekJJcEljNlI5a1E?oc=5",
    "date": "2026-09-12"
+  },
+  {
+   "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches ambulance service in Bengaluru, its first South Indian city, with 4 ambulances across 2 depots - Startup Pedia",
+   "source": "Startup Pedia",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNN0pxZXdQZm9QbHpCUEpuR2pwRkxlRFNxUDZXX044d21Hb1J0T2dpQUtVUU5hcWwwWGh6S29LMUVnQTdlb1JIb2xSWm1vNjZWcV8xV1dnMTdZZ05oZzFHVVZfb1VIbE5EM0tfbUdVTTFwUFgyd2o5c292Tjl5QUdmdUViR2ljaG9OdV9nNnZMSjFLcGVmZmZkQmtTZ2JQOUpxQlFndXdzUlpyeUp5MlpmMzh4aU5FMFdzbHc5eEsyaUxlSXFtU2wzOFN1c3p3RXJIVHVlZkZjT2xPSDEtdTg2SGNpU1RRdw?oc=5",
+   "date": "2026-11-13"
+  },
+  {
+   "provider": "blinkit",
+   "city": "mumbai",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches quick commerce service at Mumbai airport in partnership with Adani - The Economic Times",
+   "source": "The Economic Times",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPT2NJY3pyQ2MzcU1mZFNESWpGN05XMmt4T28yMVpLX0FYLWYtOVZTS21kS1E5R1BKRjFtTkdJVHh5NnNwTmRfNjhmYlQ3WG9JbTBtWUpJUDBwVTFNSE1lbjRqcjJwNmR0QklFdWNwYmFPVlVYd1I2ZXBkN2VfLVpqTkxVLXNDQVVQSFA1aEt2OVJuV0c1OGJBRm85VUUxV2M5RXJoUGI0LWdOaW8yTmpiaENxeUVpLS04ekZkc1FPRW5YRTVjV2hBSTFySEZYUXBxeEJUcmxaWk1ydXBtMDhxVC1RRDBYMFN20gHuAUFVX3lxTE9rMTJRZnprbzgxdURxXzdXOWlZR0NEODdKcnI2RVJuTW0tRnpLbWE4MGwzUmxsS215Q0RmcHM1RHB6OEY1c1h3Vkt4dWdYdDRMZWhMWVlZMXlWOE9rME8wR0pYai1mYmgzanplWU5mVnVmMDZzUTVoN2dCNmdXVm40dzBMWDd5NXotQTFhS0pvc3prZ3JJakI0RzVGYmQzMjMyODZ5cHNWRVFkRUtuQXV4Q3VNNjlUSE5zNjVRTWVnRmJXTDNZTElGUURxaGxNellSWjhiZUlRVDlZVnBCRW42d3A3S0hZN2Y5a2c0bkE?oc=5",
+   "date": "2026-04-01"
+  },
+  {
+   "provider": "amznow",
+   "city": "jaipur",
+   "area": null,
+   "signal": "news_live",
+   "title": "Amazon Now Launches Fast Delivery in Amritsar & Jaipur - Rediff MoneyWiz",
+   "source": "Rediff MoneyWiz",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3ZRY05VZ1BVMFZkcC1fVzNsOXFvNDhfSHVTTkdRNHRhZTRGbi14NEF6eE9RR2hSZG9rMGZBUzktVGRsOGVLZFZOMUNkc084ZjJPUzN3T3Y4YkhyRXBObFRQREF4TkZwODczT0hCdFh4bXoyZTJDQWVRMmtEWXJESmRDVmE2V1J3cFBVUHdGZ0o4VHdaWk9QdU0wOFBBZVg4TVZseU84d9IBrAFBVV95cUxPWEZPUDcyQnVIaE0tdUVPamdqbWYtdDVSRndWQXhvckc2UTl1dWo2VXducExINXNDZEl1LVV5d1k0a3g1ZUNreFBPSG0wbHN2Q216VG8zTThDLXBibmdtOFJnbTNjcXN6R25CY3hyTzBGYnFsamdHQjNZdkxPOXVORVUzZkhzc2R5dl91dGZRMTZKbHpiZnM0dnZzSHRYUGlmTElCRnFla1NOaFBI?oc=5",
+   "date": "2026-09-24"
+  },
+  {
+   "provider": "amznow",
+   "city": "amritsar",
+   "area": null,
+   "signal": "news_live",
+   "title": "Amazon Now Launches Fast Delivery in Amritsar & Jaipur - Rediff MoneyWiz",
+   "source": "Rediff MoneyWiz",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3ZRY05VZ1BVMFZkcC1fVzNsOXFvNDhfSHVTTkdRNHRhZTRGbi14NEF6eE9RR2hSZG9rMGZBUzktVGRsOGVLZFZOMUNkc084ZjJPUzN3T3Y4YkhyRXBObFRQREF4TkZwODczT0hCdFh4bXoyZTJDQWVRMmtEWXJESmRDVmE2V1J3cFBVUHdGZ0o4VHdaWk9QdU0wOFBBZVg4TVZseU84d9IBrAFBVV95cUxPWEZPUDcyQnVIaE0tdUVPamdqbWYtdDVSRndWQXhvckc2UTl1dWo2VXducExINXNDZEl1LVV5d1k0a3g1ZUNreFBPSG0wbHN2Q216VG8zTThDLXBibmdtOFJnbTNjcXN6R25CY3hyTzBGYnFsamdHQjNZdkxPOXVORVUzZkhzc2R5dl91dGZRMTZKbHpiZnM0dnZzSHRYUGlmTElCRnFla1NOaFBI?oc=5",
+   "date": "2026-09-24"
   }
  ]
 }
