@@ -1,10 +1,16 @@
 {
  "collector": "places",
- "ran_at": "2026-11-21T12:16:56Z",
+ "ran_at": "2026-11-23T10:20:54Z",
  "ok": true,
- "items": 584,
- "prev_items": 0,
+ "items": 550,
+ "prev_items": 584,
  "errors": [
+  "stores tile 10,92 failed",
+  "stores tile 18,76 failed",
+  "stores tile 18,80 failed",
+  "stores tile 18,84 failed",
+  "stores tile 22,68 failed",
+  "stores tile 22,72 failed",
   "stores tile 22,76 failed",
   "stores tile 22,80 failed",
   "stores tile 22,84 failed",
@@ -18,10 +24,6 @@
   "stores tile 26,88 failed",
   "stores tile 26,92 failed",
   "stores tile 26,96 failed",
-  "stores tile 30,72 failed",
-  "stores tile 30,76 failed",
-  "stores tile 30,80 failed",
-  "stores tile 34,72 failed",
-  "stores tile 34,76 failed"
+  "stores tile 30,72 failed"
  ]
 }

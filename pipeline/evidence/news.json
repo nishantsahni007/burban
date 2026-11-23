@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-22T08:44:59Z",
+ "collected_at": "2026-11-23T09:44:36Z",
  "items": [
   {
    "provider": "blinkit",
@@ -53,7 +53,7 @@
   },
   {
    "provider": "blinkit",
-   "city": "bengaluru",
+   "city": "delhi",
    "area": null,
    "signal": "news_live",
    "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
@@ -63,7 +63,7 @@
   },
   {
    "provider": "blinkit",
-   "city": "delhi",
+   "city": "bengaluru",
    "area": null,
    "signal": "news_live",
    "title": "'GTA 6 is now live on Blinkit': CEO Albinder Dhindsa announces quick delivery in Delhi, Bengaluru and 9 other cities ahead of November 19 launch | Trending - Hindustan Times",
@@ -79,7 +79,7 @@
    "title": "Blinkit Launches 10-Minute Ambulance Service In Bengaluru, Expands Beyond Delhi-NCR - Mashable India",
    "source": "Mashable India",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOLVdLcDFkMnI0ZVlBZGRIU2ozNjl3ekZFeUVqcHVZVUdtc0JvMFRfYzd1YzRTVXVjYVhGXzJialc4LWM3dXItcEZPLUk2MTlJVHB6NFYzbmQ3dlMwNXpQNXBjQzI5b0NmUjM1OG9FSTJZU01LS3FUcFBWS3ZqTkZkc1YyREh4YmZtcUtlcjFEZVh3RzZSRm93bXBjc1FqZmJPZHJsaUNZdndZX0s2Vy1ldWVzcnBjMGNiZVE?oc=5",
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   {
    "provider": "blinkit",
@@ -92,6 +92,16 @@
    "date": "2026-11-13"
   },
   {
+   "provider": "blinkit",
+   "city": "mumbai",
+   "area": null,
+   "signal": "news_soon",
+   "title": "Blinkit goes live at Mumbai airport’s T2 domestic departures, T1 coming soon - The Financial Express",
+   "source": "The Financial Express",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOY1haU0g3MDlGXzlrMUpqVnppZ0VMd2ZUcDVReFFwaV9iS2c0ZmVmV1VQenFfRlcxM1dncXM5WTRVRDN4c0hPcVFzd2R0ZDdmNm9NbXpiUG5nM1VkeC0xSGM3UE52VTY2THVmS1JQYkVpcUNvT1hlOXRjNHkxbEExeDJfQ2p1eHI4MDladlRSSDJoMFBkQU5ZNi03cWlYMUdpZnNFOXl0clgtZDJJLUc4azVmcllTNVZvSEJqR0JJWlVPcFc4empQZm130gHQAUFVX3lxTFB6SUVuekFJYUFqbDJMQ2oyMGFVX3plZkNLaGZYOEJlV1pOb0ZPeXA1VDA0WldZQWFaNE80VGl5cXBpY3VNNUdhMTB4WHpRWnVZUWc3VzlYeGd1alNRM0hJWXE1UzNfWjc3b0xiTFZTZEJfdjN6N2dOSndaNzdxVTlHdDI2cVRJeDJGLW9LS2xOeHBnRWoyZ2RrQnUyeFlMckxFRUktLXNNN20yYXI3azhKX2NtaWs2Mkk2ejQ5S1NWdDQzTlIzZ3ZNVU93SUMtb0k?oc=5",
+   "date": "2026-04-01"
+  },
+  {
    "provider": "instamart",
    "city": "mumbai",
    "area": null,
@@ -102,6 +112,16 @@
    "date": "2026-07-08"
   },
   {
+   "provider": "instamart",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Swiggy Instamart Launches Outdoor Campaign in Bengaluru - MediaBrief",
+   "source": "MediaBrief",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOW1VTzRNZU5YVzBQUWttSWtXOGI5VVB4YlRRV2tMOHh1OWo4S2tibEFlemd5SVhzbWZENWxfbkpZdDdqOWdDNERDYmRxc1lHeFdwemNVMXU4c25uZFFVeV9TUXRxd1ptdVZWT3plX3RwWHd3SDhqNHNEanpNRlRQRHRaMA?oc=5",
+   "date": "2026-08-19"
+  },
+  {
    "provider": "bbnow",
    "city": "kolkata",
    "area": null,
@@ -110,16 +130,6 @@
    "source": "afaqs!",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQlNVQlVudUpXc0FQNk9NX2g0OTJ0eTE4amlzOFhlMmRaTGJTalVabTNyU2JTUHdjMHhlVHhmMzExVUE1elh5QXFGTzR1SzVqUGJEMTgtaDVrNnRqVTRwTHRVQkZsQXZfQzNBVnRpVFhHeHotb1VLNXJLNGRuMHkySWloQlVMVlJPeXc?oc=5",
    "date": "2026-06-22"
-  },
-  {
-   "provider": "amznow",
-   "city": "kochi",
-   "area": null,
-   "signal": "news_live",
-   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
-   "source": "About Amazon India",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
-   "date": "2026-10-01"
   },
   {
    "provider": "amznow",
@@ -134,6 +144,16 @@
   {
    "provider": "amznow",
    "city": "amritsar",
+   "area": null,
+   "signal": "news_live",
+   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
+   "source": "About Amazon India",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
+   "date": "2026-10-01"
+  },
+  {
+   "provider": "amznow",
+   "city": "kochi",
    "area": null,
    "signal": "news_live",
    "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
@@ -170,16 +190,6 @@
    "source": "ET Retail",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMmhhQS1TM0RHQ2xSNmswV1UzWnlHc1FvN1ZyaG1QOWxfSHBFTlF4VlV5dW5PQlA5eUVlRVc1TVUzelRDQVp5VlJTLW5hQzB5M2NRVENCVkNfNGZPWnZsSFp2aENKdW8wMmFRYkoyYUhLbGZRY2YwY2cySUV6OXVIR1NNUzg0b1ZFQVpJMDVJSnNYUVgxVVpYQWhucmRYYzktVXNnQmdHejhVZzlwLVBiVkRoaHZQSTRySHluNWwtZ3JINnJqMk42QXhlbzhBdHNrUFB1bUdHZERXY3daMGs3UtIB5AFBVV95cUxOWW90NlU0dXBicWVrTEsySW4tS1BRdDNudHRqZ2hUWTdJd19VeXJkQXBEZ1pkMnhGZFJfR2Fzd25mTl9DODNBOUV2M0l0emF4bEN0R19MSTJ3UHoteUg1eVdOZUdYOUxhal9pNjNwS0QwZlVYa2pnMVJILS14cmJlVHhXTXg2NFJyckNLcTVYZF9tVFFqQ2kzWFBNeG8ycHIxSmgxREt0YVBSdzByZEhIN1FmMW91RFNZclpXOWpqWTdEdFZmU3FqWndheDNPWFhsVnI0X2w4a3ZTaWJCTmI4WlRiYnM?oc=5",
    "date": "2026-09-25"
-  },
-  {
-   "provider": "snabbit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
-   "title": "Snabbit Launches Salon-at-Home Beauty Services in Bengaluru - Indian Retailer",
-   "source": "Indian Retailer",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEJXbzhCU3V6dHd2ckhGcFRfN3k5TU41VWlJU2swYVZxM2ZUb1hlZThtcGM2T0w5Sm9sckhWUnhFcWx2V1Z6Rm5YdDF0azNac3RtVGJ5Q2lIc0dJZVZZamhSOVZ1SnFpUzI5eVdIQ1ctbjNZd1VZeHYtM1BxRmU0ZVQ2YlA2dWlIS2tZb3dLaWNuMk0?oc=5",
-   "date": "2026-05-22"
   },
   {
    "provider": "swiggy",
@@ -223,16 +233,6 @@
   },
   {
    "provider": "rapido",
-   "city": "hyderabad",
-   "area": null,
-   "signal": "news_soon",
-   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ET Retail",
-   "source": "ET Retail",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTElVNmlLeEJuZFJTbUdyeDFHU1VSVE9KVDBnT2dIaEpYbWJLSE5VcWFBeGxndU9qNC0zcnZtSW9hcm9saTg2WUdGZmZHZ0ZqU3dRTHNhT1RCNENnTklCN1JFNGRzZW5Vem5Rc0NyLTNsZ3liTmJ4dnFlRFlQZTVINDFQNGFOZkVQdU1QUXVGN1J2UVh3dTlJSVhyRi14ZmN1MTV0bGFIRk5PUnd4UE9SSDVUMmxWSThaZ2Q3Y3FmS0dyWnl1VTF2eDhfOHNRYmRtY2VTRzJ2cmM1U3hYdVFuM1dpNkF5NVkyX0l0VjNVVzlUM0VCdFpHUEwzaFc4WXBfSEg4YnhjVdIBiwJBVV95cUxQMHh6cjZDR2t1enhhVWs5R2NaTW9ISVVfdXk4VENHc2drZ1RxcE9nYVRQOE1qdjVibGdEcExPc3phSE5TZG1hajhmOFJwbXluTXFqS2lTZkVQMEVTeUtXQ3BIeXFpeHlHRThQUW5fb2NmOXhHTVpaRWpQbG81Y0dKREVLVE15RnFtQkVzd20zclVPRWRoV281VFJfdFFqeWhaQUhULVNabmZxb244TGJ4NTVIUVo0d3ZYaGxpQkZaV1YydlZZRWxaNEZWOE1RMHNQWGlRWkVCQ3F4U2xWSHpXUURKLXFfdXBhRllBd2VEVUR0TEE1aUt2OWdmanJqM0k4cDBTQVRJZmtIMFE?oc=5",
-   "date": "2026-09-26"
-  },
-  {
-   "provider": "rapido",
    "city": "bengaluru",
    "area": null,
    "signal": "news_live",
@@ -252,6 +252,16 @@
    "date": "2026-03-03"
   },
   {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_soon",
+   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ET Retail",
+   "source": "ET Retail",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTElVNmlLeEJuZFJTbUdyeDFHU1VSVE9KVDBnT2dIaEpYbWJLSE5VcWFBeGxndU9qNC0zcnZtSW9hcm9saTg2WUdGZmZHZ0ZqU3dRTHNhT1RCNENnTklCN1JFNGRzZW5Vem5Rc0NyLTNsZ3liTmJ4dnFlRFlQZTVINDFQNGFOZkVQdU1QUXVGN1J2UVh3dTlJSVhyRi14ZmN1MTV0bGFIRk5PUnd4UE9SSDVUMmxWSThaZ2Q3Y3FmS0dyWnl1VTF2eDhfOHNRYmRtY2VTRzJ2cmM1U3hYdVFuM1dpNkF5NVkyX0l0VjNVVzlUM0VCdFpHUEwzaFc4WXBfSEg4YnhjVdIBiwJBVV95cUxQMHh6cjZDR2t1enhhVWs5R2NaTW9ISVVfdXk4VENHc2drZ1RxcE9nYVRQOE1qdjVibGdEcExPc3phSE5TZG1hajhmOFJwbXluTXFqS2lTZkVQMEVTeUtXQ3BIeXFpeHlHRThQUW5fb2NmOXhHTVpaRWpQbG81Y0dKREVLVE15RnFtQkVzd20zclVPRWRoV281VFJfdFFqeWhaQUhULVNabmZxb244TGJ4NTVIUVo0d3ZYaGxpQkZaV1YydlZZRWxaNEZWOE1RMHNQWGlRWkVCQ3F4U2xWSHpXUURKLXFfdXBhRllBd2VEVUR0TEE1aUt2OWdmanJqM0k4cDBTQVRJZmtIMFE?oc=5",
+   "date": "2026-09-26"
+  },
+  {
    "provider": "nammayatri",
    "city": "bengaluru",
    "area": null,
@@ -260,6 +270,16 @@
    "source": "Indian Startup News",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFJzbjFkQWJJUlNxMkcyc0xsY19RVnJXZWlDWXR3OW1aNlp1cmwxNmxRckFGeTIxT09ETnFPd2FYYTFCbmdLcU5uMG1RVGFzZ1R1eExrQ0VxWFpFWnUxTTlpY2dBOHlZbm5mMFp6VnlWcmVJRnN3SnpZRllVT01Ha05qT0t1QjRDLWxUWlZHemVkTnRTWFlQVVdMdFRTVG8xdndoTDhlTWNhOUhhMG5tWDdoQmR2SFJ1QTVIRHRLaHZneU1zR1g0bEw3SnpCSXBJYzZSOWtR0gHWAUFVX3lxTFBUUnNuMWRBYklSU3EyRzJzTGxjX1FWcldlaUNZdHc5bVo2WnVybDE2bFFyQUZ5MjFPT0ROcU93YVhhMUJuZ0txTm4wbVFUYXNnVHV4TGtDRXFYWkVadTFNOWljZ0E4eVlubmYwWnpWeVZyZUlGc3dKellGWVVPTUdrTmpPS3VCNEMtbFRaVkd6ZWROdFNYWVBVV0x0VFNUbzF2d2hMOGVNY2E5SGEwbm1YN2hCZHZIUnVBNUhEdEtodmd5TXNHWDRsTDdKekJJcEljNlI5a1E?oc=5",
    "date": "2026-09-12"
+  },
+  {
+   "provider": "snabbit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Snabbit Launches Salon-at-Home Beauty Services in Bengaluru - Indian Retailer",
+   "source": "Indian Retailer",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEJXbzhCU3V6dHd2ckhGcFRfN3k5TU41VWlJU2swYVZxM2ZUb1hlZThtcGM2T0w5Sm9sckhWUnhFcWx2V1Z6Rm5YdDF0azNac3RtVGJ5Q2lIc0dJZVZZamhSOVZ1SnFpUzI5eVdIQ1ctbjNZd1VZeHYtM1BxRmU0ZVQ2YlA2dWlIS2tZb3dLaWNuMk0?oc=5",
+   "date": "2026-05-22"
   },
   {
    "provider": "blinkit",
