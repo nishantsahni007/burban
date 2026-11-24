@@ -1,16 +1,6 @@
 {
- "collected_at": "2026-11-23T09:44:36Z",
+ "collected_at": "2026-11-24T11:35:15Z",
  "items": [
-  {
-   "provider": "blinkit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
-   "title": "Blinkit launches ambulance service in Bengaluru, expands coverage to four localities - ET Retail",
-   "source": "ET Retail",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQ3Y1TVZ6RkU0YUlRcTR6RWItNnJ2QkhtbzFTS1JqXy1zU0xTdjhOZWdRUUtqTmplWmlKU0hUNGZlMk5QdG9nQ2RTXzVYQzU5d0w5bUpQbnM0T1FieTZQd1pURHJGVGdMTDRFZWZDcVo2RGtFV0NVMlE3cm85MGZwdHlMdW1LbExLSEhPS0RKWVZGcVFTOWhwQ0pFTmpocnd2TGdQejJtYmJXZzJlcU5YbjZFRXAxSG42V1RPUHJuUjA5cGk4NmtDbzhxMGNuZzk0VGh6LUdPaktCN2NLdWk0MS1GX0lMajF4UGJPVm05MnJ0aXpG0gH6AUFVX3lxTE1yaGkyS0V0YlN0Sk9wSVQ4ajFXV0F6ODhYd0FhMmNhbFZ0MFUzNHRWcmxWWHRhR1htLXUxY1E4YUtUZWVTVGhYa05feG9jR1hfLWZRZDByWVhRNmpldWV5OEpXU1p3cG5QNmVGV0hmcXNwamIxZDRCMGRzcldxaXZRQ0NrYVZwMWUyby1HbWRJTDBLWXZZNFR2SjhIOXZMaFNOZ3p1RHN1SG8wZW9uV1N2aFFzVTRFdll5WU83OTdrSVhHSDhtU1JpZVNuODZqSnZoZ0hfMGgzYXJ3cXJONzZzS3BzQzZYOU4yQW5XWWQtX3dNZ1pWYm1ER2c?oc=5",
-   "date": "2026-11-18"
-  },
   {
    "provider": "blinkit",
    "city": "bengaluru",
@@ -20,6 +10,26 @@
    "source": "CNBC TV18",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVjcxME1GMmxQNnAzcXppcWJISld2S2JCczNKWlhHS2Q3QWpVSGVhTWFqSzdwa09qRmFqN2xwR0M1Sy00NWlhU3FwUVZ4T2QxckpKaWlFckc4NGtVNEpidFVaU01MbnFoY0JTWHZkUldydmZBOGYxWmpSeTlleEVoUjF4c19NeTJiUXNnbzJfd3MzT2dYSXhhTXFsRnU1VlM3VlRWS2RXX1l6UjBYWTBlRlVxcW42TlpGM1JJcUJnb0FDN1BTMEVFSjFGOUtjY2gyaDlaQ0xoR1p6Z9IB3wFBVV95cUxOeHkzSzZZN2VIek9sSi1pUEwyaF9PSXAwLXVXMTVIcm1fMXBoSDdKWjZKYUcyUy1RSGNmSjYyOXhlcHFVVlVfNkljSENuWERYS0g4ZndrN3UzWHpoeFJWWW1UWlQ0VXlGVGZLQnJCZUdHY0VIOTd3bDFpeDNTc05BR2dSM2hXWjNQYlUtXzBsMVNLQUhxd21Pbk1idGtMQV9rNmlYUEs1cTY2ZlVpdWx2TFR3MDgzVEo5SnpoZVluVUt6MldyWDFLMTNTZFZJRXpyVnFlcFZZQVd5WHlpd2Qw?oc=5",
    "date": "2026-11-20"
+  },
+  {
+   "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches ambulance service in Bengaluru, expands coverage to four localities - ET Retail",
+   "source": "ET Retail",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRVBWMFNMckhSTHdBVjNWaVRCa1J5M0RFcmhyMVM5cXFKOEFDd3Q3ak5sNEdWRVR6NlFUaU8yTTFQT01vb0VRMHZlQ0lrZ3N1NlhxajduOTVrM0xNSkxUd0pTbXVMRENRc2VFVUN5Y0VFNjJ4RHR0WlgwUXBlNUxQY1dNVEVFTWZiY21GLWVvUVF3aEdwN2NLV0s3Z0hzaERHOVZyOGJKZHU2em9PWUFnMVJib1lSXzRQS1E4Uk9haUtleld3YzRiSHg0eVp3X2RTZkNfS1p6cEg4czJRT1BheW5sRDVpZVc5VGxITEN3NUVwWkItZmfSAfsBQVVfeXFMTTc4OE1zd25GYV8zZ0NTSEJCTmtNb3F5cnVYMHR4ZVV5M0ZvR0t5YkR6X1c3OG9nTXgtNWZjRDlxaFFKSnI1ZWJaU24tVlF4VUpNZGNIcDUzdUp3UU9NelpsSFU5OFVlX3JlZWpxQl9WcS1DS3JJYmNBVzZLTXlYOFlvbE9DN0w4UHRVcDZESXA0MlltdTF1Ry1VakRwMDRxTWlWOGdNbHR3NDJIU2pEUDBwa0RwRHlfWkJubXctZGZlVFNQMFk3VEVvMTZjLXJRekRjb09CbHU1SFpaUVBmcFRBUDU3Z3JsSVhnejBzNWlYRUFra1BHVjI5bXM?oc=5",
+   "date": "2026-11-18"
+  },
+  {
+   "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches ambulance service in Bengaluru, expands training academy network - MediaBrief",
+   "source": "MediaBrief",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XS3N3MUNCNXpJNjhwSnB4amRxckVOMTlQc2pwbDJ5dDc0QVdzVkZXR1RKb0sxOE9XYjc5c0xtZDdiVnVmSndPaW9vTUdkZTBxSnpNX3FlWTBoTnotb0RwODF2ZzdzaVRGUWw3bDM1ZTZ3ZWMxWGQ5Sm9OYw?oc=5",
+   "date": "2026-11-18"
   },
   {
    "provider": "blinkit",
@@ -133,16 +143,6 @@
   },
   {
    "provider": "amznow",
-   "city": "bhubaneshwar",
-   "area": null,
-   "signal": "news_live",
-   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
-   "source": "About Amazon India",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
-   "date": "2026-10-01"
-  },
-  {
-   "provider": "amznow",
    "city": "amritsar",
    "area": null,
    "signal": "news_live",
@@ -154,6 +154,16 @@
   {
    "provider": "amznow",
    "city": "kochi",
+   "area": null,
+   "signal": "news_live",
+   "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
+   "source": "About Amazon India",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSEI2YVd2eWdfNTVJSjVaUVVRVGJYUUFxTWtWUEt5WVBXbktsd282UjRPYllhMGRsem5KWlVqN1NxWmc4ekNqbEJadm5palE4U0RlSkdzYklXSjV1WXpxS18yanlaVUZyRl9KUlpzLTBTU2J3TDJ2cllBT3VDY3dCZw?oc=5",
+   "date": "2026-10-01"
+  },
+  {
+   "provider": "amznow",
+   "city": "bhubaneshwar",
    "area": null,
    "signal": "news_live",
    "title": "Amazon Now expands to over 120 cities including Amritsar, Kochi and Bhubaneswar - About Amazon India",
@@ -192,6 +202,26 @@
    "date": "2026-09-25"
   },
   {
+   "provider": "snabbit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Snabbit Launches Salon-at-Home Beauty Services in Bengaluru - Indian Retailer",
+   "source": "Indian Retailer",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEJXbzhCU3V6dHd2ckhGcFRfN3k5TU41VWlJU2swYVZxM2ZUb1hlZThtcGM2T0w5Sm9sckhWUnhFcWx2V1Z6Rm5YdDF0azNac3RtVGJ5Q2lIc0dJZVZZamhSOVZ1SnFpUzI5eVdIQ1ctbjNZd1VZeHYtM1BxRmU0ZVQ2YlA2dWlIS2tZb3dLaWNuMk0?oc=5",
+   "date": "2026-05-22"
+  },
+  {
+   "provider": "swiggy",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Swiggy launches EatRight Exclusives in Bengaluru with curated healthy menu offerings - ET Retail",
+   "source": "ET Retail",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOLVZZZzh3cl9heEFiNkRMUGszRG95aFhIXzFfWkY4cG5LTzItMFotbWRueXVXdzVDNndkT2hmT2JFUmxNODhUMUZWNktGOFhuWWw2M1kxeTY3SjhxQWc0aFhoLUFjb1JxMDFiWWNER0JjT3JBTzJLdWhjR3daU1h2dWZFMkk3dFZzcFRpeml0aWxYMUNCZXE5cmVOSnlheUpyZnNnY1c4RGtWVXRlblJCN2lRamdlWDRudUlOcmNtWU1ubF9ycTBMR3ladzFWd3JHN0NjalotSmV4alRCWjhaMWVaa2k0bkVMbFk5X2NTbjcxaXNyNGxFX2ZaS2FobkppUEtBbnpzMNIBiwJBVV95cUxNQWxMOEZRMHhwendDOEVyRVJLaW5SRHJpMHVMZDZEbTJxMFcwOXllckNOSDFIcVVNcm9KeUFfQjQ5d1JweVdtTGZRZ3ZwRzBvcmNCUlBjNFljMFQwQ3piUXprSmdVN2hSVGRHMnlyZVgtTnlyeUIya0NQWkdvV0NUYVF3UWZXYXA4N1NIcEVPUVVvWGQ4LThlMUcxUjJrVU9XdDJHc0tpMm9ZVGE3aVZQQU5tUkpfU2k4Z3VrWnBPaDU4M2JRcnhIay1NeTZYazUyZXk1OE5xUWZDU0tVRlI4YkYyQ3F1aS1SNmYzX1ZRMUtUbUMyM1MzR2ZhcXpPREtySmpvdDBrby1qYU0?oc=5",
+   "date": "2026-06-17"
+  },
+  {
    "provider": "swiggy",
    "city": "delhi",
    "area": null,
@@ -200,6 +230,16 @@
    "source": "NDTV Food",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVXdxenZITzNGS2xNSWN4T29zRWtDa19ldDdYb0VwbGU1Ukw1TkxWZ0lLWElhNzBuTXRXMDRFd0xtWU85NXVZUFVZNnVEcUJWTTM0b0QydHdCV29feDVCQ3N3dTJvNjlzLXZWMTdJRllxR1VBcE01UklzMTNLOW45WlBHQTVYUGdnQnp6QnZDSWxDMFFZc2dEVVBmNlNQZzJGbFFYUFBWR08yZGVBX24wa3Mxc19OSV9yTEFR0gHDAUFVX3lxTE9GQzJOcjRUZzhVTDg5X2tKazNhaXdyd3F2S3ZmZm5LYi1BR3VJTXBUY25SS1l1OW94Z3pJYmVmMUJacG1WNlhrZy1yTEFPYUwtNTRkWkdOeFFERHR6aXNiTWZPLXozWmlxM2FhZkVGRjdyV3lXb01odmd4NVU5SVZOZ2xzRXpBZ1BlUC1DSExrZ2QwM2xuSXpsd3Jndmx2QnRlWDR3bWxLN1J1RDVUWVN3ajQ3UUlTeThPRFd2M05ySzRXWQ?oc=5",
    "date": "2026-03-01"
+  },
+  {
+   "provider": "swiggy",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Meghalaya's Premium Pineapples Now Available On Swiggy Instamart In Bengaluru - NDTV",
+   "source": "NDTV",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYmNpXzRPSzlaeFRUNTBlM29mMy1adHp4Ymk4NU9fUmczQ1d2eXJocW5FZlIzS25OaEJlaUtPb0djc3oyQUFnaTI2YTNtQkdQX2piQmF6Q2s4bzJPLWdoaTFTMkluVXA5RHpWRzNyRHlQUW1vaTFsZ2RqTEJvTkhNZDRIZmlXay1nMURvM1lwODBJUjdQdGNub2FMNXMzc3VGMERkVlltVTdlWHhnekE4RNIBuAFBVV95cUxQeUhyLTRYNi1mZG8zendob2dmMWtwZTBJdUNwdVVlUHpkNkJ3d2RpT05pRzQ3MFFuaVVKTlJGb3RFcXl2WGktYjgzck03cHU5akhOYnp2bzc1VHdOaVJ0cFd5aFc3bXpwYjJpQ1pNOXdUbWZjYTQ2ZXdyVi0wM0x4bE53c2JmelhrT0pTLVlpSHNJdktrYWRjRkM2OGp2bjRlc0RzOTJtUVpuc3dyaXpQZzMtVHAzZGs5?oc=5",
+   "date": "2026-07-29"
   },
   {
    "provider": "rapido",
@@ -225,11 +265,151 @@
    "provider": "rapido",
    "city": "hyderabad",
    "area": null,
-   "signal": "news_live",
-   "title": "Rapido Launches Ownly in Hyderabad, Celebrates With A Biryani party - Deccan Chronicle",
-   "source": "Deccan Chronicle",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPTi12bzY5MzZyV0Z2M0xVSDNiTEJDdXZaS09td3BCVlFvaHd4OWJRLXVQelUxZkstWGw3enU0LVJINTZmX2c1TExhWEpFT3lyWFZPb2Rqdm9OTVF5RHNRNnlFcGdONmdDZnRjQ3lIYWZ6TkJPRVBMYUF1dnByeGdxMnRUU0tKOHNVWTd1QjVuQzJIQ1c5RHhXa2J1X2c2bzNwZ2NKOHRKRVkzX09XNGstdHJabXBydGtUU1VnUEFGSXo5eFZEQV9OTHh5dVBrczJ6ajN3THZrN0xlTkNzVHNN0gHkAUFVX3lxTE95bVhrZ0N2dm4zT0xRTUJ6S2RZT3lvYUszWERzZTM5MGtTRDNVVi05d0g4RWxCMWJaVFBHa0V1RVJGSi1lZ1B6Z1YzQ0t4Q0ZoOVAwRXBiWkxsT2RVUVZwWENBTWkxRktSZDVlaDFweXdZX2p1VThLZGlBM0NIQkFjT1RwdWcwVVliTURpVWlabGZXVVU1cDNWQ0RXTXVCX3AyemUwTkFSSFpYc3NKRnBUcXNZTmJsTUhyRWY4Q1VZM0ViOGZDOFNDRGZaaUVXZ3VzamdZdTBGQXljVmZIdDk3TGNiUQ?oc=5",
+   "signal": "news_soon",
+   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ThePrint",
+   "source": "ThePrint",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcHhsWXpyYUF1RWhhRjJjV05RYndnN2pMWHB6Q1R0MnRrcHQwVlhfXy04YXBLUDhMTzZPTmY0R05halVRNjlTRmw1X0pURWFRVDlnU3pEeHk2MEVnMG9lMER0dDJKM2pDelp5Rk1Ca1lrc2h2VEhmZnhWMGFTX050cDVsdFhjNEdJQ1dlNjhLaFhvcUo2cnlOaTN0TkhLd3JhWkMyWkpCczMwbFd0UXJGWjZxN21BQXczZWpRQlM2OHdOMk9GNFF5MGZFQjVyUdIB0wFBVV95cUxPRGdkaTJWWENKazFfdmFRSmJLSGNTVFRXVUFrTlBOUjR1ZHVmaHQzeGlvLVpMbExwNTNXSWRfWnhjZVl5S2F0anM5bVlvd3RGdTBncmR3UG5fSHFIOHROdERmM0VzVUZRUGctTkQtMnpsdkZJQjQtQzhzQkxiSnYtOVh2eGRkY2pDS3ZJX1c0STBVTUR2ZElxWlhkNnl2VUlEYWF2c242LUxDbnZCUi1nWEN0Nlpwc1doaTFwRjdHamZJc2gzT1JmZlFETzMzUGlhMVhZ?oc=5",
    "date": "2026-09-25"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido’s Ownly Launches In Hyderabad, Plans Expansion Across Major Cities - Kotak Neo",
+   "source": "Kotak Neo",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZUdlZGRndjNuZnB1RjRiVnBGZHhReFhyTE1BamE1WC1nam84bU42SmVJWGZjdHA2aXhfTEcyUVVwR3J2ZHJndjdPVC14OFJ6MWVHOEszOXZPSDYtamQwanlOYmNPdVVwWkhvLTZUYkozQkFjeGxKSG51T3ZuZV84Z28wQ0x0QTNkRVhDV1Z4RnZiVWlPNzJINlRXejBjM19DUkZnYQ?oc=5",
+   "date": "2026-09-26"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido Launches Ownly in Hyderabad, Celebrates the City’s Captains with a Biryani Party - Odisha Diary",
+   "source": "Odisha Diary",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdE5vaENqdU1lTjMwalk1ZGNmdnFqU0xBLVA0NjlUeVFwbVhEcGFVclZrN19id2pVS1lqeDI1UnRac2pZZ1dLRmFtVU1NWkc0bVN4QktTZEdtQmVOaXVQbDNHLWdLaWdZR2FrVUJPTjd1a1MtWC00U3J2c2VtYWh3d3hReXp6UW5PQzA1a2h3cExfa2lPdXVuTHVKcTFOQnN0ZnNRc05YcEh3c094aGlR?oc=5",
+   "date": "2026-10-26"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido Pink Bike Launches In Hyderabad, Offering Women-Only Rides - Telangana Today",
+   "source": "Telangana Today",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUFNvMWNMMmw3SmRkNmFvT3ZXaUo1R2NQOWN3QmZxOUR6TFZrWlZMa01XYWxUMFpsdUx3bEQzQVR5bWhicThyQlZZYnc5ajVLS0dpYnIzZTQ2bVIxbVliOV9NZWk0VkVieHRsNlF0UkI3RTBSQjVTb3FERXhPMi1vODVzSkh3bWM5QWwzVTJmN01relFrWnc?oc=5",
+   "date": "2026-09-03"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido Pink Bike Launches In Hyderabad For Women Only - INDToday",
+   "source": "INDToday",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkZXeU8ydUM4LVBpQ1ZLdWQ1QVFPc0g3V2QxaXZUdktOZU5teDBsU1FaamdLS0plSE02cXdnemE3Q0Z5QjY4X1RPUlZ4QUg5Q0hfTWh6NzB5ekdIRklRTHFrM2Mya2tDdl9wbGYxZEVaT0xEM3hHTTI4NkR2ZEpsNg?oc=5",
+   "date": "2026-09-03"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_soon",
+   "title": "Rapido’s Ownly eyes multi-city expansion as Bengaluru orders hit 50,000 a day - BusinessLine",
+   "source": "BusinessLine",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPd1Zic2pSazZzb1NDUkhVRklvSmVTdnJTc3JVaHBtT3VIUGEzVkhpUXJqekswNWhiQ3ZlV3NaUmlWeWdiWkp5a2RxeklydkpxemFtMFdwQlZFVkoweDl1elgtOHhCOTNlZG5BSmdVTkJBSG4wM2k0ZjN4Y2dEZzRVRDFzcno5b3RCZGdDWGFFbk5XaHRpR1lSN1g2SXJUei1DOUMzaFV0eHRRWTZ0QzBDMUc2TXZfOEdUbnM0UHlpbjB5RHNyYkNvNUxqZm5STEtUQUVPMXNJb3FJUdIB4AFBVV95cUxOQjg2SGxLUnp4blNQNng3WnZzdXdvWEItc0dJcUxVQnRoNnU3eURHNDdCN3UzUWtpVFlFckhZSnNDWGk2cDZueDR5VGozNHVFay05aFdIRUhIdmlUTFg0ellDWGFhc3ZuSUd2OTlPTjlLdmZ1Y2dPN2VfVDY1d2N4RnBLaUU4N0tNc0o5YXRrV09oQldBY3FRbENmWUVHNDZZUjJjN0dJZnd6X0hTcEJodDZGVHJkeFJJWHZMNHJTN29KeUlSNzdYQmc2TjB0bXl6MERHbksybDZjRlhySWt1VA?oc=5",
+   "date": "2026-08-21"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_soon",
+   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ETHospitalityWorld",
+   "source": "ETHospitalityWorld",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOLWZpaVRoYWF5c2tndDBVYjZHSUhZZVUxWXVoSWQ2ZWh1c3Z3OTNPcjJKWm52bi04Ry05ZlR0Q2lnbVRyTkZ3TEFydDZBTkdkR3Q0b1I3MTJtdF92b0tMV2F1Z01PbVQtUXMxdzFsRGZ3dkRKX09kNEx6WUIyUnR0U2VpMkZxZ0U1b3pSMl9NQ3ZLZnNsQmVyanNySFlaSl85a1p5OFlvU1VZQklNZTdPcTN6cTZoclZySFZDa3lVWXpWdGF3UUMxalNhYlU1TkJVYTFrbXhIaWpXakZHdkZESnJoUVhwRzBvalotM19lUXJndlkzMmszQWJRMGlaQUJDRWNfLVNyWWk3RXc2bHfSAZMCQVVfeXFMTl9tN1FCS1Zfd3hDRVFNWUdiOGFlcnNnMF9IMU9wdWpNOE1maTBrQVp2WlF5cjNnSFZBRkg2TFFJeG1wWkoydFcxTlRnMnVzMGdSRGZpNDBrNkQ1bm8zaDBobVhOS2w1YzVsd1BxM3dfcEZBVFZScjZYOUQxTlpLR3MxZzE0eUc3WTd3OG96TlRlZDZrQVZlOUNpZlRMdlhSSUFpVDhqM01CejRMWktkc1VxaWk2aWhfbW5rQWZHWFh1SXlDSzFmUHNjdG1yR3k2bkJjanFBT2l6QXNQNXhGWVJJa3llaGRiU3ZVUVZ3d1ZTZzJZZG9IYVBYWlhpUEoyS2xkS2FhN3YzRG9ldzdiRDRDd0E?oc=5",
+   "date": "2026-09-27"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido’s ‘Ownly’ enters Hyderabad with zero-commission food delivery model - Telangana Today",
+   "source": "Telangana Today",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTE9LWTFhSHhnNmpPQ3hHWVNRb2FvbVZ2M3VhU2syWnVCaDI1aEdMa2RQbTJRb2tDcEJxMWdCR051V2k2Z29CWURGaDQxWF9aS21ZclJkYTRXT19fOEVaVndKVFg2TGx2WGZUc1REenpHSGZDM0ZoYmxjZkxNTTllZnZwZEcybU5lcHU2MmoyNlRidDZRM3FvSDFsbzhOV1U?oc=5",
+   "date": "2026-09-26"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_soon",
+   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ET Retail",
+   "source": "ET Retail",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTElVNmlLeEJuZFJTbUdyeDFHU1VSVE9KVDBnT2dIaEpYbWJLSE5VcWFBeGxndU9qNC0zcnZtSW9hcm9saTg2WUdGZmZHZ0ZqU3dRTHNhT1RCNENnTklCN1JFNGRzZW5Vem5Rc0NyLTNsZ3liTmJ4dnFlRFlQZTVINDFQNGFOZkVQdU1QUXVGN1J2UVh3dTlJSVhyRi14ZmN1MTV0bGFIRk5PUnd4UE9SSDVUMmxWSThaZ2Q3Y3FmS0dyWnl1VTF2eDhfOHNRYmRtY2VTRzJ2cmM1U3hYdVFuM1dpNkF5NVkyX0l0VjNVVzlUM0VCdFpHUEwzaFc4WXBfSEg4YnhjVdIBiwJBVV95cUxQMHh6cjZDR2t1enhhVWs5R2NaTW9ISVVfdXk4VENHc2drZ1RxcE9nYVRQOE1qdjVibGdEcExPc3phSE5TZG1hajhmOFJwbXluTXFqS2lTZkVQMEVTeUtXQ3BIeXFpeHlHRThQUW5fb2NmOXhHTVpaRWpQbG81Y0dKREVLVE15RnFtQkVzd20zclVPRWRoV281VFJfdFFqeWhaQUhULVNabmZxb244TGJ4NTVIUVo0d3ZYaGxpQkZaV1YydlZZRWxaNEZWOE1RMHNQWGlRWkVCQ3F4U2xWSHpXUURKLXFfdXBhRllBd2VEVUR0TEE1aUt2OWdmanJqM0k4cDBTQVRJZmtIMFE?oc=5",
+   "date": "2026-09-26"
+  },
+  {
+   "provider": "rapido",
+   "city": "thiruvananthapuram",
+   "area": null,
+   "signal": "news_live",
+   "title": "Women riders take the wheel as Rapido launches ‘Shakti’ in Thiruvananthapuram - The New Indian Express",
+   "source": "The New Indian Express",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQd0Z2WF9xZW9kVVJaNDhYdHpxRnNWRUtDV2xTOFJNdVRpaldZWU1hTXhYOW4zUEk3bF9NUHBqUzJEUlBiUU44UEM4TjNjZ1NTeEt6d2NWUFcyYTFjbVVnN1JlWGdFMDNrUUtTREZmNjZkZHlXdmZJNXJQSFdnX0hyUjRkYW9uS2k2aFVMeVJsbUg4OE94RXJXOVQwT3M3RUhjSFhaczVMcTgwQjBZLU5vZ2I1cExXUUNxZUFmdG93dk4zeXQ2bkNkTGViMXdmYmE1Qy1xbUxwQkFuVDhIT0Nz0gHsAUFVX3lxTE1TaFZZWC16a2dDRzVjeTlqOVJQRjBpRWpBUHFGVl9hemtXMGtmOV9FUzVVOTZEU25rbW5JV0k5T0xBcDZ0d2tEQnhrUERKVGZiRTAydklVV0VkNnVhT3R6dURUalF3LWRUY0hyN1dPbmxUa1FtaG4xRFJ3SzJOcWJCbS1sWDFoQlROUm5rVnoxc3Y1SHFwUFVMTFpLS3ZkdVFOSVpPX1k1QXUwTFNDQVlZbU9lVTljakhnZFQ5U0lua1J5VUdONHFKQ0hBSFpERmRnemR5bWpwWERIeWN6NHdsWTZ2T2dVUEI0N3RJ?oc=5",
+   "date": "2026-03-07"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches Ownly food app in Bengaluru with latest campaign - afaqs!",
+   "source": "afaqs!",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRGc5U1pwZWlfTEk4NzR1YXJPOThaZVllcU95d1oteWkwVWZndWNNUXBWS3VNOUx6YmlmSFY2Tkp4b1d1Wms1MWNsM1BWR2c1S1RGb3dEdXlJVXFPR1pfUVNOZEU1ZmVweUNhVk8yQ3NEcE1zVXQ1MjJ6eExETHFJZXBvUzRycHdFU3o1NGZBS2s4eWxYSDFzc21NUHJ5RDRlRGRsTUxxa3p3Tzd5ZFExZjJR?oc=5",
+   "date": "2026-03-03"
+  },
+  {
+   "provider": "rapido",
+   "city": "mumbai",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido Launches ‘Rest Spaces’ for Gig Workers Across Mumbai. - Deccan Chronicle",
+   "source": "Deccan Chronicle",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFlhaktGMDB0OFhzR05oZ3dFYmxad3hQbjdKQjNOOUdENmdNX2ZQUHlRc2QwYWh0b2RoY3Q1T0llMkkwaW5oMEZhS25iMHNkZnhfR2JFNFkwWUNqd0E4Q1AzWEtSdTlDaTVZOVR3YjBpQmtYb3FJczd4ZUVuSEdUcEowbDVGVmJqTnRlMGtEWS1KdFYzV1Z3aW1TMjdENkNhSWQyeUFlWUstd9IBrwFBVV95cUxOYWhaMS1jUVZ0eHZVbkVyV1JNVzA2SHFFc0dmZUprTnJlUTdOX2puZzM5NWxtLTRuY3BNNk80Ui1TbEdQbjROX0VXY1ZvR2QyWGxSQ2hYdUJWbFBIOVF5NDlKVmV0SmFDTVN2cGRXVW5RVXdjcGFfSnR5blc4bVpidmo4QnZvRkdwalI3ZGtOVHFhR1J1N2p5dXd2SS0xdlRkYlVFRFFHUW1BMTVYMElN?oc=5",
+   "date": "2026-05-27"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches ‘Ownly’ food delivery app in Bengaluru with ‘zero commission’ model - Telangana Today",
+   "source": "Telangana Today",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMGNPV2hWRnBRblBCRTV4MzlzNEdjR0VTcjV0dmNlNGwxMWdBRmpFUzZhVE9GT2U4SEFjd2VqSXhMQl81TzEtbVJUMGRGcXNVZEswRDRTenJsVTBWdnNnNTRTdGlxeUFBRzJkUEQ1YlljOUJubjM4TDRoVmNUY2N6bmd3U180ZGVjTWYydTUxbUM1YkJIekNTRXpTYmc5c0ZRUFZZaVFQdHlOZw?oc=5",
+   "date": "2026-03-05"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches Ownly food delivery app in Bengaluru with no commission - Storyboard18",
+   "source": "Storyboard18",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSnl0am1OZnBIQmp3ZUlVVnVsN09GZEcxejQzcGR1OW56TGdYT1M0bjBETDdZaHhRT1NGbHpobFN2anlFUmVlZmw1TW1HRkVzRm9SVlNQaEg1SlBwMjRrcDBpMVFYcjNOWVQ3elJ5NDRWc0I1ajc0OXY5Q3lnMFVCT25QNlJoRFJzVG9IRGZFLUJ3YXFXRXJnd3pJbGxjTVNldUx4MnNLUUsyWUNnLVZzTkpRc2t1VjhaSWxQYkpVZGNUQWlnc09vMm5BLWxJNzRPaEdj0gHYAUFVX3lxTE12U3BmazRld0hOS0gxMDZIVTlkYTVCZzRlVzZvc05TZ3MtcVVwMThsQnk4d0J3UkdUTlEyNVhVenJURmZFa2RuRzV4VWNVQXJ1am5qUmd0NlJGNWY1VjhrWk9nblUxVTBHMTBOeVc5b1lnMVdTRDJIbG9KS056bnN1MlZyNDFiUy1fRjZnUHdzQVh6QzJ0aGh1X0hxLXRqOE1ydTczWDdyN2FEQTJoY3VPbDJJd1prUlA5czZmMWRaaURSVTlRLUJWQnRiVzZCRERVT3NkX016Zw?oc=5",
+   "date": "2026-03-04"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido formally rolls out Ownly across Bengaluru with zero-commission food delivery model - Moneycontrol.com",
+   "source": "Moneycontrol.com",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxObFlyUVVJYWhiQ2lDdktkb1VLa20wSUozeGI4ZW9PeHY4anlUa0tEck1fUjQ1UHQwVnVCVEtTdnozWlczV3Zjdk5jVUEwdDhPODUybmpHaDNPa2hPSFRtTXYwR2phZkNCTW5PeEJsT0ZkLTJNMlVQcWhKQUd5YWZjdnVGT0lsSkFSUGpFRGNvNDNYWE5SampZWWc5ZGFIX08yTVhNUkd3dWN3aE1NMExoSDk5cDQwb2Jqa3pxZDdqR3JIU3VyX3ZBSHBPRnkyMnkwb055cV9BTFF0OTVPdG1rR0NUZkZhNndmNEHSAe8BQVVfeXFMTm5PZ2xScC1lSi1kckFpbFJEVE5XT0tOU1Ryc3A1Ykk5TnE5S3hES2tlM1NJTFkwU2hLSWhNMk1rdW5EbjBIV2g2YnVWNWUwWVpoT1MtUXpIckZEN1YtVjliTlNwSjFtVGRHWUlzZG1oUTBJOTV1NUNkTjl0NHdPUURMSDM1dUxhRnpwalZkcF9Rd1BkWm9mWUVWTTFiSkxWYkFXU2NrLUxmWklsSlhpZVRRQ0lJeXJ0aVVtYy1EeFBOcTJ6RWxTb2NEMy1jSW8wSlltYnVRSFBhUlRBaVZIel92RjZEcFowMk0zYVpwOTQ?oc=5",
+   "date": "2026-03-03"
   },
   {
    "provider": "rapido",
@@ -246,6 +426,36 @@
    "city": "bengaluru",
    "area": null,
    "signal": "news_live",
+   "title": "Rapido rolls out zero-commission food delivery platform Ownly across Bengaluru, plans tier-1 expansion - BusinessLine",
+   "source": "BusinessLine",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQZUVrNkRVdzBaTnVWNkliaFNUVmd1WnBySlZmNTlweEtTSHhld0hGTDIxZnpOWHJnelVpUUNla3dnS1FZZGVwM0p1NmdBdllhT3FCalFwb1k0NFNKZnhLWVlKTFNQWF91TlFabDZOMEJzUDh1WTBJQ1o2ejBhMlViUDNvNlMybXYtWU5GeDZIQktHUHlNVktHcHZZYWNXeHh2YUdfYWJTUXg1Wi12bXVhbjh6ZDNrSy1ZT2lNZTZhZmJDRHVBRlVSYnFkUmp5VWc4dmRVWUFXNWdJM0VtUTdzZ256d2lrX05IYmlYM0tMSnNOVkdwTnN3dmprcjLSAYMCQVVfeXFMTVBYc2FmcV93ckltNWVWd2RDSW9HR3ZhWjRabWJsQ1d0emdhejBpRlhqem1IbHFHWXdSeU9zUnBZQTcxTDBFTGNtSGYtakhudV9MODFWTTVudUxvUmVleVlxbGMwXzM2YUF3bkxFYXZhU2RjeXFOMFBFdE56ZnF5SC1MMm0xSFFNU25yVmRCQ0R2VFh4LVJIbmlnMHZ3Zm50Wk9jdjNKV3VtV2tVTnJ5aEFiM0lnMjR2SUhiUFpubzE2ZHFXNktLcEJwd00yUmlwS0ZKOHZaemU1ZkpUN2FjelN4UEc0TmlxT3dLUlNpSzR5TjdCcnVNeTZNOU82WW9iSE5CNA?oc=5",
+   "date": "2026-02-06"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido enters food delivery with zero-commission app ‘Ownly’ in Bengaluru - Fortune India",
+   "source": "Fortune India",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRFg1Y2tZN2x5QjRBRlRnTGx3QUhacEUwYU1fVG1mRVdUUUdPRGRVcW1CVVJvQndpRVFuZG1KbDVhdUdMcy1qZ0JkMWw0OHppWVpQVWhrNEtNQWtQNDFuR3Y2OTQwYjRHQWM2d3Y4R0g4MXN6MGk0QjFHZS1tZ2Zid3hlRHNMXzBndjNEZDFFSndvUzU3czgweXduYzNGOEJkRlhzcnhVT3V5OW1ydVBXUEFrRXJzcEg4aFQzbHAzVjjSAc4BQVVfeXFMTUVnZ2NYcnU3WklZMVYzMVE5WHBTbmlVcWNOSUozVzRsbE1MV2dNVV9Udm9HcmpLbkh2N1VCTWZ3R09mUUtkeFBOU0FkdFF5RkQyWkZZQXpJOVEyRlR4OURUeS1Oa3YwYVJ3Q3pIOFlTbGVXRUtTZm8yXzFvYzBTZGx4eEtYa0h6S0hyMjNUY2NEVHFVYm53VXFKZkg3OTFTMk5PaHpQeEhQTEtRU2ozdVlablZvbTQ4cm1HaVdJdVZtdVlSS1N0V1FBc0x6QVE?oc=5",
+   "date": "2026-03-03"
+  },
+  {
+   "provider": "rapido",
+   "city": "vijayawada",
+   "area": null,
+   "signal": "news_live",
+   "title": "A.P. Tourism launches ‘Driver-Cum-Guide’ training with Rapido in Vijayawada - The Hindu",
+   "source": "The Hindu",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSi1hU0RheGE0Sno2WllsaGI1LXlGYmVOU1ZMLUx3TnRodmcta1FFTTh1aWx4X3dnZjA2ZThTaTdOcXBSbmRzRm5YbGhVNWRsMDlTMkZDMXY2Q0tfSHRENWt1VlFrbjZPWUgzcEpvNTcwN2lGekg0M1dxLVJxcVhLSjU4bjdlTmVjYXY5N1RkMXVXUFdlNGk4Mm9aaGJVQTJvY3p1SnFvckliUEhvY2VLM1J3Tzd3ZTBRQUFhWEpEdlZUdVlKanNPVFpUMThsd3NrSTRMUkFmSmUwcmxuTVHSAeQBQVVfeXFMTnZtWl8zT3dWZ3Q1RTRkQnUtNDlvNE1WazZTVzJHVzV5SF9QOEQ3aUtzMmtEYzJtY0pxZjI1NVgtWFlaSGFlNW5LeXgwN19MT19fSlRYaFFHcTl1U0dMS1NoUHQ3WlBNRFhFNUVVa1JtQ2hENnl4RWtpd2FkOHV5bWNFU2hka0xVbVctTFlQdS1QakktU1gxS3VIREVxUFFhRE1MS0U3bVpSbkJ3ZE53TnNSVVRvNFkyT3lxVDJPUVdKdjZLdktNbmhobGRvUzFPVFg3WXVBcGRRdU1nREdMTDRzRl96?oc=5",
+   "date": "2026-03-03"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
    "title": "Rapido Launches Ownly Food Delivery App in Bengaluru, Competing with Swiggy and Zomato - CNBC TV18",
    "source": "CNBC TV18",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOODgyNnVzaXQtaVJxX0pPLTFQUk9XSlpUckFiN2tUZnlXNlFXUnhFTlZOaUl6eHBsSEh2cjE5WU01MTNnYXNnYTVYNmcxbmxNQTZmbnNJeWRub2JTNlhNTkZEQWpqTDhBbEt4dlJXN2RyMl8wdWVaMTA1dUxybDdnblBKLXR3T09zSHAyTW9WM3hteER2aGpBOHdlZ1NnR3VkZFBqZTN2Q3RiakNwcUJEQkJ5aXRpSHAxdEU3cDlIZ2dRM200Q2REOXFCQVZ1UnNSZFh1RGV5NWhKN2gtU09MT2tvc3DSAeoBQVVfeXFMUHVZdTFZUzYwT3FpdVpsbF82LUk5bXpvQkcwZUQzVzFJNmM0bTlIQW9Zc1VUdTdhRy16QVRWc1dWX1RpLVFYOGdLMzM4WW4wd2pualhRUmlKUy16dmpSTWxiSFd4SEswWlY3RHZrX0xuZnY0UE9LdFl5Q09BWVpQWWQyX3MtUXh0X3pPNU1hVktZNGF6WDhuZEVRYlE2QzVHcUp6NmVTVTA3eE05cTZqSVdXeXViMldXakJRM3o0WF9VaElnOWtiVndib0J5V2RIbENZMzlpbHVqbm45ejNwdl9FbkM2RzlzZU9R?oc=5",
@@ -253,13 +463,73 @@
   },
   {
    "provider": "rapido",
-   "city": "hyderabad",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches zero-commission food delivery platform ‘Ownly’ in Bengaluru - MediaBrief",
+   "source": "MediaBrief",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzc3B1SFBlNE14SFF5ZVI1cHYxR2dQTzc1S0lSWUJJUm9lSkRHR0VXOTk5U0VOUlpWclV3WXlaNWhwNF8yM0NTVEk1Q3B0SG1aSnVVSGJITnlMNk9NazVQaFZnQ0s2YXFlYXc?oc=5",
+   "date": "2026-03-04"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
    "area": null,
    "signal": "news_soon",
-   "title": "Rapido launches Ownly in Hyderabad, plans to scale food delivery service to all metros in Oct-Dec - ET Retail",
+   "title": "India’s Rapido rolls out Ownly across Bengaluru, eyes Tier-1 cities - Verdict Foodservice",
+   "source": "Verdict Foodservice",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9XejE4Z0lRZUtyVEtRa0l2MkdZVlhOQXR4cF81dDZQNUhnT3FzTUkwVW42b3F2cExuc3lQQ0haUHc4aFZxVUQ4ZExJal9ibmV2QktzSU05UHR2VUthTVN1RFlHMnpUOElsb19JbUx5SHhFYk1LN3RQV2Zn?oc=5",
+   "date": "2026-02-09"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches zero-commission food delivery app Ownly in Bengaluru - Indian Television Dot Com",
+   "source": "Indian Television Dot Com",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS001clV5Q1d0cW95Q0F6SjVHUkNGX2RNVkloRm1COUlXVy1NYy1iQVBQRUdRWDVpTEJyZlZXLS1aRVFBeFhxZ0xHczg3eGQ5cVpUbTZKbl9pakc4dERhSlJITjBHVC14b0VmVnVSdGhtUVRtV2tHS1hDSHFRZmlickJpV1diNmpnLUZINWV0cko3Tk5ydjlWZXA5Y1p0a3d2Y0NfRVFCVzc?oc=5",
+   "date": "2026-03-05"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido launches buggy services at KSR Bengaluru City railway station - The Federal",
+   "source": "The Federal",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUVBxdXVla3hBTmZBRkJfWlJmemJkc1RRRTYzenNfV0hSd2RBYkQ4Vm9RY3pnZ2Y3M2R2SGNINjJWQzU2bVdZN1htQ0hNeEdHZWdJdUdpdEpxanFzZXVzdVM3dDY1Z3B6NUNBWTdNNm41U0NrUENGNzI2eWVFbTVDVE5ZQklwSUd4aVlfWW5idlN5aGxMR1dDd3NMYmt3aHVYNlFIb1h4bmp3c2E1bkhCdS1rMG9ITzdNN1E?oc=5",
+   "date": "2026-05-11"
+  },
+  {
+   "provider": "rapido",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido's food delivery service Ownly goes live across Bengaluru - Business Standard",
+   "source": "Business Standard",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOME5aaEx4V180aFJseXZWTmpyeElKLTZVb0p3dGxEUXhjTE9QanZGYUZzelA5OHl1SnQ2NUZrVHpMVC1MZEhNSndDSW9FRTU1RVpsYWVSd3A5ZGFmMUpGRDhYaHVGcDhEa05zQVVhTEpvdF8xUmZ1U2tweWFDa1hkR2Z1TVYwSzFiaXYyVFNSV1ZhRmJLckt1UEdNdXJoY2JxQTRqbU5yTlcyV0RYZFdmWWwzSjVnUjYtOEY1VjJuMFRqd1RwTFBnM25kc3NfRWZrUjRz0gHYAUFVX3lxTFBEUlVzOGlQcHo2eG42aW9NME51UjR5YllqZHpzUW9mZDFGMllKYWIyN1d4MlQ5VXlmOHZ0XzVJX0VJalN0NWQxbEZlRE9LVURLN2dXOU9CLTF2aFZxU2pzWGpEWWNrcjlCdERBU0ZscU4walYxUzJHZVlsaThJTXl1VU5zQ2VpenpFb0R2SEU2WU9Gek1oY0ZSbGdtcGhlUi0zSkszT05PS3BGZHItVU1vaHF1QWJTVkdkZnNSYVZ6NzFycFQ5ZXIxMERlbnBpcjBJYWtkQmkzdQ?oc=5",
+   "date": "2026-02-06"
+  },
+  {
+   "provider": "blinkit",
+   "city": "bengaluru",
+   "area": null,
+   "signal": "news_live",
+   "title": "Blinkit launches ambulance service in Bengaluru, expands coverage to four localities - ET Retail",
    "source": "ET Retail",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTElVNmlLeEJuZFJTbUdyeDFHU1VSVE9KVDBnT2dIaEpYbWJLSE5VcWFBeGxndU9qNC0zcnZtSW9hcm9saTg2WUdGZmZHZ0ZqU3dRTHNhT1RCNENnTklCN1JFNGRzZW5Vem5Rc0NyLTNsZ3liTmJ4dnFlRFlQZTVINDFQNGFOZkVQdU1QUXVGN1J2UVh3dTlJSVhyRi14ZmN1MTV0bGFIRk5PUnd4UE9SSDVUMmxWSThaZ2Q3Y3FmS0dyWnl1VTF2eDhfOHNRYmRtY2VTRzJ2cmM1U3hYdVFuM1dpNkF5NVkyX0l0VjNVVzlUM0VCdFpHUEwzaFc4WXBfSEg4YnhjVdIBiwJBVV95cUxQMHh6cjZDR2t1enhhVWs5R2NaTW9ISVVfdXk4VENHc2drZ1RxcE9nYVRQOE1qdjVibGdEcExPc3phSE5TZG1hajhmOFJwbXluTXFqS2lTZkVQMEVTeUtXQ3BIeXFpeHlHRThQUW5fb2NmOXhHTVpaRWpQbG81Y0dKREVLVE15RnFtQkVzd20zclVPRWRoV281VFJfdFFqeWhaQUhULVNabmZxb244TGJ4NTVIUVo0d3ZYaGxpQkZaV1YydlZZRWxaNEZWOE1RMHNQWGlRWkVCQ3F4U2xWSHpXUURKLXFfdXBhRllBd2VEVUR0TEE1aUt2OWdmanJqM0k4cDBTQVRJZmtIMFE?oc=5",
-   "date": "2026-09-26"
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQ3Y1TVZ6RkU0YUlRcTR6RWItNnJ2QkhtbzFTS1JqXy1zU0xTdjhOZWdRUUtqTmplWmlKU0hUNGZlMk5QdG9nQ2RTXzVYQzU5d0w5bUpQbnM0T1FieTZQd1pURHJGVGdMTDRFZWZDcVo2RGtFV0NVMlE3cm85MGZwdHlMdW1LbExLSEhPS0RKWVZGcVFTOWhwQ0pFTmpocnd2TGdQejJtYmJXZzJlcU5YbjZFRXAxSG42V1RPUHJuUjA5cGk4NmtDbzhxMGNuZzk0VGh6LUdPaktCN2NLdWk0MS1GX0lMajF4UGJPVm05MnJ0aXpG0gH6AUFVX3lxTE1yaGkyS0V0YlN0Sk9wSVQ4ajFXV0F6ODhYd0FhMmNhbFZ0MFUzNHRWcmxWWHRhR1htLXUxY1E4YUtUZWVTVGhYa05feG9jR1hfLWZRZDByWVhRNmpldWV5OEpXU1p3cG5QNmVGV0hmcXNwamIxZDRCMGRzcldxaXZRQ0NrYVZwMWUyby1HbWRJTDBLWXZZNFR2SjhIOXZMaFNOZ3p1RHN1SG8wZW9uV1N2aFFzVTRFdll5WU83OTdrSVhHSDhtU1JpZVNuODZqSnZoZ0hfMGgzYXJ3cXJONzZzS3BzQzZYOU4yQW5XWWQtX3dNZ1pWYm1ER2c?oc=5",
+   "date": "2026-11-18"
+  },
+  {
+   "provider": "rapido",
+   "city": "hyderabad",
+   "area": null,
+   "signal": "news_live",
+   "title": "Rapido Launches Ownly in Hyderabad, Celebrates With A Biryani party - Deccan Chronicle",
+   "source": "Deccan Chronicle",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPTi12bzY5MzZyV0Z2M0xVSDNiTEJDdXZaS09td3BCVlFvaHd4OWJRLXVQelUxZkstWGw3enU0LVJINTZmX2c1TExhWEpFT3lyWFZPb2Rqdm9OTVF5RHNRNnlFcGdONmdDZnRjQ3lIYWZ6TkJPRVBMYUF1dnByeGdxMnRUU0tKOHNVWTd1QjVuQzJIQ1c5RHhXa2J1X2c2bzNwZ2NKOHRKRVkzX09XNGstdHJabXBydGtUU1VnUEFGSXo5eFZEQV9OTHh5dVBrczJ6ajN3THZrN0xlTkNzVHNN0gHkAUFVX3lxTE95bVhrZ0N2dm4zT0xRTUJ6S2RZT3lvYUszWERzZTM5MGtTRDNVVi05d0g4RWxCMWJaVFBHa0V1RVJGSi1lZ1B6Z1YzQ0t4Q0ZoOVAwRXBiWkxsT2RVUVZwWENBTWkxRktSZDVlaDFweXdZX2p1VThLZGlBM0NIQkFjT1RwdWcwVVliTURpVWlabGZXVVU1cDNWQ0RXTXVCX3AyemUwTkFSSFpYc3NKRnBUcXNZTmJsTUhyRWY4Q1VZM0ViOGZDOFNDRGZaaUVXZ3VzamdZdTBGQXljVmZIdDk3TGNiUQ?oc=5",
+   "date": "2026-09-25"
   },
   {
    "provider": "nammayatri",
@@ -270,16 +540,6 @@
    "source": "Indian Startup News",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFJzbjFkQWJJUlNxMkcyc0xsY19RVnJXZWlDWXR3OW1aNlp1cmwxNmxRckFGeTIxT09ETnFPd2FYYTFCbmdLcU5uMG1RVGFzZ1R1eExrQ0VxWFpFWnUxTTlpY2dBOHlZbm5mMFp6VnlWcmVJRnN3SnpZRllVT01Ha05qT0t1QjRDLWxUWlZHemVkTnRTWFlQVVdMdFRTVG8xdndoTDhlTWNhOUhhMG5tWDdoQmR2SFJ1QTVIRHRLaHZneU1zR1g0bEw3SnpCSXBJYzZSOWtR0gHWAUFVX3lxTFBUUnNuMWRBYklSU3EyRzJzTGxjX1FWcldlaUNZdHc5bVo2WnVybDE2bFFyQUZ5MjFPT0ROcU93YVhhMUJuZ0txTm4wbVFUYXNnVHV4TGtDRXFYWkVadTFNOWljZ0E4eVlubmYwWnpWeVZyZUlGc3dKellGWVVPTUdrTmpPS3VCNEMtbFRaVkd6ZWROdFNYWVBVV0x0VFNUbzF2d2hMOGVNY2E5SGEwbm1YN2hCZHZIUnVBNUhEdEtodmd5TXNHWDRsTDdKekJJcEljNlI5a1E?oc=5",
    "date": "2026-09-12"
-  },
-  {
-   "provider": "snabbit",
-   "city": "bengaluru",
-   "area": null,
-   "signal": "news_live",
-   "title": "Snabbit Launches Salon-at-Home Beauty Services in Bengaluru - Indian Retailer",
-   "source": "Indian Retailer",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEJXbzhCU3V6dHd2ckhGcFRfN3k5TU41VWlJU2swYVZxM2ZUb1hlZThtcGM2T0w5Sm9sckhWUnhFcWx2V1Z6Rm5YdDF0azNac3RtVGJ5Q2lIc0dJZVZZamhSOVZ1SnFpUzI5eVdIQ1ctbjNZd1VZeHYtM1BxRmU0ZVQ2YlA2dWlIS2tZb3dLaWNuMk0?oc=5",
-   "date": "2026-05-22"
   },
   {
    "provider": "blinkit",
