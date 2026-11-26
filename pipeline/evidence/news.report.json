@@ -1,8 +1,8 @@
 {
  "collector": "news",
- "ran_at": "2026-11-25T10:25:32Z",
+ "ran_at": "2026-11-26T10:00:41Z",
  "ok": true,
- "items": 73,
- "prev_items": 58,
+ "items": 75,
+ "prev_items": 73,
  "errors": []
 }

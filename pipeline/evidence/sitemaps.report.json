@@ -1,11 +1,11 @@
 {
  "collector": "sitemaps",
- "ran_at": "2026-11-25T10:28:06Z",
+ "ran_at": "2026-11-26T10:06:30Z",
  "ok": true,
- "items": 5245,
- "prev_items": 5243,
+ "items": 5258,
+ "prev_items": 5245,
  "errors": [
-  "www.zomato.com: https://www.zomato.com/sitemap.xml (HTTPError)",
+  "www.zomato.com: https://www.zomato.com/sitemap.xml (TimeoutError)",
   "www.actcorp.in: https://www.actcorp.in/sitemap.xml (HTTPError)"
  ]
 }
